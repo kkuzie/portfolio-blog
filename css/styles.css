@@ -1,0 +1,531 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+    --ff-primary: "Be Vietnam", sans-serif;
+    --ff-seconday: "Glegoo", serif;
+
+    --fw-reg: 300;
+    --fw-bold: 800;
+
+    --clr-light: #ececec;
+    --clr-dark: #303030;
+    --clr-accent: #a494a4;
+
+    /*under 800px*/
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em .75em rgba(0,0,0,.25),
+            0.125em 0.125em .25em rgba(0,0,0,.15) ;
+
+}
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+@media (min-width: 1920px) {
+    :root {
+        --fs-h1: 6rem;
+        --fs-h2: 5rem;
+        --fs-h3: 2.5rem;
+        --fs-body: 1.5rem;
+    }
+}
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.8;
+}
+
+section { 
+    padding: 6em 0;/*was 5em*/
+}
+img {
+    display: block;
+    max-width: 100%; 
+}
+
+strong { font-weight: var(--fw-bold);}
+
+:focus { 
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--fs-h3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    border-radius: 10px;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* TYPOGRAPHY */
+
+h1, 
+h2, 
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+.section__title {
+    margin-bottom: .5em;
+}
+
+.section__title--intro{
+    font-weight: var(--fw-reg);
+    padding-top: .75em;
+}
+
+.section__title--intro strong {
+    display: block; /* will make name always on a second line*/
+}
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    padding: .125em 1em;/*was .25 1*/
+    font-family: var(--ff-seconday);
+    margin-bottom: 1em;
+}
+.section__subtitle--about {
+    border-radius: 10px 0 0 10px;
+}
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+/* HEADER */
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;/*was 1 2*/
+    background-image: url(../images/watercolor.jpg);
+    background-size: 100%;/*kk*/
+}
+.logo {
+    /* max-width: 150px; */
+    max-width: 100px;
+    height: 140px;/*was 100*/
+    /* margin-top: -25px; */
+}
+/* .logo--img {
+
+} */
+
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--clr-accent);
+}
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 5em;/*was 1*/
+    top: 6em;/*was 1*/
+    z-index: 1000;
+}
+.nav-toggle:focus {
+    outline-offset: 45px;/*was 20*/
+}
+/* makes hamb menu slide in from right */
+.nav-open .nav {
+    transform: translateX(0);
+}
+.nav-open .nav-toggle {
+    position: fixed;
+}
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+.nav-open .hamburger::before { 
+    transform: rotate(90deg) translateX(-35px);/*offset from the .hamburger::before top: 6px below*//*was-6*/
+}
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: block;
+    position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--clr-accent);
+    width: 11em;/*was 2*/
+    height: 10px;/*was 3*/
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.hamburger::before { top: 35px;}/*was 6*/
+.hamburger::after { bottom: 35px;}/*was 6*/
+
+/* INTRO section */
+
+.intro {
+    position: relative;
+}
+
+/* .intro__img {
+    box-shadow: var(--bs);
+}
+.intro__img--sideways {
+    box-shadow: none; */
+/* } */
+.section__subtitle--intro {
+    display: inline-block;
+    /*makes fed bg shorter instead of full length of div - makes the div width the size of itself*/
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        /* width: min-content; */
+        margin: 0 0;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title img2"
+            "img subtitle img2"
+            "img subtitle img2";
+        /* grid-template-columns: min-content max-content; */
+    }
+
+    .intro__img {
+        /* grid-area: img; */
+        min-width: 500px;
+        position: relative;
+        z-index: 2;
+        transform: rotateY(180deg);
+    }
+    .intro__img--silly {
+        grid-area: img;
+    }
+
+    .intro__img--sideways{
+        grid-area: img2;
+    }    
+    .sideways {
+        grid-area: img2;
+        /* left: 22%; */
+        top: -100px;
+        justify-self: end;/*moves img .sideways flush right*/
+
+    }
+
+    p{
+        border-radius: 10px;
+    }
+    .section__subtitle--fed {
+        align-self: start;
+        grid-column: -2 / 1; /* makes the front-end dev title stretch along bottom instead of under name*/
+        grid-row: 3;
+        text-align: right;
+        position: relative;
+        left: -3em; 
+        top: -3.75em;
+        /* NOTE this is removed because of the image used is not a box. shadows done in affinity */
+        /* width: calc(100% + 1.25em); */
+        /* this will add the 1.5 em back on to the right side to align again with name */
+    }
+    .section__subtitle--gd {
+        align-self: start;
+        grid-column: 2 / -1; /* makes the front-end dev title stretch along bottom instead of under name*/
+        grid-row: 2;
+        text-align: left;
+        position: relative;
+        right: -3.75em;
+        top: -1.75em; 
+        /* NOTE this is removed because of the image used is not a box. shadows done in affinity */
+        width: calc(100% - 3.75em);
+        /* this will add the 1.5 em back on to the right side to align again with name */
+        /* overflow-x: hidden; */
+    }
+
+}
+
+/* WHAT I DO (services) section */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(../images/laptop-code.png);
+    /* background-image: url(../images/watercolor.jpg);
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-blend-mode:multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: ' ';
+    display: block;
+    width: 2em;
+    height: 2px;/*was 1*/
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.services {
+    margin-bottom: 4em;
+}
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+    flex-basis: 100%;/*to make columns even in width*/ 
+}
+
+@media (min-width: 800px){
+    .services{
+        display: flex;
+        max-width: 1500px;/*was 1200*/
+        margin-left: auto;
+        margin-right: auto; /*instead of margin: 0 auto; so doesnt override margin-bottom on .service*/
+    }
+
+    /* to add space between the individual .service 's */
+    .service + .service {/*this essentially ignores the first .service (Design + Dev) since it is not have a sibling before it. the + looks for the sibling of an element AFTER. */
+        margin-left: 2em;
+    }
+}
+
+/* ABOUT */
+
+.about-me__body {
+    grid-area: text;/*kk*/
+    /* width: 75%; */
+}
+.about-me{
+    /* max-width: 1500px;was 1000 */
+    margin: 0 auto;
+    padding-left: 4em;
+    /* padding-right: 4em; */
+}
+.my-work__img {
+    /* box-shadow: var(--bs); */
+    transform: rotate(-90deg);
+    min-width: 500px;
+}
+@media(min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 475px;/*was 200px*/
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .section__title--about {
+        grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        /* width: calc(100% + 2em); */
+        /* padding-left: 1em;
+        padding-right: calc(200px + 4em); */
+        width: calc(100% + 1em);
+        margin: 0;
+    }
+    .my-work__img {
+        grid-area: img;
+        position: relative;
+        z-index: -1;/*was 2*/
+        top: -355px;
+        right: -54em;
+        /* width: calc(100% + 3em); */
+    }
+}
+
+/* PORTFOLIO - my work */
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+    text-align: center;
+}
+.my-work__div-img {/*peek a boo image*/
+    position: absolute;
+    z-index: -1;
+}
+.section__subtitle--tagline {
+    color: var(--clr-light);
+    padding-bottom: 1em;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* height: 212px;added height to make all image same as shortest (ETi) */
+    /* max-width: 460px;
+    margin: 0 auto; */
+}
+@media (min-width:1200px){
+    .portfolio{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+@media (min-width: 1500px) {
+    .portfolio{
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__item--img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+.portfolio__item--img:hover,
+.portfolio__item:focus .portfolio__item--img {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover, 
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
