@@ -23,6 +23,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flyout.css">
 
 </head>
 
@@ -34,15 +35,39 @@
                 class="logo--img">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
+            <div class="nav-toggle__outline">
+            <span class="hamburger-top"></span>
             <span class="hamburger"></span>
+            <span class="hamburger-bottom"></span>
+        </div>
         </button>
+
+<!-- video version of hamburger  -->
+        <!-- <div class="wrapper">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger-top"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div> -->
+
+
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#whatIdo" class="nav__link">What I do</a></li>
-                <li class="nav__item"><a href="#about-me" class="nav__link">Who I am</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link nav__link--home">Home</a></li>
+                <li class="nav__item"><a href="#whatIdo" class="nav__link nav__link--whatIdo">What I do</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link nav__link--about">Who I am</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link nav__link--work">Works</a></li>
+
+                <div class="nav__item--hover-element"></div>
             </ul>
+
+                <div class="nav__img">
+                    <img id="home" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--home active" style="transform: rotate(270deg);">
+                    <img id="whatIdo" src="images/paolo looks at me wo p v4 purpleish.png" alt="" class="nav__img--link-img nav__img--whatIdo">
+                    <img id="about" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
+                    <img id="work" src="images/paolo looks at me wo p v4 purpleish.png" alt="" class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
+                </div>
         </nav>
     </header>
 
@@ -201,6 +226,9 @@
             </li>
         </ul>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
     <script src="js/index.js"></script>
 

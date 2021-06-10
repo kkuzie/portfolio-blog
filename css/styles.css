@@ -48,8 +48,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);/*was light */
+    color: var(--clr-light);/*was dark*/
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -86,6 +86,8 @@ strong { font-weight: var(--fw-bold);}
     font-weight: var(--fw-bold);
     border-radius: 10px;
     transition: transform 200ms ease-in-out;
+    position: relative;
+    z-index: 100;
 }
 
 .btn:hover{
@@ -127,6 +129,7 @@ h3 { font-size: var(--fs-h3); }
     padding: .125em 1em;/*was .25 1*/
     font-family: var(--ff-seconday);
     margin-bottom: 1em;
+    color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
 .section__subtitle--about {
     border-radius: 10px 0 0 10px;
@@ -160,24 +163,24 @@ header {
     background: var(--clr-dark);
     color: var(--clr-light);
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    /* bottom: 0;
+    right: 0; */
+    /* left: 0; */
     z-index: 100;
 
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    /* transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); */
 }
-.nav__list {
-    list-style: none;
-    display: flex;
-    height: 100%;
+/* .nav__list { */
+    /* list-style: none; */
+    /* display: flex; */
+    /* height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0;
-    padding: 0;
-}
+    margin: 0; */
+    /* padding: 0; */
+/* } */
 
 .nav__link {
     color: inherit;
@@ -187,7 +190,8 @@ header {
 }
 
 .nav__link:hover{
-    color: var(--clr-accent);
+    color: var(--clr-dark);
+    font-family: var(--ff-seconday);
 }
 
 .nav-toggle {
@@ -196,53 +200,63 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 5em;/*was 1*/
+    right: 15em;/*was 1 originally then 5em, 15em for use with gsap toggle*/
     top: 6em;/*was 1*/
     z-index: 1000;
 }
 .nav-toggle:focus {
-    outline-offset: 45px;/*was 20*/
+    /* outline-offset: 45px;was 20 */
+    outline: none;
 }
+
+/* REMOVED for gsap animation */
+
 /* makes hamb menu slide in from right */
-.nav-open .nav {
+/* .nav-open .nav {
     transform: translateX(0);
-}
+} */
 .nav-open .nav-toggle {
     position: fixed;
 }
-.nav-open .hamburger {
+/* .nav-open .hamburger {
     transform: rotate(.625turn);
 }
 .nav-open .hamburger::before { 
-    transform: rotate(90deg) translateX(-35px);/*offset from the .hamburger::before top: 6px below*//*was-6*/
-}
+    transform: rotate(90deg) translateX(-35px); */
+    /*offset from the .hamburger::before top: 6px below*//*was-6*/
+/* }
 .nav-open .hamburger::after {
     opacity: 0;
-}
+} */
 
 /* HAMBURGER */
 .hamburger {
     display: block;
     position: relative;
 }
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.hamburger-top,
+.hamburger-bottom,
+.hamburger
+/* .hamburger::before,
+.hamburger::after  */
+{
     background: var(--clr-accent);
-    width: 11em;/*was 2*/
-    height: 10px;/*was 3*/
+    width: 11em;/* was 2 */
+    height: 10px;/* was 3 */
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    /* transition: transform 250ms ease-in-out; */
 }
-.hamburger::before,
+/* .hamburger::before,
 .hamburger::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-}
-.hamburger::before { top: 35px;}/*was 6*/
-.hamburger::after { bottom: 35px;}/*was 6*/
+} */
+/* .hamburger::before { top: 35px;}was 6 */
+ /* .hamburger::after { bottom: 35px;}/*was 6 */
+
+/* END REMOVED for gsap animation */
 
 /* INTRO section */
 
@@ -434,7 +448,7 @@ header {
 /* PORTFOLIO - my work */
 
 .my-work {
-    background-color: var(--clr-dark);
+    background-color: #111;/*was dark*/
     color: var(--clr-accent);
     text-align: center;
 }
@@ -488,7 +502,7 @@ header {
 /* FOOTER */
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);/*was #111*/
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
