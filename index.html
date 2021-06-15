@@ -7,16 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karen Kuzmiak Portfolio</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&family=Montserrat:wght@300;800&display=swap" rel="stylesheet">  -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
@@ -35,14 +29,14 @@
                 class="logo--img">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
-            <div class="nav-toggle__outline">
+            <!-- <div class="nav-toggle__outline"> -->
             <span class="hamburger-top"></span>
             <span class="hamburger"></span>
             <span class="hamburger-bottom"></span>
-        </div>
+            <!-- </div> -->
         </button>
 
-<!-- video version of hamburger  -->
+        <!-- video version of hamburger  -->
         <!-- <div class="wrapper">
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger-top"></span>
@@ -54,20 +48,31 @@
 
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link nav__link--home">Home</a></li>
-                <li class="nav__item"><a href="#whatIdo" class="nav__link nav__link--whatIdo">What I do</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link nav__link--about">Who I am</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link nav__link--work">Works</a></li>
+                <li class="nav__item">
+                    <a href="#home" class="nav__link nav__link--home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#whatIdo" class="nav__link nav__link--whatIdo">What I do</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link nav__link--about">Who I am</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link nav__link--work">Works</a>
+                </li>
 
                 <div class="nav__item--hover-element"></div>
             </ul>
 
-                <div class="nav__img">
-                    <img id="home" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--home active" style="transform: rotate(270deg);">
-                    <img id="whatIdo" src="images/paolo looks at me wo p v4 purpleish.png" alt="" class="nav__img--link-img nav__img--whatIdo">
-                    <img id="about" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
-                    <img id="work" src="images/paolo looks at me wo p v4 purpleish.png" alt="" class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
-                </div>
+            <div class="nav__img">
+                <img id="home" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--home active"
+                    style="transform: rotate(-90deg);">
+                <img id="whatIdo" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
+                    class="nav__img--link-img nav__img--whatIdo">
+                <img id="about" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
+                <img id="work" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
+                    class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
+            </div>
         </nav>
     </header>
 
@@ -78,50 +83,50 @@
             Ciao! I am <strong>Karen Kuzmiak</strong>
         </h1>
 
-        <p class="section__subtitle section__subtitle--intro section__subtitle--gd">graphic design</p>
-        <p class="section__subtitle section__subtitle--intro section__subtitle--fed">front-end dev</p>
-
+        <p class="section__subtitle section__subtitle--intro section__subtitle--fed intro__fed">front-end dev</p>
         <img src="images/paolo looks at me wo p v4 purpleish.png" alt="sideways picture of Karen"
-            class="intro__img intro__img--silly">
-        <img src="images/sideways-silly.png" alt="sideways picture of Karen"
-            class="intro__img  intro__img--sideways sideways">
+            class="intro__img intro__img--silly intro__fed">
 
+        <p class="section__subtitle section__subtitle--intro section__subtitle--gd intro__gd">graphic design</p>
+        <img src="images/sideways-silly.png" alt="sideways picture of Karen"
+            class="intro__img  intro__img--sideways intro__gd">
 
     </section>
 
-    <!--WHAT I DO -services-->
+    <!--WHAT I DO -->
 
-    <section class="my-services" id="whatIdo">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
+    <section class="whatIdo" id="whatIdo">
+        <h2 class="section__title section__title--whatIdo">What I do</h2>
+        <div class="whatIdo__descriptions">
+            <div class="whatIdo__descriptions--each">
                 <h3>Design</h3>
                 <p>It is all about imagination.
                     I get inspiration from things I see, experience, or hear about in order
                     to design logos and
-                    create interfaces and experiences that spark interest.<br>Gotta turn the world on its head to see different perspectives.</p>
-            </div> <!-- /service -->
+                    create interfaces and experiences that spark interest.<br>Gotta turn the world on its head to see
+                    different perspectives.</p>
+            </div> <!-- /whatIdo__descriptions--each -->
 
-            <div class="service">
+            <div class="whatIdo__descriptions--each">
                 <h3>Development</h3>
                 <p>Front-end developer that is constantly aspiring to write cleaner code, be ever more efficient, and
                     figure out how to bring
                     designs and ideas to life.<br>
                     “There’s gotta be a way to do that”<br>
                     is what I say then figure it out. </p>
-            </div> <!-- /service -->
+            </div> <!-- /whatIdo__descriptions--each -->
 
-            <div class="service">
+            <div class="whatIdo__descriptions--each">
                 <h3>Audio & Video</h3>
                 <p>I can sing, I can dance, I make films.<br>
                     Uh, nope.<br>
                     But I love to give it a whirl and have so much fun editing parts together to make beautiful music
                     and stories.
                     Sometimes I add my voice then do a chair dance when it all comes together. </p>
-            </div> <!-- /service -->
-        </div> <!-- /services -->
+            </div> <!-- /whatIdo__descriptions--each -->
+        </div> <!-- /whatIdo__descriptions -->
 
-        <a href="#work" class="btn">works</a>
+        <a href="#work" class="btn">Sneak a peek</a>
 
     </section>
 
@@ -136,27 +141,29 @@
                 a polyglot,<br>
                 long to move back to Italy,<br>
                 and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
-            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own beats to complement the videos I produce.
+            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                beats to complement the videos I produce.
             </p>
         </div>
 
         <!-- <img src="images/pilot-wpfoto.jpg" alt="pilot karen" class="about-me__img"> -->
-                
+
 
     </section>
 
     <!-- MY WORK -->
 
-    <section class="my-work" id="work">
-            <div class="my-work__div-img">
-        <img src="images/sideways-silly.png" alt="peek out karen" class="my-work__img"> 
-    </div>
-<h2 class="section__title">Works</h2>
-        <p class="section__subtitle section__subtitle--tagline">A selection of my range of work</p>
+    <section id="work" class="my-work">
+        <div class="my-work__div-img">
+            <img src="images/sideways-silly.png" alt="peek out karen" class="my-work__img">
+        </div>
+        <h2 class="section__title">Sneak a peek...</h2>
+        <p class="section__subtitle section__subtitle--tagline">A selection of my work</p>
 
         <div class="portfolio">
             <!-- PORTFOLIO ITEM 01 -->
-<a href="#" class="portfolio__item">
+            <a href="#" class="portfolio__item">
                 <img src="images/globe-silver-business-card-mockup1500x1000.png" alt="" class="portfolio__item--img">
             </a>
 
@@ -177,12 +184,14 @@
 
             <!-- PORTFOLIO ITEM 05 -->
             <a href="#" class="portfolio__item">
-                <img src="images/optimized-sandy-canvas-Label-Tag-PSD-MockUp-2-1500x1000.png" alt="Sandy Canvas logo design" class="portfolio__item--img">
+                <img src="images/optimized-sandy-canvas-Label-Tag-PSD-MockUp-2-1500x1000.png"
+                    alt="Sandy Canvas logo design" class="portfolio__item--img">
             </a>
 
             <!-- PORTFOLIO ITEM 06 -->
             <a href="#" class="portfolio__item">
-                <img src="images/pizza-box-mockup-freepix1500x1000.png" alt="Po5 Pizza Lounge logo mockup" class="portfolio__item--img">
+                <img src="images/pizza-box-mockup-freepix1500x1000.png" alt="Po5 Pizza Lounge logo mockup"
+                    class="portfolio__item--img">
             </a>
 
             <!-- PORTFOLIO ITEM 07 -->
@@ -210,6 +219,7 @@
     </section>
 
     <footer class="footer">
+        <div class="footer--bg"></div>
         <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -229,7 +239,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
 
+    <script src="js/flyout.js"></script>
     <script src="js/index.js"></script>
 
 </body>
