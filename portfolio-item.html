@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karen Kuzmiak Portfolio</title>
+    <title>KK Projects</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
+            rel="stylesheet">
+        
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/flyout.css">
         <link rel="stylesheet" href="css/portfolio.css">
 
 </head>
@@ -23,45 +26,153 @@
 
     <header>
         <div class="logo">
-            <img src="images/kk logo trns bkgrd with rectangle frames.svg" alt="">
+            <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
+                class="logo--img">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger-top"></span>
             <span class="hamburger"></span>
+            <span class="hamburger-bottom"></span>
         </button>
+
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#whatIdo" class="nav__link">What I do</a></li>
-                <li class="nav__item"><a href="index.html#about-me" class="nav__link">Who I am</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">Works</a></li>
+                <li class="nav__item">
+                    <a href="#home" class="nav__link nav__link--home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#whatIdo" class="nav__link nav__link--whatIdo">What I do</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link nav__link--about">Who I am</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link nav__link--work">Works</a>
+                </li>
+
+                <div class="nav__item--hover-element"></div>
             </ul>
+
+            <div class="nav__img">
+                <img id="home" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--home active"
+                    style="transform: rotate(-90deg);">
+                <img id="whatIdo" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
+                    class="nav__img--link-img nav__img--whatIdo">
+                <img id="about" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
+                <img id="work" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
+                    class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
+            </div>
         </nav>
     </header>
 
-    <section class="intro" id="home">
+    <!-- INTRO -->
+
+    <section class="intro--port" id="home">
         <h1 class="section__title section__title--intro">
             The title of<strong>my project</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro section__subtitle--fed">A short subtitle</p>
-        <img src="images/business cards diagonal.png" alt="ETi business cards" class="intro__img">
+        
+        <p class="section__subtitle section__subtitle--intro section__subtitle--port">A short subtitle</p>
+        <img src="images/business cards diagonal.png" alt="ETi business cards" class="intro__img intro__img--port">
     </section>
 
-    <div class="portfolio-item-individual">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi laboriosam dolore doloribus rerum! At totam, a ducimus molestiae maxime minus.</p>
-        <img src="images/mockup breakout caps w text w sdccd bottom color.png" alt="ETi business cards" class="portfolio-item-individual-img">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ab totam, blanditiis corrupti perspiciatis maxime quisquam laborum ipsum tenetur quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos debitis alias accusantium pariatur aliquid voluptatem non commodi a quam nostrum.</p>
-    </div>
+    <!-- PORT ITEM 1 -->
+    <section class="portfolio__part portfolio__part--right">
+        <h2 class="section__title section__title--right">
+                    <!-- Creating<strong> the Brand</strong> -->
+        </h2>
+
+        <p class="section__subtitle section__subtitle--right">personas</p>
+        <div class="section__body">
+            <p>I am a tireless seeker of knowledge,
+                a polyglot,
+                long to move back to Italy,
+                and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                beats to complement the videos I produce.
+            </p>
+        </div>        
+        
+        <img src="images/persona mockups.png" alt="ETi business cards" class="portfolio__item--section-img">
+
+</section>
+
+<!-- PORT ITEM 2 -->
+<section class="portfolio__part portfolio__part--left">
+    <h2 class="section__title section__title--left">
+        <!-- Creating<strong> the Brand</strong> -->
+    </h2>
+
+    <p class="section__subtitle section__subtitle--left">personas</p>
+    <div class="section__body">
+        <p>I am a tireless seeker of knowledge,<br>
+            a polyglot,<br>
+            long to move back to Italy,<br>
+            and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+        <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+            bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+            beats to complement the videos I produce.
+        </p>
+    </div>        
+    
+    <img src="images/mockup breakout caps w text w sdccd bottom color.png" class="portfolio__item--section-img">
+
+</section>
+
+<section class="portfolio__part portfolio__part--right">
+    <h2 class="section__title section__title--right">
+        <!-- Creating<strong> the Brand</strong> -->
+    </h2>
+
+    <p class="section__subtitle section__subtitle--right">personas</p>
+    <div class="section__body">
+        <p>I am a tireless seeker of knowledge,<br>
+            a polyglot,<br>
+            long to move back to Italy,<br>
+            and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+        <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+            bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+            beats to complement the videos I produce.
+        </p>
+    </div>        
+    
+    <img src="images/sketchbook-eti-v2-mockup-800x534px.png" alt="ETi business cards" class="portfolio__item--section-img">
+
+</section>
+
+<section class="portfolio__part portfolio__part--left">
+<h2 class="section__title section__title--left">
+    <!-- Creating<strong> the Brand</strong> -->
+</h2>
+
+<p class="section__subtitle section__subtitle--left">personas</p>
+<div class="section__body">
+    <p>I am a tireless seeker of knowledge,
+        a polyglot,
+        long to move back to Italy,
+        and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+    <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+        bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+        beats to complement the videos I produce.
+    </p>
+</div>        
+
+<img src="images/interface mockup v2 800x535px.png" class="portfolio__item--section-img">
+
+</section>
+
 
     <footer class="footer">
+        <div class="footer--bg"></div>
         <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
         <ul class="social-list">
             <li class="social-list__item">
                 <a href="#" class="social-list__link"><i class="fab fa-codepen"></i></a>
             </li>
-            <li class="social-list__item">
+            <!-- <li class="social-list__item">
                 <a href="#" class="social-list__link"><i class="fab fa-dribbble"></i></a>
-            </li>
+            </li> -->
             <li class="social-list__item">
                 <a href="#" class="social-list__link"><i class="fab fa-twitter"></i></a>
             </li>
@@ -71,7 +182,13 @@
         </ul>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/flyout.js"></script>
     <script src="js/index.js"></script>
+
 
 </body>
 
