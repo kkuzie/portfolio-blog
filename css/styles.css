@@ -14,6 +14,7 @@
 
     --clr-light: #ececec;
     --clr-dark: #303030;
+    --clr-darkest: #111111;
     --clr-accent: #a494a4;
 
     /*under 800px*/
@@ -22,8 +23,10 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
     
-    --bs: 0.25em 0.25em .75em rgba(0,0,0,.25),
+    --bs-dark: 0.25em 0.25em .75em rgba(0,0,0,.25),
             0.125em 0.125em .25em rgba(0,0,0,.15) ;
+    --bs-light: 0.25em 0.25em .75em rgba(255, 255, 255, 0.25),
+    0.125em 0.125em .25em rgba(255, 255, 255, 0.15) ;
 
 }
 @media (min-width: 800px) {
@@ -66,10 +69,10 @@ img {
 
 strong { font-weight: var(--fw-bold);}
 
-:focus { 
+/* :focus { 
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
-}
+} */
 
 /* BUTTON */
 
@@ -86,8 +89,8 @@ strong { font-weight: var(--fw-bold);}
     font-weight: var(--fw-bold);
     border-radius: 10px;
     transition: transform 200ms ease-in-out;
-    position: relative;
-    z-index: 100;
+    /* position: relative;
+    z-index: 100; */
 }
 
 .btn:hover{
@@ -119,6 +122,9 @@ h3 { font-size: var(--fs-h3); }
 .section__title--intro strong {
     display: block; /* will make name always on a second line*/
 }
+.section__title--intro:hover{
+    color:var(--clr-accent);
+}
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -131,7 +137,8 @@ h3 { font-size: var(--fs-h3); }
     margin-bottom: 1em;
     color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
-.section__subtitle--about {
+.section__subtitle--about, 
+.section__subtitle--gd {
     border-radius: 10px 0 0 10px;
 }
 .section__subtitle--work {
@@ -262,6 +269,7 @@ header {
 
 .intro {
     position: relative;
+    z-index: 100;/*brings section to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*/
 }
 
 /* .intro__img {
@@ -292,33 +300,41 @@ header {
         /* grid-area: img; */
         min-width: 500px;
         position: relative;
-        z-index: 2;
-        transform: rotateY(180deg);
+        z-index: 2;/*to be sure image is on top of purple banner*/
     }
     .intro__img--silly {
         grid-area: img;
+        transform: rotateY(180deg);
     }
 
     .intro__img--sideways{
         grid-area: img2;
+        transform: rotateY(180deg);
+        top: -100px;
+        justify-self: end;/*moves img .intro__img--sideways flush right*/
+
     }    
-    .sideways {
+    /* .sideways {
         grid-area: img2;
         /* left: 22%; */
-        top: -100px;
-        justify-self: end;/*moves img .sideways flush right*/
 
-    }
+    /* } */ 
 
     p{
         border-radius: 10px;
     }
-    .section__subtitle--fed {
+
+    .section__subtitle--intro {
         align-self: start;
+        position: relative;
+    }
+    /* section__subtitle specific to index page */
+    .section__subtitle--fed {
+        /* align-self: start; added to .section__subtitle--intro */
         grid-column: -2 / 1; /* makes the front-end dev title stretch along bottom instead of under name*/
         grid-row: 3;
         text-align: right;
-        position: relative;
+        /* position: relative; added to .section__subtitle--intro */
         left: -3em; 
         top: -3.75em;
         /* NOTE this is removed because of the image used is not a box. shadows done in affinity */
@@ -326,11 +342,11 @@ header {
         /* this will add the 1.5 em back on to the right side to align again with name */
     }
     .section__subtitle--gd {
-        align-self: start;
+        /* align-self: start;   added to .section__subtitle--intro*/
         grid-column: 2 / -1; /* makes the front-end dev title stretch along bottom instead of under name*/
         grid-row: 2;
         text-align: left;
-        position: relative;
+        /* position: relative; added to .section__subtitle--intro */
         right: -3.75em;
         top: -1.75em; 
         /* NOTE this is removed because of the image used is not a box. shadows done in affinity */
@@ -341,9 +357,9 @@ header {
 
 }
 
-/* WHAT I DO (services) section */
+/* WHAT I DO  section */
 
-.my-services {
+.whatIdo {
     background-color: var(--clr-dark);
     background-image: url(../images/laptop-code.png);
     /* background-image: url(../images/watercolor.jpg);
@@ -352,14 +368,16 @@ header {
     background-blend-mode:multiply;
     color: var(--clr-light);
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
-.section__title--services {
+.section__title--whatIdo {
     color: var(--clr-accent);
     position: relative;
 }
 
-.section__title--services::after {
+.section__title--whatIdo::after {
     content: ' ';
     display: block;
     width: 2em;
@@ -369,25 +387,25 @@ header {
     opacity: 0.25;
 }
 
-.services {
+.whatIdo__descriptions {
     margin-bottom: 4em;
 }
-.service {
+.whatIdo__descriptions--each {
     max-width: 500px;
     margin: 0 auto;
     flex-basis: 100%;/*to make columns even in width*/ 
 }
 
 @media (min-width: 800px){
-    .services{
+    .whatIdo__descriptions{
         display: flex;
         max-width: 1500px;/*was 1200*/
         margin-left: auto;
-        margin-right: auto; /*instead of margin: 0 auto; so doesnt override margin-bottom on .service*/
+        margin-right: auto; /*instead of margin: 0 auto; so doesnt override margin-bottom on .whatIdo__descriptions--each*/
     }
 
-    /* to add space between the individual .service 's */
-    .service + .service {/*this essentially ignores the first .service (Design + Dev) since it is not have a sibling before it. the + looks for the sibling of an element AFTER. */
+    /* to add space between the individual .whatIdo__descriptions--each 's */
+    .whatIdo__descriptions--each + .whatIdo__descriptions--each {/*this essentially ignores the first .whatIdo__descriptions--each (Design + Dev) since it is not have a sibling before it. the + looks for the sibling of an element AFTER. */
         margin-left: 2em;
     }
 }
@@ -403,6 +421,8 @@ header {
     margin: 0 auto;
     padding-left: 4em;
     /* padding-right: 4em; */
+    position: relative;
+    z-index: 100;
 }
 .my-work__img {
     /* box-shadow: var(--bs); */
@@ -414,10 +434,10 @@ header {
         display: grid;
         grid-template-columns: 1fr 475px;/*was 200px*/
         grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
+        "title img"
+        "subtitle img"
+        "text .";
+grid-column-gap: 2em;
     }
 
     .section__title--about {
@@ -467,6 +487,8 @@ header {
     /* height: 212px;added height to make all image same as shortest (ETi) */
     /* max-width: 460px;
     margin: 0 auto; */
+    position: relative;
+    z-index: 100;/*brings portfolio foward on top of nav__item and nav__item--hover-element*/
 }
 @media (min-width:1200px){
     .portfolio{
@@ -507,6 +529,14 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    position: relative;
+    z-index: 100;
+}
+.footer--bg {
+    background-image: url(../images/watercolor.jpg);
+    background-size: 100%;/*kk*/
+    height: 4em;
+    margin-bottom: 2em;
 }
 
 .footer a { 
