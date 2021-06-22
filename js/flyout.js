@@ -1,12 +1,34 @@
 $(document).ready(function () {
 
+////////move hover bar on mouse move
+$(window).mousemove(function (e) {
+    var y = e.clientY;
+    // console.log(y);
+    $('.nav__item--hover-element').css('margin-top', y);
+});
+
+////////changes the images on hover of menu links
+// $('.nav__link').mouseover(function() {
+//     var activeLinkId = $(this).attr('href');
+//     console.log(activeLinkId);//shows that when hover which links are active
+//     $('.nav__img--link-img').removeClass('active');
+//     $('.nav__img--link-img' + activeLinkId).addClass('active');
+// });
+
+// var toggleBtn = document.querySelector('.nav-toggle');//using const navToggle instead (above)
+let mq800andup = window.matchMedia('(min-width:801px)');
+let mq800to601 = window.matchMedia('(max-width: 800px) and (min-width: 601px)');
+let mq600andunder = window.matchMedia('(max-width: 600px)');
 
 ///////gsap animation in nav menu
 var tl = new TimelineMax({paused: true});
+function mqHamburger(e) {
+    if (e.matches) {
 
 ///////hamburger animation
     tl.to('.hamburger', .5, {
-        // right: '-500'
+        width: '13em',
+        right: '-10em',
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
@@ -17,6 +39,78 @@ var tl = new TimelineMax({paused: true});
         rotate: -45,
         top: 10
     }, '-=.5')//offset
+}
+tl.play();
+}
+mqHamburger(mq800andup);
+mq800andup.addEventListener('change', mqHamburger);
+
+////////under 800////////
+/////////////////////////////////
+
+function mqHamburger2(e) {
+    if (e.matches) {
+
+///////hamburger animation
+    tl.to('.hamburger', .5, {
+        width: '6em',
+        height: '5px',
+        right: '-8.5em',
+        rotate: 90
+    })
+    tl.to('.hamburger-top', .5, {
+        width: '4em',
+        height: '5px',
+        rotate: 45,
+        top: 8,
+        right: '-99px'
+    }, '-=.5')//offset
+    tl.to('.hamburger-bottom', .5, {
+        width: '4em',
+        height: '5px',
+        rotate: -45,
+        top: 8,
+        right: '-99px'
+    }, '-=.5')//offset
+}
+tl.play();
+}
+mqHamburger2(mq800to601);
+mq800to601.addEventListener('change', mqHamburger2);
+
+////////under 800////////
+/////////////////////////////////
+
+function mqHamburger3(e) {
+    if (e.matches) {
+
+///////hamburger animation
+    tl.to('.hamburger', .5, {
+        width: '6em',
+        height: 5,
+        top: 35,
+        right: '-4.375em',
+        rotate: 90
+    })
+    tl.to('.hamburger-top', .5, {
+        width: '4em',
+        height: 5,
+        rotate: 45,
+        top: 35,
+        right: -45
+    }, '-=.5')//offset
+    tl.to('.hamburger-bottom', .5, {
+        width: '4em',
+        height: 5,
+        rotate: -45,
+        top: 35,
+        right: -45
+    }, '-=.5')//offset
+}
+tl.play();
+}
+mqHamburger3(mq600andunder);
+mq600andunder.addEventListener('change', mqHamburger3);
 
 //////// entire menu slides in:
     tl.to('.nav', 1, {
@@ -70,14 +164,6 @@ var tl = new TimelineMax({paused: true});
 
     ////////go to section - 
     
-    //DELETE doesnt work
-    // var whatIdo = $('section#whatIdo');
-
-    // whatIdoPos = whatIdo.offset().top;
-
-    // $('a#whatIdoLink').click(function(){
-    //     TweenLite.to(window, 2, {scrollTo: whatIdoPos});
-    // });
 
     //DELETE doesnt work
     // document.querySelector('.nav__link').forEach(element => {
@@ -138,6 +224,31 @@ var tl = new TimelineMax({paused: true});
     $(document).on("click", ".nav__link", function(e) {
         e.preventDefault();
         tl.reversed(!tl.reversed());
+
+        // DELETE doesnt work
+    //  $(function() {
+    //      $('.nav__link--whatIdo').click(function() {
+    //          var href = $(this).attr('href');
+    //          $('html, body').animate({
+    //              scrollTop: $(href).offset().top
+    //          },500);
+    //          return false;
+    //      });
+    //  });  
+        
+
+    //DELETE doesnt work
+    // var whatIdo = $('#whatIdo');
+    // console.log(whatIdo);
+
+    // whatIdoPos = whatIdo.offset().top;
+    // console.log(whatIdoPos);
+
+    // $('a#whatIdoLink').click(function(){
+    //     TweenLite.to(window, 2, {scrollTo: whatIdoPos});
+    //     console.log('worked');
+    // });
+
         // setTimeout(function() {
         //   window.location.hash = "whatIdo";
         // }, 500);
