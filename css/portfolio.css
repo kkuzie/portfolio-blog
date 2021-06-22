@@ -9,7 +9,6 @@
 
 .intro--port,
 .portfolio__part {
-    /* max-width:1500px; */
     margin: 0 auto;
     padding-left: 4em;
     padding-right: 4em;
@@ -19,7 +18,6 @@
 .portfolio__item--section-img {
     box-shadow: var(--bs-dark);
 }
-
 
 /* TYPOGRAPHY */
 
@@ -37,9 +35,8 @@
 .section__title--left,
 .section__subtitle--left {
     text-align: right;
-    /* padding-right: 2rem; */
-    /* margin-right: 1.5em; */
 }
+
 .section__subtitle--right,
 .section__subtitle--left {
     background: var(--clr-accent);
@@ -48,75 +45,42 @@
     margin-bottom: 1em;
     color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
+
 .section__subtitle--right {
     border-radius: 10px 0 0 10px;
 }
+
 .section__subtitle--intro,
 .section__subtitle--left {
     border-radius: 0 10px 10px 0 ;
 }
 
-/* intro section */
-
-/* .intro__img--port {
-    box-shadow: var(--bs-dark);
-} */
-
-/* .section__title--left {
-    padding-right: 1.5rem;
-} */
-
+/* SECTIONS */
 
 @media (min-width: 600px) {
-    .intro--port {
+    .intro--port,
+    .portfolio__part--right,
+    .portfolio__part--left {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* width: min-content; */
-        /* margin: 0 auto; */
-        grid-column-gap: 1em;
+        grid-column-gap: 2em;
+    }
+    .intro--port {
         grid-template-areas: 
             "img title"
             "img subtitle";
-        /* grid-template-columns: min-content max-content; */
     }
-
-    .intro__img--port {
-        grid-area: img;
-    }
-
-    .section__subtitle--port {
-        grid-column: 1 / -1;/*makes subtitle stretch across whole div*/
-        grid-row: 2;
-        text-align: right;
-        /* left: -1em;was 1.5 */
-        right: 2.5em;
-        width: calc(100% + 2.5em);/*this adds the 2.5 to the right back onto the left side    was 1.5*/
-        
-    }
-
-
-/* }
-@media (min-width: 600px) { */
     .portfolio__part--right {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "title img"
             "subtitle img"
             "text img";
-        grid-column-gap: 2em;
-        /* grid-template-columns: min-content max-content; */
     }
-
     .portfolio__part--left {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
         grid-template-areas: 
             "img title"
             "img subtitle"
             "img text";
-        grid-column-gap: 2em;
-        /* grid-template-columns: min-content max-content; */
     }
 
     .section__title--right,
@@ -124,9 +88,21 @@
         grid-area: title;
     }
 
-    .section__subtitle--right {
-        grid-column: 1 / -1; /*so expands the entire grid*/
+    .section__subtitle--port,
+    .section__subtitle--right,
+    .section__subtitle--left {
+        grid-column: 1 / -1;/*makes subtitle stretch across whole div*/
         grid-row: 2; /*to keep in right place */
+
+    }
+    .section__subtitle--port,
+    .section__subtitle--left {
+        position: relative;
+        text-align: right;
+        right: 2.5em;
+        width: calc(100% + 2.5em);/*this adds the 2.5 to the right back onto the left side    was 1.5*/
+    }
+    .section__subtitle--right {
         position: relative;
         left: -1em; 
         width: calc(100% + 3.5em);/*to extend right side of purple banner*/
@@ -134,37 +110,14 @@
         padding-right: calc(475px + 3em); /*set it up so text in subtitle wont go under the image at any screen size (475px is pic width, 1em left padding, 1em left*/
     }
 
-    .section__subtitle--left {
-        grid-column: 1 / -1; /*so expands the entire grid*/
-        grid-row: 2; /*to keep in right place */
-        position: relative;
-        right: 2.5em; 
-        width: calc(100% + 2.5em);
-        /* padding-right: 2em; */
-        /* padding-left: calc(475px + 3em); set it up so text in subtitle wont go under the image at any screen size (475px is pic width, 1em left padding, 1em left */
-    }
-
     .section__body {
         grid-area: text;
     }
+    .intro__img--port,
     .portfolio__item--section-img {
         grid-area: img;
         position: relative;
-        /* z-index: 2; not really needed since pos rel */
     }
 }
-/* portfolio items */
 
-/* used on old design - DELETE */
-/* .portfolio-item-individual {
-    padding: 0 2em 2em 0;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
