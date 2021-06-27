@@ -3,19 +3,9 @@ $(document).ready(function () {
 ////////move hover bar on mouse move
 $(window).mousemove(function (e) {
     var y = e.clientY;
-    // console.log(y);
     $('.nav__item--hover-element').css('margin-top', y);
 });
 
-////////changes the images on hover of menu links
-// $('.nav__link').mouseover(function() {
-//     var activeLinkId = $(this).attr('href');
-//     console.log(activeLinkId);//shows that when hover which links are active
-//     $('.nav__img--link-img').removeClass('active');
-//     $('.nav__img--link-img' + activeLinkId).addClass('active');
-// });
-
-// var toggleBtn = document.querySelector('.nav-toggle');//using const navToggle instead (above)
 let mq800andup = window.matchMedia('(min-width:801px)');
 let mq800to601 = window.matchMedia('(max-width: 800px) and (min-width: 601px)');
 let mq600andunder = window.matchMedia('(max-width: 600px)');
@@ -119,14 +109,14 @@ mq600andunder.addEventListener('change', mqHamburger3);
 
 //////// menu items stagger into view
     tl.from('nav ul li', .8, {
-        x: -1000,
+        x: -3000,
         opacity: 0,
         stagger: .3
     })
 
 ////////bar comes into view
     tl.from('.nav__item--hover-element', 1, {
-        x: -1000,
+        x: -3000,
         opacity: 0
     }, '-=1' )
 
