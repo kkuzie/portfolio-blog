@@ -36,18 +36,15 @@ body { overflow-x: hidden;}
     text-align: right;
 }
 .nav__item {
+    position: relative;
+    z-index: -1;
+
     list-style: none;
     margin-bottom: 80px;
 }
 .nav__item:nth-child(1){
     margin-top: 2em;
 }
-@media screen and (max-width: 960px){
-    .nav__item{
-        margin-bottom: 20px;
-    }
-}
-
 .nav__item--hover-element{
     position: absolute;
     top: -50px;
@@ -56,8 +53,24 @@ body { overflow-x: hidden;}
     height: 100px;
     background-color: var(--clr-accent);
     border-radius: 0px 10px 10px 0;
-    z-index: -1;
+    z-index: -2;
 }
+@media screen and (max-width: 960px){
+    .nav__item{
+        margin-bottom: 20px;
+    }
+}
+
+/* .nav__item--hover-element{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--clr-accent);
+    border-radius: 0px 10px 10px 0;
+    z-index: -2;
+} */
 @media screen and (max-width: 800px){
     .nav__item--hover-element{
     height: 50px;
