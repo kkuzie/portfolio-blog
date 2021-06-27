@@ -6,26 +6,62 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
 navToggle.addEventListener('click', () => {
-    //*brings sections to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*
+    //*brings nav items to the top (forefront) of .nav so hovering works when nav menu appears*
+    //DELETE puts sections behind nav items (to -1)
+    //menu open
     document.body.classList.toggle('nav-open');
     if (document.body.classList.contains('nav-open')) {
-        $('.portfolio').css('z-index', '0');
-        $('footer').css('z-index', '0');
-        $('section').css('z-index', '0');
+        $('.nav__item').css('z-index', '1000');
+        $('.nav__item--hover-element').css('z-index', '999');
+        // $('.portfolio').css('z-index', '-1');
+        // $('footer').css('z-index', '-1');
+        // $('section').css('z-index', '-1');
+        // $('header').show();
+        // $('.portfolio').hide();
+        // $('footer').hide();
+        // $('section').hide();
+        
     } else {
-        //*brings section to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*
+        //*brings  sections back to forefront (1000) when nav menu disappears*
+        //only is for timing*****
+        //menu closed
         window.setTimeout(function () {
-            $('.portfolio').css('z-index', '100');
-            $('section').css('z-index', '100');
-            $('footer').css('z-index', '100');
+            // $('.nav__item').hide();
+            // $('.portfolio').css('z-index', '1000');
+            // $('.section').css('z-index', '1000');
+            // $('footer').css('z-index', '1000');
+
+
+            // $('header').hide();
+            // $('.portfolio').show();
+            // $('section').show();
+            // $('footer').show();
         }, 3000);
     }
 });
 
-///////removes nav-open so flyout disappears 
+///////removes nav-open so flyout disappears - menu closed
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
         document.body.classList.remove('nav-open');
+        //disable scrollup nav appear
+        pauseNavAppearOnScrollup();
+
+        //re enable scrollup nav appear 
+        window.setTimeout(function () {
+            navAppearOnScrollup();
+        }, 3000);
+
+        //reverts nav items back to -1
+        // $('.nav__item').css('z-index', '-1');
+        // $('.nav__item--hover-element').css('z-index', '-2');
+
+
+        //         $('header').show();
+        // $('.portfolio').hide();
+        // $('footer').hide();
+        // $('section').hide();
+
     })
 });
 
@@ -41,6 +77,8 @@ $('.nav__link').mouseover(function () {
 //////// https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp////////
 
 //////// need to deactivate onclick of navlink
+let navAppearOnScrollup = function () {
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -50,6 +88,22 @@ window.onscroll = function () {
         document.querySelector("header").style.top = "-180px";
     }
     prevScrollpos = currentScrollPos;
+}
+}
+navAppearOnScrollup();
+
+
+let pauseNavAppearOnScrollup = function () {
+var prevScrollpos2 = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos2 = window.pageYOffset;
+    if (prevScrollpos2 < currentScrollPos2) {
+        document.querySelector("header").style.top = "-180px";
+    } else {
+        document.querySelector("header").style.top = "-180px";
+    }
+    prevScrollpos2 = currentScrollPos2;
+}
 }
 
 //////ADDs the path to address bar,  scrolls  to section. 
