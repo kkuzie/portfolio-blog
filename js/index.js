@@ -465,13 +465,13 @@ $(document).ready(function () {
         scrollTrigger: {
             trigger: ".section__subtitle--tagline",
             toggleActions: 'play reverse reverse reverse',
-            markers: true,
-            markers: {
-                startColor: 'red',
-                endColor: 'purple',
-                fontSize: '1em',
-                indent: 200
-            }
+            // markers: true,
+            // markers: {
+            //     startColor: 'red',
+            //     endColor: 'purple',
+            //     fontSize: '1em',
+            //     indent: 200
+            // }
         }
     })
 
