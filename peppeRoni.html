@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK PeppeRoni App</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flyout.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/more.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
+                class="logo--img">
+        </div>
+        <button class="nav-toggle nav-phn" aria-label="back-next buttons" onclick="goBack()">
+            <span class="arrow-upper"></span>
+            <span class="hamburger"></span>
+            <span class="arrow-lower"></span>
+        </button>
+    </header>
+
+    <!-- INTRO -->
+
+    <section class="intro--port portfolio__part portfolio__part--left">
+        <h1 class="section__title section__title--intro section__title--intro-port">
+            Lovin'<strong>Peppe & Roni</strong>
+        </h1>
+
+        <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">pizza
+            ordering app</p>
+
+        <div class="section__body">
+            <p>A user-friendly application for placing pizza orders.
+                Peppe & Roni Pizza is a neighborhood pizzeria aimed at making pizzas you can fall in love with.
+                </p>
+            <p>
+            </p>
+        </div>
+
+        <div class="section__img">
+            <img src="images/pepperoni/iPadMini3 peppeRoni1500x1000.png" alt="ETi business cards"
+                class="intro__img intro__img--port">
+        </div>
+
+    </section>
+
+    <!-- PORT ITEM 1 -->
+    <section class="portfolio__part portfolio__part--right">
+        <!-- <h2 class="section__title section__title--right">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+        <p class="section__subtitle section__subtitle--right">personas</p>
+        <div class="section__body">
+            <p>I am a tireless seeker of knowledge,
+                a polyglot,
+                long to move back to Italy,
+                and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                beats to complement the videos I produce.
+            </p>
+        </div>
+
+        <div class="section__img">
+            <img src="images/pepperoni/laptop-code.png" alt="ETi business cards" class="portfolio__item--section-img">
+        </div>
+
+    </section>
+
+    <!-- PORT ITEM 2 -->
+    <section class="portfolio__part portfolio__part--left">
+        <!-- <h2 class="section__title section__title--left">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+        <p class="section__subtitle section__subtitle--left">personas</p>
+        <div class="section__body">
+            <p>I am a tireless seeker of knowledge,<br>
+                a polyglot,<br>
+                long to move back to Italy,<br>
+                and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                beats to complement the videos I produce.
+            </p>
+        </div>
+
+        <div class="section__img">
+            <video autoplay loop class="portfolio__item--section-img" data-sizes="auto" alt="globe logo animation">
+                <source src="images/pepperoni/ZKMWlrvGjM.mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <!-- PORT ITEM 3 -->
+    <section class="portfolio__part portfolio__part--right">
+        <!-- <h2 class="section__title section__title--right">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+        <p class="section__subtitle section__subtitle--right">personas</p>
+        <div class="section__body">
+            <p>I am a tireless seeker of knowledge,<br>
+                a polyglot,<br>
+                long to move back to Italy,<br>
+                and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+            <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                beats to complement the videos I produce.
+            </p>
+        </div>
+
+        <div class="section__img">
+            <img src="images/pepperoni/iPadMini3 peppeRoni1500x1000.png" alt="ETi business cards"
+                class="portfolio__item--section-img">
+        </div>
+
+    </section>
+
+    <section class="more darkest-bg">
+
+        <p class="section__subtitle section__subtitle--left section__subtitle--more">more from my portfolio</p>
+
+        <div id="next" class="sprite next"><a href="./sandy.html" rel="prev" style="opacity: 0;">Sandy Canvas</a></div>
+        <div id="prev" class="sprite prev"><a href="./tkc.html" rel="next">TheKuziCollaborative</a></div>
+
+        <div class="row">
+            <div class="col-12">
+
+                <ul id="thumbs" class="thumbs clearfix">
+
+                    <li style="opacity: 1;"><a href="./sandy.html"><img
+                                src="./images/sandy/optimized-sandy-canvas-Label-Tag-PSD-MockUp-2-1500x1000.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                                loading="lazy"
+                                srcset="./images/sandy/optimized-sandy-canvas-Label-Tag-PSD-MockUp-2-1500x1000.png 628w, ./images/sandy/optimized-sandy-canvas-Label-Tag-PSD-MockUp-2-1500x1000.png 300w"
+                                sizes="(max-width: 628px) 100vw, 628px">
+                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                                <h4>Sandy Canvas</h4>
+                                <p>logo design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="opacity: 1;"><a href="./po5.html"><img
+                                src="./images/po5/pizza-box-mockup-freepix1500x1000.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                                loading="lazy"
+                                srcset="./images/po5/pizza-box-mockup-freepix1500x1000.png 628w, ./images/po5/pizza-box-mockup-freepix1500x1000.png 300w"
+                                sizes="(max-width: 628px) 100vw, 628px">
+                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                                <h4>Po5 Pizza Lounge & Bar</h4>
+                                <p>logo & branding</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="opacity: 1;"><a href="./globe.html"><img
+                                src="./images/globe/vinyl-2labels-v1-847x564.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                                loading="lazy"
+                                srcset="./images/globe/vinyl-2labels-v1-847x564.png 628w, ./images/globe/vinyl-2labels-v1-847x564.png 300w"
+                                sizes="(max-width: 628px) 100vw, 628px">
+                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                                <h4>Globe Records</h4>
+                                <p>logo/branding & video production</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer ">
+        <div class="footer--bg"></div>
+        <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="#" class="social-list__link"><i class="fab fa-codepen"></i></a>
+            </li>
+            <!-- <li class="social-list__item">
+                <a href="#" class="social-list__link"><i class="fab fa-dribbble"></i></a>
+            </li> -->
+            <li class="social-list__item">
+                <a href="#" class="social-list__link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#" class="social-list__link"><i class="fab fa-github"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/flyout.js"></script>
+    <script src="js/index.js"></script> -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/headerNavScrollup.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/more.js"></script>
+
+    <script type="text/javascript">
+        /*
+         * Call functions when dom is ready
+         */
+        $(document).ready(function () {
+
+            // Function to fade in image sprites
+            $('.sprite').fadeSprite();
+
+            //Function for thumbnail hover effect
+            $('.thumbs li').hoverThumb();
+
+            // Function to animate when leaving page
+            $('.transition, #thumbs a, #next a, #prev a').leavePage();
+        });
+    </script>
+
+
+</body>
+
+</html>
