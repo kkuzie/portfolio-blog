@@ -19,7 +19,24 @@
     box-shadow: var(--bs-dark);
 }
 
+/* ARROW */
+
+.arrow-upper,
+.arrow-lower {
+    top: -10px;
+    width: 4em;
+    transform: rotate(-45deg);
+    left: -1px;
+}
+.arrow-lower {
+    top: 25px;
+    transform: rotate(45deg);
+}
+
 /* TYPOGRAPHY */
+.section__title--intro-port:hover {
+    color: unset;
+}
 
 .section__title--left,
 .section__title--right {
@@ -54,7 +71,19 @@
 .section__subtitle--left {
     border-radius: 0 10px 10px 0 ;
 }
+.section__captions--right {
+    float: right;
+}
 
+.section__img {
+    overflow: hidden;
+    max-width: 850px;
+    max-height: 550px;
+}
+
+.section__img--po5-shirt {
+    margin-bottom: 40px;
+}
 /* SECTIONS */
 
 @media (min-width: 600px) {
@@ -69,6 +98,7 @@
         grid-template-areas: 
             "img title"
             "img subtitle";
+            margin-top: 175px;
     }
     .portfolio__part--right {
         grid-template-areas: 
@@ -110,14 +140,54 @@
         padding-right: calc(475px + 3em); /*set it up so text in subtitle wont go under the image at any screen size (475px is pic width, 1em left padding, 1em left*/
     }
 
+    .section__subtitle--more {
+        width: 80%;
+        right: 10.5em;
+    }
+
     .section__body {
         grid-area: text;
     }
     .intro__img--port,
-    .portfolio__item--section-img {
+    .portfolio__item--section-img,
+    .section__img {
         grid-area: img;
         position: relative;
+    }
+    .portfolio__item--section-img{
+        /* max-height: 550px; */
+        margin: 0 auto;
     }
 }
 
 
+/* SPECIFIC to PAGES */
+
+/* Po5 */
+.section__img--po5-shirt {
+        max-height: 550px;
+    }
+
+/* globe */
+.intro__img--port-bfos {
+    top: -120px;
+}
+@media screen and (max-width: 1200px){
+    .intro__img--port-bfos {
+        top: 0;
+    }
+}
+.portfolio__item--section-img-sketch {
+    top: -150px;
+}
+
+/* ETi */
+.section__img--section-origSite {
+    overflow: unset;
+}
+/* .portfolio__part--eti-one{
+    background: url(../images/eti/interface\ mockup\ v2\ 800x535px.png) no-repeat;
+    background-size: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+} */
