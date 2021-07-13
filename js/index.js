@@ -73,39 +73,6 @@ $('.nav__link').mouseover(function () {
     $('.nav__img--link-img' + activeLinkId).addClass('active');
 });
 
-//////// HEADER NAV bar reappear on scroll up
-//////// https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp////////
-
-//////// need to deactivate onclick of navlink
-let navAppearOnScrollup = function () {
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector("header").style.top = "0";
-    } else {
-        document.querySelector("header").style.top = "-180px";
-    }
-    prevScrollpos = currentScrollPos;
-}
-}
-navAppearOnScrollup();
-
-
-let pauseNavAppearOnScrollup = function () {
-var prevScrollpos2 = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos2 = window.pageYOffset;
-    if (prevScrollpos2 < currentScrollPos2) {
-        document.querySelector("header").style.top = "-180px";
-    } else {
-        document.querySelector("header").style.top = "-180px";
-    }
-    prevScrollpos2 = currentScrollPos2;
-}
-}
-
 //////ADDs the path to address bar,  scrolls  to section. 
 ////////https://www.yogihosting.com/jquery-scroll-to-element/ ////////
 $('a[href^="#"]').on('click', function (e) {
@@ -451,6 +418,35 @@ $(document).ready(function () {
             toggleActions: 'restart reverse restart reverse'
         }
     })
+    gsap.from('.section__img--kk', {
+        opacity: 0, 
+        x: 1000,
+        duration: 2.5,
+        scrollTrigger: {
+            trigger: '.section__subtitle--about',
+            toggleActions: 'restart none restart reverse',
+        }
+    })
+    gsap.from('.section__img--kk', {
+        marker: true,
+        opacity: 1, 
+        // x: 1000,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: '.section__title--sneak',
+            toggleActions: 'restart none none none',
+        }
+    })
+    gsap.from('.section__img--kk', {
+        opacity: 0, 
+        x: 1000,
+        duration: 2.5,
+        scrollTrigger: {
+            trigger: '.section__subtitle--about',
+            toggleActions: 'none none restart reverse',
+        }
+    })
+
 
     gsap.from('.about-me__body p', {
         opacity: 0,
@@ -462,14 +458,40 @@ $(document).ready(function () {
         }
     })
 
-    ////////peek-a-boo image
+    //////peek-a-boo image
     gsap.from('.my-work__img', {
         y: 300,
         duration: 1.4,
         scrollTrigger: {
             trigger: ".section__subtitle--tagline",
-            toggleActions: 'restart reverse restart reverse',
+            toggleActions: 'play reverse reverse reverse',
+            markers: true,
+            markers: {
+                startColor: 'red',
+                endColor: 'purple',
+                fontSize: '1em',
+                indent: 200
+            }
         }
     })
+
+//     gsap.to('.my-work__img', {
+// // opacity: 0,
+//         y: 300,
+//         duration: 2,
+//         scrollTrigger: {
+//             trigger: ".animation-start",
+//             toggleActions: 'reverse none none none',
+//                                 markers: true,
+//                     markers: {
+//                         startColor: 'yellow',
+//                         endColor: 'lime',
+//                         fontSize: '2em',
+//                         indent: 200
+//                     }
+
+//         }
+        
+//     })
 }); //document.ready closing
 // console.log(window.location.href);
