@@ -438,7 +438,7 @@ img {
 width: 59px;
 height: 118px;
 display: block;
-background: url(/images/sprite.png) no-repeat;
+background: url(/images/temporary-sprites.png) no-repeat;
 position: fixed;
 top: 45%;
 text-indent: -9999px;
@@ -455,7 +455,7 @@ background-position: 0px -309px;
 .prev a {
 position: absolute;
 display: block;
-background: url(/images/sprite.png) no-repeat;
+background: url(/images/temporary-sprites.png) no-repeat;
 width: 59px;
 height: 118px;
 z-index: 10;
@@ -475,7 +475,7 @@ background-position: 0px -428px;
       .thumbs .arrow-r {
         width: 32px;
         height: 32px;
-        background: url(/images/sprite.png) no-repeat;
+        background: url(/images/temporary-sprites.png) no-repeat;
         display: block;
         background-position: -63px -107px;
         position: absolute;
