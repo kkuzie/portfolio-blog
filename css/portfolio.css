@@ -98,7 +98,7 @@
         grid-template-areas: 
             "img title"
             "img subtitle";
-            margin-top: 175px;
+            /* margin-top: 175px; */
     }
     .portfolio__part--right {
         grid-template-areas: 
