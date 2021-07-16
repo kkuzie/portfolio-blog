@@ -89,7 +89,7 @@ body {
 section {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 6em 0;
+    padding: 10em 0;
     /*was 5em*/
     overflow: hidden;
 }
@@ -405,7 +405,7 @@ header {
             "img subtitle img2";
         justify-items: center;
         /* align-items: start; */
-        margin-top: 175px;
+        /* margin-top: 175px; */
     }
 }
 .section__title--intro {
@@ -670,8 +670,8 @@ header {
     transform: rotate(-90deg);
     position: relative;
     min-width: 500px;
-    top: -75px;
-    right: -65em;
+    top: 30px;/*how high head peeks out*/
+    right: -50em;
 }
 @media screen and (max-width: 1800px){
     .my-work__img {
@@ -775,6 +775,8 @@ header {
     text-align: center;
     position: relative;
     z-index: 101;
+    /* reduce section padding */
+    padding-top: 6em;
 }
 
 .my-work__div-img {
