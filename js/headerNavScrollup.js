@@ -10,7 +10,7 @@ let navAppearOnScrollup = function () {
         if (prevScrollpos > currentScrollPos) {
             document.querySelector("header").style.top = "0";
         } else {
-            document.querySelector("header").style.top = "-180px";
+            document.querySelector("header").style.top = "-190px";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -23,9 +23,9 @@ let navAppearOnScrollup = function () {
     window.onscroll = function () {
         var currentScrollPos2 = window.pageYOffset;
         if (prevScrollpos2 < currentScrollPos2) {
-            document.querySelector("header").style.top = "-180px";
+            document.querySelector("header").style.top = "-190px";
         } else {
-            document.querySelector("header").style.top = "-180px";
+            document.querySelector("header").style.top = "-190px";
         }
         prevScrollpos2 = currentScrollPos2;
     }
