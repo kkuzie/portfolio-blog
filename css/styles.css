@@ -76,7 +76,7 @@ html {
 }
 
 body {
-    background: var(--clr-dark);
+    background: var(--clr-darkest);
     /*was light */
     color: var(--clr-light);
     /*was dark*/
@@ -340,7 +340,7 @@ header {
     position: relative;
     z-index: 100;
     /*brings section to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*/
-    background-color: var(--clr-dark);
+    background-color: var(--clr-darkest);
 }
 
 .section__subtitle--intro {
@@ -465,6 +465,9 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
+    .intro {
+        margin-top: 175px;
+    }
     .section__subtitle--gd {
         right: -5em;
         width: 23em;
@@ -657,7 +660,7 @@ header {
 }
 
 .about-me {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-darkest);
     padding-left: 4em;
     position: relative;
     z-index: 100;
@@ -910,17 +913,13 @@ header {
 }
 
 .footer__link {
-
     font-weight: var(--fw-bold);
 }
 
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
+    transform: scale(3);
 }
 
 .social-list {

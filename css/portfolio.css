@@ -3,7 +3,8 @@
 
 /* sections */
 .intro--port,
-.portfolio__part--left {
+.portfolio__part--left,
+.portfolio__part--right {
     background: var(--clr-darkest);
 }
 
