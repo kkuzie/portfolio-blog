@@ -21,120 +21,170 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/more.css">
 
-    <style>
-       
 
-        /* * {
-            margin:0px;
-            padding:0px;
-            box-sizing:border-box;
-          }
-          body {
-            font-family:"Raleway",sans-serif;
-          } */
-          .container {
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-          }
-          .container .title {
-            text-align:center;
-            margin-bottom:40px;
-            color:#acacac;
-            font-size:40px;
-          }
-          .compare {
-            position:relative;
-            /* width:640px; */
-            /* height:450px; */
+    <!-- test-scroll-tilt styles -->
+    <style>
+    #scroll{ 
+        transform: rotate(-16deg) scale(.9);
+        right: -150px;
+        margin-left: -150px;
+        max-width: 1000px;
+        max-height: unset;
+     }
+     .portfolio__part--right {
+         padding-right: unset;
+     }
+     .section__body {
+         z-index: 2;
+     }
+
+    </style>
+
+    <!-- before/after slider styles -->
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container .title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #acacac;
+            font-size: 40px;
+        }
+
+        .compare {
+            position: relative;
             width: 850px;
             height: 550px;
-            /* border:1px solid #f5f5f5; */
-            box-shadow:0px 0px 20px 5px rgba(0,0,0,0.15);
-          }
-          .compare .before {
-            position:relative;
-            top:0px;
-            width:100%;
-            height:100%;
-            background:url("images/home-after-top.png");
-        
-          }
-          .compare .before .after {
-            position:absolute;
-            top:0px;
-            left:0px;
-            /* width:320px; */
-            /* height:450px; */
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .compare .before {
+            position: relative;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: url("images/home-after-top.png");
+        }
+
+        .compare .before .after {
+            position: absolute;
+            top: 0px;
+            left: 0px;
             width: 425px;
             height: 550px;
-            background:url("/images/home-before-850x550.png");
+            background: url("/images/home-before-850x550.png");
             background-size: 850px;
-        
-            z-index:2;
-          }
-          .compare input {
-            position:absolute;
-            top:0px;
-            left:0px;
-            -webkit-appearance:none;
-            z-index:3;
-            width:100%;
-            height:100%;
-            background:transparent;
-          }
-          .compare input::-webkit-slider-thumb {
-            -webkit-appearance:none;
-            display:block;
-            width:10px;
-            /* height:450px; */
-            height: 550px;
-            border:1px solid var(--clr-accent);
-            background:#5b83dc;
-            cursor:pointer;
-          }
-          .compare input::-webkit-slider-thumb:active {
-            background:#e25a5a;
-            border:1px solid #e25a5a;
-            transition:all 300ms ease-in-out;
-          }
-          input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance:none;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background: #a494a4;
-      cursor: pointer;
-  }
-  input[type=range]::-moz-range-thumb {
-      -webkit-appearance:none;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background: #a494a4;
-      cursor: pointer;
-  }
-  input[type=range]::-ms-thumb {
-      -webkit-appearance:none;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background: #a494a4;
-      cursor: pointer;
-  }
+            z-index: 2;
+        }
 
-          
-          
-           </style>
+        .compare input {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            -webkit-appearance: none;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .compare input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            display: block;
+            width: 10px;
+            height: 550px;
+            border: 1px solid var(--clr-accent);
+            background: #5b83dc;
+            cursor: pointer;
+        }
+
+        .compare input::-webkit-slider-thumb:active {
+            background: #e25a5a;
+            border: 1px solid #e25a5a;
+            transition: all 300ms ease-in-out;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background: #a494a4;
+            cursor: pointer;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            -webkit-appearance: none;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background: #a494a4;
+            cursor: pointer;
+        }
+
+        input[type=range]::-ms-thumb {
+            -webkit-appearance: none;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background: #a494a4;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- image scroll on hover -->
+    <style>
+/* Hover Scroll Effect */
+.frame{
+  width:850px;
+  height:550px;
+  overflow: hidden;
+}
+.frame img{
+  object-fit: cover;
+  width:100%;
+  transform: translateY(0);
+  transition: 10s ease-out;
+}
+.frame:hover img {
+  object-fit: cover;
+  width:100%;
+  /* Considering frame height   */
+  transform: translateY(calc(-100% + 300px));
+  transition: 10s ease-out;
+}
+
+/* With background image  */
+.bg-image{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/home\ after.png);
+  transition: background-position 15s ease-out;
+  
+}
+.frame:hover .bg-image{
+    background-position: 0 100%;
+ }
+    </style>
+
+
 </head>
 
 <body>
 
     <header>
         <div class="logo">
-            <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
-                class="logo--img">
+            <a href="index.html">
+                <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
+                    class="logo--img">
+            </a>
         </div>
 
         <button class="nav-toggle nav-phn" aria-label="back-next buttons" onclick="goBack()">
@@ -151,9 +201,13 @@
             Supporting<strong>San Diego 350</strong>
         </h1>
 
-        <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">volunteer work</p>
+        <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">volunteer
+            work</p>
         <div class="section__body">
-            <p>San Diego 350 is an inclusive volunteer organization building a movement to prevent the worst impacts of climate change and climate injustice and strives to create a future that supports a livable planet and just society through education and outreach, public policy advocacy, and mobilizing people to take action.
+            <p>San Diego 350 is an inclusive volunteer organization building a movement to prevent the worst impacts of
+                climate change and climate injustice and strives to create a future that supports a livable planet and
+                just society through education and outreach, public policy advocacy, and mobilizing people to take
+                action.
             </p>
             <p>
                 Role: Web Designer/Developer
@@ -161,8 +215,8 @@
         </div>
 
         <div class="section__img">
-        <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png" class="portfolio__item--section-img"
-            alt="ETi business cards">
+            <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png"
+                class="portfolio__item--section-img" alt="ETi business cards">
         </div>
 
     </section>
@@ -175,78 +229,77 @@
 
         <p class="section__subtitle section__subtitle--right">goal</p>
         <div class="section__body">
-            <p>One of the awareness *what is the word* San Diego 350 put together a site to raise awareness about Sempra Energy and fracking. 
-                </p>
-            <p>Goal was to improve user experience, bring cohesion between pages, give clear direction of what site was about. 
+            <p>One of the awareness *what is the word* San Diego 350 put together a site to raise awareness about Sempra
+                Energy and fracking.
+            </p>
+            <p>Goal was to improve user experience, bring cohesion between pages, give clear direction of what site was
+                about.
             </p>
         </div>
 
-        <div class="section__img">
-            <img src="images/eti/sketchbook-eti-v2-mockup-800x534px.png" alt="sketches of early ideas"
-            class="portfolio__item--section-img">
+        <div class="section__img" id="scroll">
+
+            <div class="card">
+                <div class="frame">
+                  <div class="bg-image"></div>
+                </div>
+              </div>
+          </div>
+        
+            <!-- <img src="images/home after.png" alt="sketches of early ideas"
+                class="portfolio__item--section-img"> -->
         </div>
 
     </section>
 
     <!-- PORT ITEM 2 -->
+    <section class="portfolio__part portfolio__part--left">
+        <!-- <h2 class="section__title section__title--left">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+        <p class="section__subtitle section__subtitle--left">challenges</p>
+        <div class="section__body">
+            <p>San Diego 350 had attempted to put together a website to raise awareness about Sempra Energy and fracking.  However, with no clear message and sorely lacking a path to lead the user to provide desired input, it was confusing and inadequate to meet their goals.  
+            </p>
+            <p>Call to Action (CTA) buttons were different colors and sizes, two of which were titled more as menu items than calls to action.  The site lacked any design and appeared to have been thrown together with no cohesion between pages and no hierarchy. Questions abounded:  Where does user begin to read? Why would reader want to read more? 
+            </p>
+        </div>
+
+        <div class="section__img">
+            <!-- <div class="container"> -->
+            <div class="title">
+                <!-- Before-After Image Slider -->
+            </div>
+            <div class="compare">
+                <div class="before">
+                    <div class="after"></div>
+                </div>
+                <input type="range" min="0" max="850" step="10" id="compare-ip">
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </section>
+
+    <!-- PORT ITEM 3 -->
     <section class="portfolio__part portfolio__part--right">
         <!-- <h2 class="section__title section__title--right">
             Creating<strong> the Brand</strong>
         </h2> -->
 
         <p class="section__subtitle section__subtitle--right">challenge</p>
-        <div class="section__body">
-            <p>User experience confusing. 
-                No clear message, nor what wanted the user to do.
-                CTA buttons were different colors/sizes 2 of which were title more as menu items than calls to action.
-                No design. Just looked thrown together.
-                No cohesion between pages. Cannot tell on same site.
-                </p>
-            <p>No hierarchy. 
-                Where does user begin to read? Why would reader want to read more?
-                Turns out the ‘raise the alarm’ with megaphone icon is the logo for fracking awareness.
-                Logo begs user to click on it hoping for sound to be produced. 
+ <div class="section__body">
+            <p>Ironically, the logo for fracking awareness contains their battlecry to "Raise the Alarm" complete with a megaphone icon, begging for the user to click on it in anticipation of sound to be produced and a web journey to an exhilarating and inspiring experience. So much possibility left unpursued! 
             </p>
-        </div>
-
-        <div class="section__img">
-            <!-- <div class="container"> -->
-                <div class="title">
-                  <!-- Before-After Image Slider -->
-                </div>
-                <div class="compare">
-                  <div class="before">
-                    <div class="after"></div>
-                  </div>
-                  <input type="range" min="0" max="850" step="10" id="compare-ip">
-                </div>
-              <!-- </div> -->
-            </div>
-
-    </section>
-
-    <!-- PORT ITEM 3 -->
-    <section class="portfolio__part portfolio__part--left">
-        <!-- <h2 class="section__title section__title--left">
-            Creating<strong> the Brand</strong>
-        </h2> -->
-
-        <p class="section__subtitle section__subtitle--left">setting the mood</p>
-        <div class="section__body">
-            <p>chose the black/grey/white/orange/teal scheme to:
-                1.	Give cohesiveness throughout the site
-                2.	The orange gives the viewer the feeling of ‘warning’ in general. I feel that the subject matter is something to be warned about – therefore having the viewers want to take action or join the cause. Though there is only a dabble of orange, the brightness makes a statement. Test audience felt red was too bold.
-                3.	The teal gives just enough pop to distinguish from the stark black and white.
-                4.	Sections with black background are areas that grabs attention, with calmer grey and white backgrounds for the reader to mellow in order to read more.
-                5.	Black and white header images depict the grimness of the world with fracking. While color images within the pages make an impact by bringing to attention what could happen if fracking continues.
-                </p>
             <p>
+                My challenge was to address the multiple issues in order make the goals of the site clear, bring cohesion between pages and ultimately provide a great user experience working on a common vision.  
             </p>
         </div>
 
         <div class="section__img">
-            <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png" class="portfolio__item--section-img"
-            alt="ETi business cards">
+            <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png"
+                class="portfolio__item--section-img" alt="ETi business cards">
         </div>
 
     </section>
@@ -257,17 +310,21 @@
             Creating<strong> the Brand</strong>
         </h2> -->
 
-        <p class="section__subtitle section__subtitle--left">personas</p>
+        <p class="section__subtitle section__subtitle--left">setting the mood</p>
         <div class="section__body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ut ab illo, id ad facilis sint eos, aliquam in, minus temporibus perspiciatis quod assumenda harum voluptatem iusto praesentium optio nobis!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci in alias. Illo aut itaque vitae nobis, sed natus dolorum repellendus vero, autem mollitia obcaecati.
+            <p>I chose the black/grey/white/orange/teal scheme.<br><br>
+                •	The orange gives a feeling of ‘warning’ that aligns with the cause. (Think traffic cones or safety vests as examples.)<br>
+                •	The teal provides a balance and serves as a pop against the black, grey and white. <br>
+                •	Black and grey tones reflect a seriousness, even foreboding, as in the world of fracking. 
+                
+            </p>
+            <p>
             </p>
         </div>
 
         <div class="section__img">
-        <img src="images/eti/interface mockup v2 800x535px.png" class="portfolio__item--section-img"
-            alt="wireframe version">
+            <img src="images/eti/interface mockup v2 800x535px.png" class="portfolio__item--section-img"
+                alt="wireframe version">
         </div>
 
     </section>
@@ -303,7 +360,7 @@
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>ETi</h4>
-                                <p>website & logo design</p>
+                                <p>UI & logo design</p>
                             </div>
                         </a>
                     </li>
@@ -315,7 +372,7 @@
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>TheKuziCollaborative</h4>
-                                <p>personal website</p>
+                                <p>personal website project</p>
                             </div>
                         </a>
                     </li>
@@ -327,7 +384,7 @@
     </section>
 
 
-    <footer class="footer ">
+    <footer class="footer  darkest-bg">
         <div class="footer--bg"></div>
         <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
         <ul class="social-list">
@@ -336,7 +393,8 @@
                 <a href="#" class="social-list__link"><i class="fab fa-codepen"></i></a>
             </li> -->
             <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/karenkuzmiak/" class="social-list__link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/karenkuzmiak/" class="social-list__link"><i
+                        class="fab fa-linkedin"></i></a>
             </li>
             <!-- <li class="social-list__item">
                 <a href="#" class="social-list__link"><i class="fab fa-twitter"></i></a>
@@ -344,19 +402,25 @@
             <li class="social-list__item">
                 <a href="https://github.com/kkuzie" class="social-list__link"><i class="fab fa-github"></i></a>
             </li>
-                        <li class="social-list__item">
-                <a href="images/resume-webdev-v5a-13mar21.pdf" class="social-list__link"><i class="fas fa-file-pdf"></i></a>
+            <li class="social-list__item">
+                <a href="images/resume-webdev-v5a-13mar21.pdf" class="social-list__link"><i
+                        class="fas fa-file-pdf"></i></a>
             </li>
         </ul>
     </footer>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>-->
 
     <script src="js/flyout.js"></script>
-    <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script> 
     <script src="js/portfolio.js"></script>
     <script src="js/headerNavScrollup.js"></script>
 
@@ -382,19 +446,15 @@
 
 
     <script>
-    
+        document.querySelector(".compare #compare-ip").addEventListener("input", function (e) {
+            document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
+        });
 
-        document.querySelector(".compare #compare-ip").addEventListener("input",function(e){
-          document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
+        document.querySelector(".compare #compare-ip").addEventListener("change", function (e) {
+            document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
         });
-        
-        document.querySelector(".compare #compare-ip").addEventListener("change",function(e){
-          document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
-        });
-        
-        
-        </script>
-        
+    </script>
+
 </body>
 
 </html>
