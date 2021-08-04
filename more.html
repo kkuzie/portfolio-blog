@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK GlobeRecords</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/more-orig.css">
+
+</head>
+<body>
+    
+
+<section class="dark">
+
+
+    <div id="next" class="sprite next"><a href="./ETi.html" rel="prev"
+            style="opacity: 0;">ETi</a></div>
+    <div id="prev" class="sprite prev"><a href="./po5.html"
+            rel="next">Po5</a></div>
+
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="header-center">
+                <h3>More from my portfolio</h3>
+            </div>
+            <ul id="thumbs" class="thumbs clearfix">
+
+                <li style="opacity: 1;"><a href="./eti.html"><img
+                            src="./images/eti/business cards diagonal.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
+                            srcset="./images/eti/business cards diagonal.png 628w, ./images/eti/business cards diagonal.png 300w"
+                            sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>ETi</h4>
+                            <p>website & logo  design</p>
+                        </div>
+                    </a></li>
+                <li style="opacity: 1;"><a href="./tkc.html"><img
+                            src="./images/tkc/moodboard-thekuzicollaborative1500x1000.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
+                            srcset="./images/tkc/moodboard-thekuzicollaborative1500x1000.png 628w, ./images/tkc/moodboard-thekuzicollaborative1500x1000.png 300w"
+                            sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>TheKuziCollaborative</h4>
+                            <p>personal website project</p>
+                        </div>
+                    </a></li>
+                <li style="opacity: 1;"><a href="./peppeRoni.html"><img
+                            src="./images/pepperoni/iPadMini3 peppeRoni1500x1000.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
+                            srcset="./images/pepperoni/iPadMini3 peppeRoni1500x1000.png 628w, ./images/pepperoni/iPadMini3 peppeRoni1500x1000.png 300w"
+                            sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Peppe&Roni Pizza</h4>
+                            <p>ordering app</p>
+                        </div>
+                    </a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/more.js"></script>
+
+
+<script type="text/javascript">
+
+
+//If browser is IE8 or older we show IE specific page
+// if(ie < 9){
+// 	ieMessage();
+// }
+
+/*
+* Call functions when dom is ready
+*/
+$(document).ready(function() {
+
+	// // Hide browser top bar in mobiles
+	// $('body').scrollTop(1);
+
+	// // Toggle Navigation for mobile devices
+	// $('.icon-nav').on('click', function(){
+	// 	$('header nav').slideToggle();
+	// 	$(this).toggleClass('active');
+	// });
+
+	// // Function to scroll to top
+	// $('a[href=#top]').click(function(){
+
+    //     $('html, body').animate({scrollTop:0}, 1000, 'easeInOutQuad');
+    //     return false;
+    // });
+
+	// Function to fade in image sprites
+  	$('.sprite').fadeSprite();
+
+    //Function for thumbnail hover effect
+    $('.thumbs li').hoverThumb();
+
+	// Function to animate when leaving page
+	$('.transition, #thumbs a, #next a, #prev a').leavePage();	
+
+	// Animate the header on first			
+	// $('#header').stop().animate({'opacity': '1', 'top':'0'}, 1000);
+
+
+	// Copy email address to clipboard	
+	// var clipboard = new ClipboardJS('#email');
+
+	// clipboard.on('success', function(e) {
+	//     $('#email-tooltip').attr("tooltip", "Yay! My email address has been copied to your clipboard ✅");
+	//     $('#email-tooltip').addClass('success');
+
+	//     // Reset
+	//     $('#email-tooltip').mouseleave(function() {
+
+	// 	    setTimeout( function(){
+	// 			$('#email-tooltip').attr("tooltip", "Click to copy my email address to your clipboard 😀");
+	// 	    	$('#email-tooltip').removeClass('success');
+	// 		}, 300);
+	// 	});
+
+	//     e.clearSelection();
+	// });
+
+	// clipboard.on('error', function(e) {
+	//     $('#email-tooltip').attr("tooltip", "Sorry, there was a technical glitch. Please try again.");
+	//     $('#email-tooltip').toggleClass('fail');
+	// });
+
+
+	// Preload the page with jPreLoader
+	// $('body').jpreLoader({
+
+	// 	showSplash: true
+
+	// }, function() {	
+
+	// 	//Show the page once images are loaded	
+	// 				animatePage();
+
+			
+	// });
+
+});
+
+</script>
+</body>
