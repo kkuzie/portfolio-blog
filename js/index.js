@@ -493,5 +493,57 @@ $(document).ready(function () {
 //         }
         
 //     })
+
+
+// image-tilt onScroll 
+// Portfolio Pages
+
+gsap.to('#scroll', {
+    rotation: 16,
+    // skewX: -10,
+    xPercent: -10,
+     x: 0,
+    //  opacity: .6,
+    scale: 1,
+    scrollTrigger: {
+        trigger: ".portfolio__part--right",
+        start: 'top 50%',
+        // end: 'top -10%',
+        scrub: true,
+        toggleActions: 'restart reverse restart reverse',
+        // markers: {
+        //     startColor: 'red',
+        //     endColor: 'purple',
+        //     fontSize: '1em',
+        //     indent: 200
+        // }
+    }
+})
+
+
+// gsap.from('#scroll', {
+//     rotation: 0,
+//     // skewX: 10,
+//      x: -50,
+//     scale: 1,
+//     scrollTrigger: {
+//         trigger: ".portfolio__part--right",
+//         start: 'top 0%',
+//         end: 'top 80%',
+//         scrub: true,
+//         toggleActions: 'restart reverse restart reverse',
+//         markers: {
+//             startColor: 'yellow',
+//             endColor: 'green',
+//             fontSize: '1em',
+//             indent: 200
+//         }
+//     }
+// })
+
+
+
+
+
 }); //document.ready closing
 // console.log(window.location.href);
