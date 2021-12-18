@@ -572,7 +572,7 @@ header {
 /* WHAT I DO  section */
 
 .whatIdo {
-    background-color: var(--clr-dark);
+    background-color: #131313;
     background-image: url(../images/pepperoni/laptop-code.png);
     background-size: cover;
     background-blend-mode: multiply;
