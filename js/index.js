@@ -402,7 +402,7 @@ $(document).ready(function () {
 
     ////////about section animations
     gsap.from('.section__subtitle--about', {
-        x: 1000,
+        x: 500,
         duration: 2.5,
         scrollTrigger: {
             trigger: ".section__subtitle--about",
