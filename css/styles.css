@@ -48,7 +48,7 @@
         --fs-h2: 4.125rem;
         --fs-h3: 2rem;
         --fs-h4: 1.625rem;
-        --fs-body: 1.5rem;
+        --fs-body: 1rem;
         --fs-captions: .8rem;
 
         --lh-h1: 6rem;
@@ -673,7 +673,7 @@ header {
     transform: rotate(-90deg);
     position: relative;
     min-width: 500px;
-    top: 30px;/*how high head peeks out*/
+    top: -50px;/*how high head peeks out*/
     right: -50em;
 }
 @media screen and (max-width: 1800px){
