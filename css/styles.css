@@ -130,11 +130,22 @@ strong {
     font-weight: var(--fw-bold);
     border-radius: 10px;
     transition: transform 200ms ease-in-out;
+    /* added below for projects button */
+    position: absolute;
+    left: 35%;
+
 }
 
 .btn:hover {
     transform: scale(1.1);
 }
+
+    /* added for projects button */
+.center {
+    position: relative;
+    margin-bottom: 125px;
+}
+
 
 /* TYPOGRAPHY */
 
