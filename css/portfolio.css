@@ -24,13 +24,13 @@
 
 .arrow-upper,
 .arrow-lower {
-    top: -10px;
-    width: 4em;
+    top: -3px;/*-10 */
+    width: 3em;/*4 */
     transform: rotate(-45deg);
     left: -1px;
 }
 .arrow-lower {
-    top: 25px;
+    top: 18px;/*25 */
     transform: rotate(45deg);
 }
 

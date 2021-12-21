@@ -256,9 +256,12 @@ header {
 
 .logo {
     max-width: 100px;
-    height: 140px;
-    /*was 100*/
+    height: 80px;/*140 */
 }
+.logo--img{
+    max-width: 60%;
+}
+
 @media (max-width: 600px){
     .logo {
     height: 50px;
@@ -293,8 +296,7 @@ header {
     position: absolute;
     right: 150px;
     /*was 1 originally then 5em, 15em for use with gsap toggle*/
-    top: 6em;
-    /*was 1*/
+    top: 3em;/*6 */
     z-index: 1000;
 }
 /* @media screen and (max-width: 800px){
@@ -329,10 +331,8 @@ header {
 .arrow-upper,
 .arrow-lower {
     background: var(--clr-accent);
-    width: 8em;
-    /* was 2 */
+    width: 5em;/*8 */
     height: 10px;
-    /* was 3 */
     border-radius: 1em;
 }
 @media (max-width: 600px){
