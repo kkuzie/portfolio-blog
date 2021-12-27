@@ -148,12 +148,16 @@
 
     .section__body {
         grid-area: text;
+        /* added for canvas */
+        position: relative;
+
     }
     .intro__img--port,
     .portfolio__item--section-img,
     .section__img {
         grid-area: img;
         position: relative;
+        /* margin: 0 auto; USE IF want image across entire screen img img in grid instead of title img*/
     }
     .portfolio__item--section-img{
         /* max-height: 550px; */
@@ -178,9 +182,10 @@
         top: 0;
     }
 }
-.portfolio__item--section-img-sketch {
+/* used for sketch image */
+/* .portfolio__item--section-img-sketch {
     top: -150px;
-}
+} */
 
 /* ETi */
 .section__img--section-origSite {
