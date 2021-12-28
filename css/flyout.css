@@ -38,9 +38,9 @@ body { overflow-x: hidden;}
 .nav__item {
     position: relative;
     z-index: -1;
-
     list-style: none;
-    margin-bottom: 80px;
+    /* removed margin - menu height wrong */
+    /* margin-bottom: 80px; */
 }
 .nav__item:nth-child(1){
     margin-top: 2em;
