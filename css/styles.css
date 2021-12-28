@@ -837,7 +837,7 @@ header {
     transform: scale(1.2);
 }
 .overlay__box {
-    background: rgba(164, 148, 164, 0.9);
+    background: rgba(75,109,153,.9);/*old 164, 148, 164, 0.9*/
     position: absolute;
     transform: scale(0);
     /* opacity: 0; */
