@@ -13,9 +13,9 @@
     --fw-bold: 800;
 
     --clr-light: #ececec;
-    --clr-dark: #303030;
+    --clr-dark: #030005;/*old #303030;*/
     --clr-darkest: #111111;
-    --clr-accent: #a494a4;
+    --clr-accent: #4b6d99;/*old #a494a4;*/
 
     --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
         0.125em 0.125em .25em rgba(0, 0, 0, .15);
@@ -89,8 +89,8 @@ body {
 section {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 10em 0;
-    /*was 5em*/
+    padding: 10em 0 0;
+    /*old 10em 0*/
     overflow: hidden;
 }
 
@@ -143,7 +143,8 @@ strong {
     /* added for projects button */
 .center {
     position: relative;
-    margin-bottom: 125px;
+    margin-top: 125px;
+    height: 100px;
 }
 
 
@@ -243,7 +244,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em 3em;
-    /*was 1 2*/
+    /*old 1 2*/
     background-image: url(../images/watercolor.jpg);
     background-size: cover;
     background-color: var(--clr-darkest);
@@ -259,7 +260,7 @@ header {
 
 .logo {
     max-width: 100px;
-    height: 80px;/*140 */
+    height: 80px;/*old 140 */
 }
 .logo--img{
     max-width: 60%;
@@ -587,7 +588,7 @@ header {
 /* WHAT I DO  section */
 
 .whatIdo {
-    background-color: rgba(19,19,19,.9);
+    background-color: rgba(3,0,5,.9);/*old 19,19,19,.9*/
     background-image: url(../images/pepperoni/laptop-code.png);
     background-size: cover;
     background-blend-mode: multiply;
@@ -595,6 +596,7 @@ header {
     text-align: center;
     position: relative;
     z-index: 100;
+    padding-bottom: 10em;/*old - none*/
 }
 
 .section__title--whatIdo {
