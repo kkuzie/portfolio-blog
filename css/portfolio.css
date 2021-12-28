@@ -79,7 +79,8 @@
 .section__img {
     overflow: hidden;
     max-width: 850px;
-    max-height: 550px;
+    /* removed in order to add 2 images to section */
+    /* max-height: 550px; */
 }
 
 .section__img--po5-shirt {
@@ -94,6 +95,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
+        grid-row-gap: 2em;
     }
     .intro--port {
         grid-template-areas: 
@@ -105,7 +107,8 @@
         grid-template-areas: 
             "title img"
             "subtitle img"
-            "text img";
+            "text img"
+            "img2 text2";
     }
     .portfolio__part--left {
         grid-template-areas: 
@@ -152,6 +155,13 @@
         position: relative;
 
     }
+    .section__body2 {
+        grid-area: text2;
+        /* added for canvas */
+        position: relative;
+
+    }
+
     .intro__img--port,
     .portfolio__item--section-img,
     .section__img {
@@ -159,9 +169,14 @@
         position: relative;
         /* margin: 0 auto; USE IF want image across entire screen img img in grid instead of title img*/
     }
+    .section__img2{
+        grid-area: img2;
+    }
     .portfolio__item--section-img{
         /* max-height: 550px; */
         margin: 0 auto;
+        /* added since added 2nd image in grid */
+        /* padding-bottom: 1em; */
     }
 }
 
@@ -174,9 +189,10 @@
     }
 
 /* globe */
-.intro__img--port-bfos {
+/* removed in order to add 2 images to section */
+/* .intro__img--port-bfos {
     top: -120px;
-}
+} */
 @media screen and (max-width: 1200px){
     .intro__img--port-bfos {
         top: 0;
