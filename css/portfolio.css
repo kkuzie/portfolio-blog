@@ -114,7 +114,9 @@
         grid-template-areas: 
             "img title"
             "img subtitle"
-            "img text";
+            "img text"
+            "text2 img2";
+
     }
 
     .section__title--right,
