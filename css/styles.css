@@ -89,8 +89,7 @@ body {
 section {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 10em 0 0;
-    /*old 10em 0*/
+    /* padding: 10em 0 0; removed when reordered sections*/
     overflow: hidden;
 }
 
@@ -357,6 +356,7 @@ header {
         z-index: 100; */
     /*brings section to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*/
     background-color: var(--clr-darkest);
+    margin-top: 10em;/*old-none*/
 }
 
 .section__subtitle--intro {
@@ -602,6 +602,7 @@ header {
 .section__title--whatIdo {
     color: var(--clr-accent);
     position: relative;
+    padding-top: 1em; /*old - none*/
 }
 
 .section__title--whatIdo::after {
@@ -674,6 +675,8 @@ header {
     /*kk*/
     /* width: 75%; */
     margin-right: 30px;
+    /* added for switched sections */
+    margin-bottom: 10em;
     /* added for canvas */
     position: relative;
 
@@ -685,6 +688,7 @@ header {
     /* removed for canvas */
     /* position: relative;
     z-index: 100; */
+    margin-top: 10em;/*old - none*/
 }
 .section__img--kk{
     box-shadow: var(--bs-dark), var(--bs-dark), var(--bs-dark);
@@ -694,7 +698,7 @@ header {
     transform: rotate(-90deg);
     position: relative;
     min-width: 500px;
-    top: -210px;/*how high head peeks out*/
+    top: -50px;/*how high head peeks out was -210*/
     right: -50em;
 }
 @media screen and (max-width: 1800px){
@@ -797,10 +801,11 @@ header {
     /*was var(--clr-darkest)*/
     color: var(--clr-accent);
     text-align: center;
-    position: relative;
-    z-index: 101;
+    /* removed position and zindex when reordered sections */
+    /* position: relative;
+    z-index: 101; */
     /* reduce section padding */
-    padding-top: 6em;
+    /* padding-top: 6em; removed when reordered sections*/
 }
 
 .my-work__div-img {

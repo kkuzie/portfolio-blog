@@ -463,7 +463,7 @@ $(document).ready(function () {
         y: 300,
         duration: 1.4,
         scrollTrigger: {
-            trigger: ".section__subtitle--tagline",
+            trigger: ".about-me__body",
             toggleActions: 'play reverse reverse reverse',
             // markers: true,
             // markers: {
