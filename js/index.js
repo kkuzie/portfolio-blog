@@ -373,9 +373,9 @@ $(document).ready(function () {
                 stagger: -.3,
                 scrollTrigger: {
                     trigger: ".whatIdo__descriptions",
-                    start: 600,
+                    // start: 600,//removed when rearranged sections
                     toggleActions: 'restart reverse restart reverse',
-                    // markers: true
+                    // markers: true,
                     // markers: {
                     //     startColor: 'yellow',
                     //     endColor: 'lime',
@@ -463,7 +463,7 @@ $(document).ready(function () {
         y: 300,
         duration: 1.4,
         scrollTrigger: {
-            trigger: ".about-me__body",
+            trigger: ".whatIdo",
             toggleActions: 'play reverse reverse reverse',
             // markers: true,
             // markers: {
