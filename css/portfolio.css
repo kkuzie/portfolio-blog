@@ -108,7 +108,8 @@
             "title img"
             "subtitle img"
             "text img"
-            "img2 text2";
+            "img2 text2"
+            "text3 img3";
     }
     .portfolio__part--left {
         grid-template-areas: 
@@ -163,6 +164,12 @@
         position: relative;
 
     }
+    .section__body3 {
+        grid-area: text3;
+        /* added for canvas */
+        position: relative;
+
+    }
 
     .intro__img--port,
     .portfolio__item--section-img,
@@ -174,6 +181,10 @@
     .section__img2{
         grid-area: img2;
     }
+    .section__img3{
+        grid-area: img3;
+    }
+
     .portfolio__item--section-img{
         /* max-height: 550px; */
         margin: 0 auto;
