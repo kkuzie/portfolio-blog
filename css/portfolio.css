@@ -11,8 +11,9 @@
 .intro--port,
 .portfolio__part {
     margin: 0 auto;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding: 10em 4em 0;    /* WAS padding-left: 4em;
+    padding-right: 4em; */
+
 }
 
 .intro__img--port,
