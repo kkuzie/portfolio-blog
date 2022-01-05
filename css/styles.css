@@ -694,7 +694,7 @@ header {
     transform: rotate(-90deg);
     position: relative;
     min-width: 500px;
-    top: -50px;/*how high head peeks out*/
+    top: -210px;/*how high head peeks out*/
     right: -50em;
 }
 @media screen and (max-width: 1800px){
