@@ -79,7 +79,7 @@
 
 .section__img {
     overflow: hidden;
-    max-width: 850px;
+    /* max-width: 850px; NEED??*/
     /* removed in order to add 2 images to section */
     /* max-height: 550px; */
 }
@@ -94,30 +94,77 @@
     .portfolio__part--right,
     .portfolio__part--left {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2em;
-        grid-row-gap: 2em;
+        grid-column-gap: 1em;
+        /* removed row gap due to added rows sometimes not used in grid */
+        /* grid-row-gap: 2em; */
     }
     .intro--port {
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-areas: 
+            "img img img title title"
+            "img img img title title"
+            "img img img subtitle subtitle";
+            ; */
             /* margin-top: 175px; */
+    }
+    .portfolio__part--left{
+        grid-template-columns: .5fr 1fr 1fr 1fr 1.5fr;
+    } 
+    .portfolio__part--right {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr .5fr;
     }
     .portfolio__part--right {
         grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img"
-            "img2 text2"
-            "text3 img3";
-    }
+        "title img img img img" 
+        "title img img img img" 
+        "text text text text3 text3" 
+        "text5 text5 text5 text5 text5" 
+        "img3 img3 img3 text4 text4" 
+        "text2 text2 img2 img2 img2";
+        /* "title img img img img" 
+        "title img img img img" 
+        "text text text text3 text3" 
+        "img3 img3 img3 text4 text4" 
+        "text2 text2 img2 img2 img2"; */
+
+        /* "title img img img img" 
+        "title img img img img" 
+        "subtitle img3 img3 img3 img3" 
+        "text text text img5 img5"
+        "img2 img2 img2 img2 img2"
+        "text2 text2 text2 text3 text3"; */
+        }
+
+        
     .portfolio__part--left {
         grid-template-areas: 
-            "img title"
-            "img subtitle"
-            "img text"
-            "text2 img2";
+        "img img img img title" 
+        "img img img img title"
+        "img5 img5 text text text"
+        "text4 text4 img3 img3 img3" 
+        "img2 img2 img2 text2 text2";
+        /* "img img img img title" 
+        "img img img img title" 
+        "img5 img5 text text text"
+        "img3 img3 img3 img3 img3" 
+        "img6 img6 img2 img2 img2" 
+        "text8 text2 text2 text2 text7"; */
+        /* "img img img img title" 
+        "img img img img title" 
+        "img3 img3 img3 img3 subtitle" 
+        "img5 img5 text text text" 
+        "text2 text2 text2 text2 text3"
+        "img6 img6 img2 img2 img2" 
+        ; */
+
+        /* "img img img img title"
+         "img img img img title" 
+         "img3 img3 img3 img3 subtitle" 
+         "text text text2 text2 text2"; */
+            /* "img img img img title"
+            "img img img img title"
+            "img2 img2 img2 subtitle subtitle"
+            "text text2 text2 text2 img3"; */
 
     }
 
@@ -157,20 +204,30 @@
         grid-area: text;
         /* added for canvas */
         position: relative;
-
+        /* added since removed row gap */
+        margin-top: 2em;
     }
     .section__body2 {
         grid-area: text2;
         /* added for canvas */
         position: relative;
-
     }
     .section__body3 {
         grid-area: text3;
         /* added for canvas */
         position: relative;
-
     }
+    .section__body4 {
+        grid-area: text4;
+        /* added for canvas */
+        position: relative;
+    }
+    .section__body5 {
+        grid-area: text5;
+        /* added for canvas */
+        position: relative;
+    }
+
 
     .intro__img--port,
     .portfolio__item--section-img,
