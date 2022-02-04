@@ -16,6 +16,7 @@
     --clr-dark: #030005;/*old #303030;*/
     --clr-darkest: #111111;
     --clr-accent: #4b6d99;/*old #a494a4;*/
+    --clr-headings: #1a1c1f;
 
     --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
         0.125em 0.125em .25em rgba(0, 0, 0, .15);
@@ -44,8 +45,8 @@
 
 @media (min-width: 1200px) {
     :root {
-        --fs-h1: 5rem;
-        --fs-h2: 4.125rem;
+        --fs-h1: 14rem;
+        --fs-h2: 12rem;
         --fs-h3: 2rem;
         --fs-h4: 1.625rem;
         --fs-body: 1.25rem;
@@ -55,6 +56,37 @@
     }
 }
 
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+position: absolute;
+bottom: -380px;
+width: 100%;
+left: 0;
+z-index: 1;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+.scroll-indicator__bar {
+    width: 2px;
+    height: 59px;
+    background-color: #fff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
 /* CUSTOM CLASSES */
 
 .darkest-bg {
@@ -152,17 +184,25 @@ strong {
 h1,
 h2,
 h3 {
-    line-height: 1;
     margin: 0;
 }
 
 h1 {
     font-size: var(--fs-h1);
-    line-height: var(--lh-h1);
+
+    /* line-height: var(--lh-h1); */
+    font-weight: bold;
+    color: var(--clr-headings);
+    line-height: 155px;
+
 }
 
 h2 {
     font-size: var(--fs-h2);
+    color: var(--clr-headings);
+    opacity: .8;
+    line-height: 155px;
+
 }
 
 h3 {
@@ -170,13 +210,14 @@ h3 {
 }
 
 .section__title {
-    margin-bottom: .5em;
+
+    /* margin-bottom: .5em; */
     /* added for canvas */
     position: relative;
 }
 
 .section__title--intro {
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-bold);
     /* padding-top: .75em; */
 }
 
@@ -185,7 +226,7 @@ h3 {
     /* will make name always on a second line*/
 }
 
-.section__title--intro:hover {
+.section__title--intro-kk:hover {
     color: var(--clr-accent);
 }
 @media screen and (max-width: 600px){
@@ -258,8 +299,8 @@ header {
 }
 
 .logo {
-    max-width: 100px;
-    height: 80px;/*old 140 */
+    max-width: 75px;
+    /* height: 80px;old 140 */
 }
 .logo--img{
     max-width: 60%;
@@ -299,7 +340,7 @@ header {
     position: absolute;
     right: 150px;
     /*was 1 originally then 5em, 15em for use with gsap toggle*/
-    top: 3em;/*6 */
+    top: 2.5em;/*6 */
     z-index: 1000;
 }
 /* @media screen and (max-width: 800px){
@@ -428,8 +469,21 @@ header {
 .section__title--intro {
     grid-area: title;
     /* justify-self: center; */
-    margin-left: 50px;
+
+    /* margin-left: 50px; */
 }
+.section__title--intro2{
+    grid-area: title2;
+    margin-left: .5em;
+}
+.section__title--intro3{
+    grid-area: title3;
+    margin-bottom: .5em;
+    padding-right: 0;
+}
+
+
+
 .section__subtitle--intro {
     align-self: start;
     position: relative;
@@ -759,7 +813,7 @@ header {
     grid-template-columns: 2fr 1fr;
     /*was 200px*/
     grid-template-areas:
-        "title img"
+        "title title"
         "subtitle img"
         "text img";
     grid-column-gap: 2em;

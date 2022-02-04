@@ -11,8 +11,7 @@
 .intro--port,
 .portfolio__part {
     margin: 0 auto;
-    padding: 10em 4em 0;    /* WAS padding-left: 4em;
-    padding-right: 4em; */
+    padding: 7em 0em 0;   
 
 }
 
@@ -40,17 +39,38 @@
     color: unset;
 }
 
+.section__title--intro {
+    text-align: left;
+    opacity: .8;
+    z-index: 0;
+}
+.section__title--intro2 {
+    text-align: left;
+    opacity: 1;
+    z-index: 0;
+}
+.section__title--intro3 {
+    text-align: right;
+    opacity: .8;
+    z-index: 0;
+    margin-left: 1.8em;
+}
+.section__title--intro-center {
+    text-align: center;
+    margin: 0;
+}
+
+
 .section__title--left,
 .section__title--right {
-    font-weight: var(--fw-reg);
-    padding-top: .75em;
+    font-weight: var(--fw-bold);
+    /* padding-top: .75em; */
 }
-.section__title--intro,
 .section__title--left {
     padding-right: .5em;
 }
 
-.section__title--intro,
+/* .section__title--intro, */
 .section__title--left,
 .section__subtitle--left {
     text-align: right;
@@ -92,14 +112,27 @@
 @media (min-width: 600px) {
     .intro--port,
     .portfolio__part--right,
+    .portfolio__part--right2,
+    .portfolio__part--center,
     .portfolio__part--left {
         display: grid;
-        grid-column-gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        /* grid-column-gap: 1em; */
         /* removed row gap due to added rows sometimes not used in grid */
         /* grid-row-gap: 2em; */
+
+        /* TEMP */
+        /* grid-auto-rows: auto;
+        grid-auto-columns: 1fr; */
     }
     .intro--port {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title title title title title" 
+        "title2 title2 title2 title2 title2" 
+        "title3 title3 title3 title3 title3" 
+        "img img img9 img9 img9" 
+        "img5 img5 text3 text3 text3";
         /* grid-template-areas: 
             "img img img title title"
             "img img img title title"
@@ -107,20 +140,21 @@
             ; */
             /* margin-top: 175px; */
     }
-    .portfolio__part--left{
-        grid-template-columns: .5fr 1fr 1fr 1fr 1.5fr;
-    } 
-    .portfolio__part--right {
-        grid-template-columns: 1.5fr 1fr 1fr 1fr .5fr;
-    }
     .portfolio__part--right {
         grid-template-areas: 
-        "title img img img img" 
+        "title title title title title" 
+        "text text text text text" 
+        "img9 img img img img" 
+        "img8 img2 img2 img7 img7";
+
+
+        /* "title img img img img" "title img img img img" "text text text text3 text3" "img3 img3 img3 text4 text4" "text5 text5 text5 text5 text5" "text2 text2 img2 img2 img2"; */
+        /* "title img img img img" 
         "title img img img img" 
         "text text text text3 text3" 
         "text5 text5 text5 text5 text5" 
         "img3 img3 img3 text4 text4" 
-        "text2 text2 img2 img2 img2";
+        "text2 text2 img2 img2 img2"; */
         /* "title img img img img" 
         "title img img img img" 
         "text text text text3 text3" 
@@ -134,15 +168,54 @@
         "img2 img2 img2 img2 img2"
         "text2 text2 text2 text3 text3"; */
         }
+    .portfolio__part--right2 {
+        grid-template-areas: 
+            "title title title title title" 
+            "title3 title3 title3 title3 title3" 
+            "text9 text text text8 text8" 
+            "img2 img2 img2 img7 img7" 
+            "img9 img9 img3 img3 img3" 
+            "textC text2 text2 text2 imgC" 
+            "img img img imgD imgD" 
+            "imgE imgE img4 img4 img4";
+        }
 
-        
+    .portfolio__part--center{
+        grid-template-areas: 
+        "title3 title3 title3 title3 title3" 
+        "text text text text text" 
+        "img img img img img9" 
+        "img8 img2 img2 img7 img7";
+        }
+
     .portfolio__part--left {
         grid-template-areas: 
-        "img img img img title" 
+            "title title title title title" 
+            "img5 img5 text3 text3 text3" 
+            "img9 img img img img" 
+            "text2 text2 text2 text9 text9" 
+            "img4 img4 img4 imgA imgA" 
+            "img3 img3 img3 img3 img3" 
+            "img8 img8 img2 img2 img2" 
+            "text text text4 text4 text4";
+        /* "title title title title title"
+        "title2 title2 title2 title2 title2"  */
+        /* "title3 title3 title3 title3 title3" 
+        "img img img9 img9 img9" 
+        "img5 img5 text text text" 
+        "text4 text4 img3 img3 img3" 
+        "img2 img2 img2 text2 text2" 
+        "text6 text6 img4 img4 img4"; */
+        
+        /* 1/20 was */
+        /* "img img img img title" 
         "img img img img title"
         "img5 img5 text text text"
         "text4 text4 img3 img3 img3" 
-        "img2 img2 img2 text2 text2";
+        "img2 img2 img2 text2 text2"
+        "text6 text6 img4 img4 img4"; */
+
+
         /* "img img img img title" 
         "img img img img title" 
         "img5 img5 text text text"
@@ -177,15 +250,17 @@
     .section__subtitle--right,
     .section__subtitle--left {
         grid-column: 1 / -1;/*makes subtitle stretch across whole div*/
-        grid-row: 2; /*to keep in right place */
-
+        grid-row: 4; /*to keep in right place 1/20 was 2*/
     }
     .section__subtitle--port,
     .section__subtitle--left {
         position: relative;
         text-align: right;
-        right: 2.5em;
-        width: calc(100% + 2.5em);/*this adds the 2.5 to the right back onto the left side    was 1.5*/
+        right: 8.5em;
+width: calc(100% + -8.5em);
+display: block;
+        /* right: 2.5em;
+        width: calc(100% + 2.5em);this adds the 2.5 to the right back onto the left side    was 1.5 */
     }
     .section__subtitle--right {
         position: relative;
@@ -199,12 +274,28 @@
         width: 80%;
         right: 10.5em;
     }
+    .section__subtitle--moreL{
+        width: 80%;
+        left: 19.5em;
+    }
+    .section__button-outline {
+        text-decoration: none;
+        color: var(--clr-accent);
+        background: none;
+        outline: var(--clr-accent) solid 3px;
+    }
+    .section__button-outline:hover {
+        color: var(--clr-dark);
+        background: var(--clr-accent);
+    }
 
     .section__body {
-        grid-area: text;
+        grid-area: title3 / text1;
         /* added for canvas */
         position: relative;
         /* added since removed row gap */
+        grid-column: 4 / -1;
+        padding-right: 3em;/*might have to make this specific to intro area*/
         margin-top: 2em;
     }
     .section__body2 {
@@ -227,12 +318,37 @@
         /* added for canvas */
         position: relative;
     }
+    .section__body--section2-eti{
+        grid-area: text;
+        margin-top: -3em;
+    }
+    .section__body--section3-eti{
+        margin-top: -2em;
+        grid-area: text3;
+    }
+    .section__body--section4-eti {
+        margin-top: -2em;
+        margin-left: -7em;
+        grid-area: text;
+        grid-row: title3 / text;
+        padding-right: 0;
+    }
+    .section__body--section-center {
+        grid-area: text;
+        grid-column: 2 / -2;
+        margin-top: -2em;
+    }
+        .section__body--intro {
+        margin-top: 5em;
+    }
 
 
-    .intro__img--port,
-    .portfolio__item--section-img,
     .section__img {
-        grid-area: img;
+        margin-top: 2em;
+    }
+    .intro__img--port,
+    .portfolio__item--section-img {
+        grid-area: title3 / img; /*1/20 was img*/
         position: relative;
         /* margin: 0 auto; USE IF want image across entire screen img img in grid instead of title img*/
     }
@@ -242,6 +358,19 @@
     .section__img3{
         grid-area: img3;
     }
+    .section__img4{
+        grid-area: img4;
+    }
+    .section__img--section2-eti {
+        grid-area: img;
+    }
+    .section__img2--section2-eti {
+        margin-top: -2em;
+    }
+    .section__img-intro{
+        grid-area: title3 / img;
+    }
+
 
     .portfolio__item--section-img{
         /* max-height: 550px; */
@@ -275,9 +404,9 @@
 } */
 
 /* ETi */
-.section__img--section-origSite {
+/* .section__img--section-origSite {
     overflow: unset;
-}
+} */
 /* .portfolio__part--eti-one{
     background: url(../images/eti/interface\ mockup\ v2\ 800x535px.png) no-repeat;
     background-size: 80vw;

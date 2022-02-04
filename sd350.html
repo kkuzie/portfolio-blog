@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="css/smoke.css">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/flyout.css">
     <link rel="stylesheet" href="css/portfolio.css">
@@ -23,7 +25,7 @@
 
 
     <!-- test-scroll-tilt styles -->
-    <style>
+    <!-- <style>
     #scroll{ 
         transform: rotate(-16deg) scale(.9);
         right: -150px;
@@ -38,7 +40,7 @@
          z-index: 2;
      }
 
-    </style>
+    </style> -->
 
     <!-- before/after slider styles -->
     <style>
@@ -63,12 +65,18 @@
             box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
         }
 
+        /* Inline #6 | http://127.0.0.1:5500/sd350.html */
+
+
         .compare .before {
             position: relative;
             top: 0px;
             width: 100%;
-            height: 100%;
-            background: url("images/home-after-top.png");
+            height: 70%;
+            /*100*/
+            background: url("images/Screenshot\ 2021-12-21\ at\ 13-04-01\ Sempra\ Fracks\ Our\ Future\ -\ Sempra\ is\ a\ fracked\ gas\ infrastructure\ company.png");
+            background-size: 579px;
+            /*850*/
         }
 
         .compare .before .after {
@@ -76,9 +84,11 @@
             top: 0px;
             left: 0px;
             width: 425px;
-            height: 550px;
+            height: 385px;
+            /*550*/
             background: url("/images/home-before-850x550.png");
-            background-size: 850px;
+            background-size: 600px;
+            /*850*/
             z-index: 2;
         }
 
@@ -89,7 +99,7 @@
             -webkit-appearance: none;
             z-index: 3;
             width: 100%;
-            height: 100%;
+            height: 70%;
             background: transparent;
         }
 
@@ -111,36 +121,36 @@
 
         input[type=range]::-webkit-slider-thumb {
             -webkit-appearance: none;
-            height: 45px;
-            width: 45px;
+            height: 25px;
+            width: 25px;
             border-radius: 50%;
-            background: #a494a4;
+            background: var(--clr-accent);
             cursor: pointer;
         }
 
         input[type=range]::-moz-range-thumb {
             -webkit-appearance: none;
-            height: 45px;
-            width: 45px;
+            height: 25px;
+            width: 25px;
             border-radius: 50%;
-            background: #a494a4;
+            background: var(--clr-accent);
             cursor: pointer;
         }
 
         input[type=range]::-ms-thumb {
             -webkit-appearance: none;
-            height: 45px;
-            width: 45px;
+            height: 25px;
+            width: 25px;
             border-radius: 50%;
-            background: #a494a4;
+            background: var(--clr-accent);
             cursor: pointer;
         }
     </style>
 
     <!-- image scroll on hover -->
-    <style>
-/* Hover Scroll Effect */
-.frame{
+    <!-- <style> -->
+    <!-- /* Hover Scroll Effect */ -->
+    <!-- .frame{
   width:850px;
   height:550px;
   overflow: hidden;
@@ -172,18 +182,18 @@
 .frame:hover .bg-image{
     background-position: 0 100%;
  }
-    </style>
+    </style> -->
 
 
 </head>
 
 <body>
+    <canvas></canvas>
 
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
-                    class="logo--img">
+                <img src="images/kk logo.png" alt="kk logo" class="logo--img">
             </a>
         </div>
 
@@ -196,149 +206,275 @@
     </header>
 
     <!-- INTRO -->
-    <section class="intro--port portfolio__part portfolio__part--left">
-        <h1 class="section__title section__title--intro section__title--intro-port">
-            Supporting<strong>San Diego 350</strong>
+    <section class="intro--port portfolio__part">
+        <!-- <h1 class="section__title section__title--intro ">
+            San
+        </h1> -->
+        <h1 class="section__title section__title--intro2 ">
+            San Diego
+        </h1>
+        <h1 class="section__title section__title--intro3 " style="margin-right: .80em;">
+            350
         </h1>
 
-        <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">volunteer
-            work</p>
-        <div class="section__body">
-            <p>San Diego 350 is an inclusive volunteer organization building a movement to prevent the worst impacts of
-                climate change and climate injustice and strives to create a future that supports a livable planet and
-                just society through education and outreach, public policy advocacy, and mobilizing people to take
-                action.
+        <!-- <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">awareness campaign</p> -->
+        <div class="section__body section__body--intro">
+            <p>San Diego 350 is an inclusive volunteer organization building a movement that mobilizes people to actively address and proactively prevent the worst impacts from climate change.
             </p>
             <p>
-                Role: Web Designer/Developer
+                A <strong style="color: #4b6d99">two-week project</strong> in June 2021 to redesign and
+                develop San Diego 350's campaign website.
             </p>
         </div>
 
-        <div class="section__img">
-            <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png"
-                class="portfolio__item--section-img" alt="ETi business cards">
+        <div class="section__ img section__img-intro" style="width: 150%; margin-left: -80px; margin-top: 25px;">
+            <img src="images/sd350/home-laptop.png" class="portfolio__item--section-img" alt="fracked logo">
         </div>
 
     </section>
 
     <!-- PORT ITEM 1 -->
     <section class="portfolio__part portfolio__part--right">
-        <!-- <h2 class="section__title section__title--right">
-            Creating<strong> the Brand</strong>
-        </h2> -->
+        <h2 class="section__title section__title--right">
+            contributions
+        </h2>
 
-        <p class="section__subtitle section__subtitle--right">background</p>
-        <div class="section__body">
-            <p>San Diego 350 had attempted to put together a website to raise awareness about Sempra Energy and fracking.  However, with no clear message and sorely lacking a path to lead the user to provide desired input, it was confusing and inadequate to meet their goals.  
-            </p>
+        <!-- <p class="section__subtitle section__subtitle--right">contributions</p> -->
+        <div class="section__body section__body--section2-eti" style="margin-top: -3em; padding-left: 3em;">
             <p>
+                <table width="100%">
+                    <col style="width:25%">
+                    <col style="width:38%">
+                    <col style="width:37%">
+                    <thead>
+
+                        <tr>
+                            <td style="padding-bottom: .5em;">
+                                <h3>Role</h3>
+                            </td>
+                            <td style="padding-left: 3em; padding-bottom: .5em;">
+                                <h3>My Responsibilities</h3>
+                            </td>
+                            <td style="padding-left: 3em; padding-bottom: .5em;">
+                                <h3>Team</h3>
+                            </td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>UI/UX Designer</td>
+                            <td style="padding-left: 3em;">UX analysis (flows)</td>
+                            <td style="padding-left: 3em;"> Scott Kelly, Project Lead</td>
+
+                        </tr>
+                        <tr>
+                            <td>Front-end Developer</td>
+                            <td style="padding-left: 3em;">Design (website and logo)</td>
+                            <td style="padding-left: 3em;"> </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left: 3em;">Iterations of the UI</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left: 3em;">Front-end development (Wordpress)</td>
+                        </tr>
+                    </tbody>
+                </table>
             </p>
+
+
         </div>
 
-        <div class="section__img" id="scroll">
-
-            <div class="card">
-                <div class="frame">
-                  <div class="bg-image"></div>
-                </div>
-              </div>
-          </div>
-        
-            <!-- <img src="images/home after.png" alt="sketches of early ideas"
-                class="portfolio__item--section-img"> -->
+        <div class="section__img section__img--section2-eti">
+            <img src="images/sd350/sd350 pages.png" alt="sketches of early design idea"
+                class="portfolio__item--section-img">
         </div>
 
     </section>
 
-    <!-- PORT ITEM 2 -->
-    <section class="portfolio__part portfolio__part--left">
-        <!-- <h2 class="section__title section__title--left">
-            Creating<strong> the Brand</strong>
-        </h2> -->
+    <!-- PORTFOLIO ITEM 2 -->
+    <section class="portfolio__part intro--port">
+        <h2 class="section__title section__title--left">
+            challenge
+        </h2>
+        <!-- <p class="section__subtitle section__subtitle--left">challenge</p> -->
+        <div class="section__body section__body--section3-eti">
+            <h3>Visual experience and intuitive navigation</h3>
 
-        <p class="section__subtitle section__subtitle--left">challenge 1</p>
-        <div class="section__body">
-            <p></p>
-            <p>Call to Action (CTA) buttons were different colors and sizes, two of which were titled more as menu items than calls to action.  The site lacked any design and appeared to have been thrown together with no cohesion between pages and no hierarchy. Questions abounded:  Where does user begin to read? Why would reader want to read more? 
+            <p>Persons interested in raising their voice to the problem of fracking
+                needed <strong style="color: #4b6d99">a logical path</strong> to take in the abundance of information
+                with signs along the way to tell them what
+                they could do next to get their voice heard.
             </p>
+            <!-- <p>The challenge was to address multiple issues: <br>
+                • Make the goals of the site clear <br>
+                • Bring cohesion between pages <br>
+                • Provide a tangible way to take action
+            </p> -->
         </div>
 
-        <div class="section__img">
-            <!-- <div class="container"> -->
-            <div class="title">
-                <!-- Before-After Image Slider -->
-            </div>
-            <div class="compare">
-                <div class="before">
-                    <div class="after"></div>
-                </div>
-                <input type="range" min="0" max="850" step="10" id="compare-ip">
-            </div>
-            <!-- </div> -->
-        </div>
 
     </section>
 
     <!-- PORT ITEM 3 -->
-    <section class="portfolio__part portfolio__part--right">
-        <!-- <h2 class="section__title section__title--right">
-            Creating<strong> the Brand</strong>
-        </h2> -->
+    <section class="portfolio__part portfolio__part--right2">
+        <h2 class="section__title section__title--intro">
+            problems
+        </h2>
+        <h2 class="section__title section__title--intro3">
+            solved
+        </h2>
+        <!-- <p class="section__subtitle section__subtitle--right">problems solved</p> -->
 
-        <p class="section__subtitle section__subtitle--right">challenge 2</p>
- <div class="section__body">
-            <p>Ironically, the logo for fracking awareness contains their battlecry to "Raise the Alarm" complete with a megaphone icon, begging for the user to click on it in anticipation of sound to be produced and a web journey to an exhilarating and inspiring experience. So much possibility left unpursued! 
+        <div class="section__body section__body--section4-eti">
+            <h3>Cohesion</h3>
+            <p>Users will not have a good experience unless the design of an app is both intuitive and cohesive. Lacking
+                these vital characteristics in the original website, it was inevitable that users did not stay engaged.
             </p>
-            <p>
-                My challenge was to address the multiple issues in order make the goals of the site clear, bring cohesion between pages and ultimately provide a great user experience working on a common vision.  
+
+            <p>The revisions provide all-important cohesion via <strong style="color: #4b6d99">clean, uncluttered
+                    layouts, well-organized screens,</strong> and <strong style="color: #4b6d99">highly legible
+                    labeling</strong> with a common thread of <strong style="color: #4b6d99">connection through color
+                    and imagery.</strong>
             </p>
         </div>
 
-        <div class="section__img">
-            <img src="images/eti/mockup breakout caps w text w sdccd bottom color.png"
-                class="portfolio__item--section-img" alt="ETi business cards">
+        <div class="section__body section__body2">
+            <h3>All paths lead to action</h3>
+            <p>Once off the home page, users found themselves at a dead end with no calls to actions offered, leaving
+                them stymied as to any potential next steps.
+            </p>
+            <p>
+                To solve this, <strong style="color: #4b6d99">a multitude of buttons</strong> and <strong
+                    style="color: #4b6d99">hoverable images</strong> now lead the user to more information and <strong
+                    style="color: #4b6d99">actionable opportunities.</strong>
+            </p>
+
+        </div>
+
+
+        <div class="section__img section__img2">
+            <!-- id="scroll" -->
+            <!-- <div class="card">
+                <div class="frame">
+                  <div class="bg-image"></div>
+                </div>
+              </div> -->
+
+            <img src="images/sd350/sd350 before.png" alt="sketches of early ideas" class="portfolio__item--section-img"
+                style="width: 600px;">
+            <p class="section__captions" style="padding-left: 6em;">before - non-cohesive, lacking in design</p>
+
+        </div>
+
+        <div class="section__img section__img3" style="padding-right: 4em;">
+            <img src="images/sd350/sd350 cohesion(1).png" class="portfolio__item--section-img" alt="wireframe version">
+        </div>
+
+        <div class="section__img" style="z-index: 1;">
+            <img src="images/sd350/sd350-flow-before.jpg" alt="sketches of early ideas"
+                class="portfolio__item--section-img" style="padding-left: 6em;">
+        </div>
+
+        <div class="section__img4">
+            <img src="images/sd350/sd350-flow-after.jpg" alt="sketches of early ideas"
+                class="portfolio__item--section-img" style="margin-top: -6em;">
         </div>
 
     </section>
 
     <!-- PORT ITEM 4 -->
-    <section class="portfolio__part portfolio__part--left">
-        <!-- <h2 class="section__title section__title--left">
-            Creating<strong> the Brand</strong>
-        </h2> -->
-
-        <p class="section__subtitle section__subtitle--left">setting the mood</p>
-        <div class="section__body">
-            <p>I chose the black/grey/white/orange/teal scheme.<br><br>
-                •	The orange gives a feeling of ‘warning’ that aligns with the cause. (Think traffic cones or safety vests as examples.)<br>
-                •	The teal provides a balance and serves as a pop against the black, grey and white. <br>
-                •	Black and grey tones reflect a seriousness, even foreboding, as in the world of fracking. 
-                
-            </p>
-            <p>
+    <section class="portfolio__part portfolio__part--center">
+        <h2 class="section__title section__title--intro3 section__title--intro-center">
+            outcome
+        </h2>
+        <!-- <p class="section__subtitle section__subtitle--right">outcomes</p> -->
+        <div class="section__body section__body--section-center">
+            <p>After re-launching the updated Sempra Fracks Our Future site, San Diego 350 promoted it in their new
+                campaign and over social media. The site has gotten <strong style="color: #4b6d99">more traffic
+                </strong>and has provided <strong style="color: #4b6d99">more awareness for</strong>
+                the non-profit organization's <strong style="color: #4b6d99">campaign efforts.</strong>
             </p>
         </div>
+    </section>
+
+    <!-- PORT ITEM 5 -->
+    <section class="portfolio__part portfolio__part--left">
+        <h2 class="section__title section__title--left">
+            finale
+        </h2>
+
+        <!-- <p class="section__subtitle section__subtitle--left">finale</p> -->
+        <div class="section__body section__body--section3-eti">
+            <h3>Reorganized</h3>
+
+            <p>
+                Initially, it was impossible to take in the abundance of information due to poor content organization.
+                Content is now <strong style="color: #4b6d99">'chunked' into digestible bites.</strong>
+
+                <!-- jumping
+                    off point for the rest of the site was provided for the visitor. -->
+            </p>
+        </div>
+
+        <div class=" section__body section__body2" style="padding-left: 6em;">
+            <h3>Responsive design</h3>
+
+            <p>Adding responsiveness to the many devices made the <strong style="color: #4b6d99">information more
+                    readily available</strong> to a world on the move.
+            </p>
+        </div>
+
+
+        <!-- <div class="section__body section__body4">
+            <h3>Something else here</h3>
+        </div> -->
 
         <div class="section__img">
-            <img src="images/eti/interface mockup v2 800x535px.png" class="portfolio__item--section-img"
-                alt="wireframe version">
+            <img src="images/sd350/sd350-chunks.gif" alt="sketches of early ideas" class="portfolio__item--section-img"
+                style="width: 800px;">
+
         </div>
+        <div class="section__img section__img4" style="margin-left: 6em; z-index: 1;">
+            <img src="images/sd350/sd350-mobile.png" alt="sketches of early ideas" class="portfolio__item--section-img">
+        </div>
+        <!-- <div class="section__img section__img2" style="margin-top: -5em;">
+            <img src="images/sd350/fracked-logo-rig-faded-850x550.png" alt="sketches of early ideas" class="portfolio__item--section-img">
+        </div> -->
 
     </section>
 
+    <!-- GO TO SITE BUTTON -->
+    <div class="center">
+        <a href="https://www.semprafracksourfuture.org" target="_blank"
+            class="section__subtitle section__subtitle--left section__button-outline">peek at site
+        </a>
+    </div>
+
     <section class="more">
+        <h2 class="section__title section__title--intro3 section__title--intro-center">
+            more
+        </h2>
+        <p class="section__subtitle section__subtitle--right section__subtitle--moreL">from my portfolio</p>
 
-        <p class="section__subtitle section__subtitle--left section__subtitle--more">more from my portfolio</p>
+        <!-- ARROWS to go to next item in port -->
 
-        <div id="next" class="sprite next"><a href="./globe.html" rel="prev" style="opacity: 0;">Globe Records</a></div>
-        <div id="prev" class="sprite prev"><a href="./sandy.html" rel="next">Sandy Canvas</a></div>
+        <!-- <div id="next" class="sprite next"><a href="./globe.html" rel="prev" style="opacity: 0;">Globe Records</a></div>
+        <div id="prev" class="sprite prev"><a href="./sandy.html" rel="next">Sandy Canvas</a></div> -->
 
         <div class="row">
             <div class="col-12">
 
                 <ul id="thumbs" class="thumbs clearfix">
 
-                    <li style="opacity: 1;"><a href="./globe.html"><img
+                    <li style="opacity: 1;">
+                        <a href="./globe.html">
+                            <img
                                 src="./images/globe/vinyl-2labels-v1-847x564.png"
                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                 loading="lazy"
@@ -346,23 +482,26 @@
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>Globe Records</h4>
-                                <p>logo/branding & video production</p>
+                                <p>UI/graphic design & front-end dev</p>
                             </div>
                         </a>
                     </li>
-                    <li style="opacity: 1;"><a href="./eti.html"><img src="./images/eti/business cards diagonal.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                    <li style="opacity: 1;">
+                        <a href="./sd350.html">
+                            <img
+                                src="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="san diego 350 site"
                                 loading="lazy"
-                                srcset="./images/eti/business cards diagonal.png 628w, ./images/eti/business cards diagonal.png 300w"
+                                srcset="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 628w, ./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 300w"
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                                <h4>ETi</h4>
-                                <p>UI & logo design</p>
+                                <h4>San Diego 350</h4>
+                                <p>UI design & web dev</p>
                             </div>
                         </a>
-                    </li>
-                    <li style="opacity: 1;"><a href="./tkc.html"><img
-                                src="./images/tkc/moodboard-thekuzicollaborative1500x1000.png"
+
+                        <!-- <a href="./tkc.html">
+                            <img src="./images/tkc/moodboard-thekuzicollaborative1500x1000.png"
                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                 loading="lazy"
                                 srcset="./images/tkc/moodboard-thekuzicollaborative1500x1000.png 628w, ./images/tkc/moodboard-thekuzicollaborative1500x1000.png 300w"
@@ -370,6 +509,19 @@
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>TheKuziCollaborative</h4>
                                 <p>personal website project</p>
+                            </div>
+                        </a> -->
+                    </li>
+                    <li style="opacity: 1;">
+                        <a href="./eti.html">
+                            <img src="./images/eti/business cards diagonal.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                                loading="lazy"
+                                srcset="./images/eti/business cards diagonal.png 628w, ./images/eti/business cards diagonal.png 300w"
+                                sizes="(max-width: 628px) 100vw, 628px">
+                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                                <h4>ETi</h4>
+                                <p>UI/UX design & front-end dev</p>
                             </div>
                         </a>
                     </li>
@@ -394,11 +546,11 @@
                         class="fab fa-linkedin"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="https://www.behance.net/kkuzie" class="social-list__link"><i
-                        class="fab fa-behance"></i></a>
+                <a href="https://www.behance.net/kkuzie" class="social-list__link"><i class="fab fa-behance"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="https://twitter.com/thekuzicreation" class="social-list__link"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/thekuzicreation" class="social-list__link"><i
+                        class="fab fa-twitter"></i></a>
             </li>
             <li class="social-list__item">
                 <a href="https://github.com/kkuzie" class="social-list__link"><i class="fab fa-github"></i></a>
@@ -408,7 +560,7 @@
                         class="fab fa-instagram"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="images/resume-webdev-v5a-13mar21.pdf" class="social-list__link"><i
+                <a href="images/Karen Kuzmiak - UI Designer-WebDev resume v7a.pdf" class="social-list__link"><i
                         class="fas fa-file-pdf"></i></a>
             </li>
         </ul>
@@ -425,12 +577,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>-->
 
     <script src="js/flyout.js"></script>
-    <script src="js/index.js"></script> 
+    <script src="js/index.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/headerNavScrollup.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="js/more.js"></script>
+    <script src="js/smoke.js"></script>
 
     <script type="text/javascript">
         /*
