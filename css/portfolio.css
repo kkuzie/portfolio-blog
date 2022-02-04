@@ -85,14 +85,6 @@
     color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
 
-.section__subtitle--right {
-    border-radius: 10px 0 0 10px;
-}
-
-.section__subtitle--intro,
-.section__subtitle--left {
-    border-radius: 0 10px 10px 0 ;
-}
 .section__captions--right {
     float: right;
 }
