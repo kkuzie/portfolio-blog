@@ -72,7 +72,8 @@ section:after,
 img {
     max-width: 100%;
     position: relative;
-    margin-bottom: 4rem;
+    /* removed margin bottom - why have it? */
+    /* margin-bottom: 4rem; */
     height: auto;
   }
   /* -609 */
