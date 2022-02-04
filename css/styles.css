@@ -16,7 +16,7 @@
     --clr-dark: #030005;/*old #303030;*/
     --clr-darkest: #111111;
     --clr-accent: #4b6d99;/*old #a494a4;*/
-    --clr-headings: #1a1c1f;
+    --clr-headings: #2a2f35;
 
     --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
         0.125em 0.125em .25em rgba(0, 0, 0, .15);
@@ -193,7 +193,7 @@ h1 {
     /* line-height: var(--lh-h1); */
     font-weight: bold;
     color: var(--clr-headings);
-    line-height: 155px;
+    line-height: 140px;
 
 }
 
@@ -228,6 +228,7 @@ h3 {
 
 .section__title--intro-kk:hover {
     color: var(--clr-accent);
+    opacity: .5;
 }
 @media screen and (max-width: 600px){
     .section__title--intro:hover{
@@ -235,13 +236,13 @@ h3 {
     }
 }
 
+.section__img {
+    grid-area: img;
+    position: relative;
+}
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
-}
-
-.section__img {
-    grid-area: img;
     position: relative;
 }
 .section__subtitle--intro,
@@ -254,9 +255,13 @@ h3 {
     color: var(--clr-dark);
     /*remove this for light font color (will inherit body)*/
 }
-
-.section__subtitle--about,
-.section__subtitle--gd {
+.section__subtitle--intro,
+.section__subtitle--left {
+    border-radius: 0 10px 10px 0 ;
+}
+/* .section__subtitle--about, */
+.section__subtitle--gd,
+.section__subtitle--right {
     border-radius: 10px 0 0 10px;
 }
 
@@ -400,11 +405,6 @@ header {
     margin-top: 10em;/*old-none*/
 }
 
-.section__subtitle--intro {
-    display: inline-block;
-    /*makes fed bg shorter instead of full length of div - makes the div width the size of itself*/
-}
-
 .intro__img {
     min-width: 500px;
     width: 120%;
@@ -416,23 +416,16 @@ header {
 .intro__img--silly {
     grid-area: img;
     justify-self: start;
-    /* top: -300px; */
     transform: rotateY(180deg);
 }
 
 .intro__img--sideways {
     grid-area: img2;
     transform: rotateY(180deg);
-    /* top: -300px; */
     justify-self: end;
     /*moves img .intro__img--sideways flush right*/
 }
 
-/* @media (max-width: 1600px) {
-    .intro__img {
-        width: 400px;
-    }
-} */
 @media (max-width: 1200px) {
     .intro__img {
         min-width: 350px;
@@ -462,15 +455,10 @@ header {
             "img subtitle img2"
             "img subtitle img2";
         justify-items: center;
-        /* align-items: start; */
-        /* margin-top: 175px; */
     }
 }
 .section__title--intro {
     grid-area: title;
-    /* justify-self: center; */
-
-    /* margin-left: 50px; */
 }
 .section__title--intro2{
     grid-area: title2;
@@ -482,11 +470,11 @@ header {
     padding-right: 0;
 }
 
-
-
 .section__subtitle--intro {
     align-self: start;
     position: relative;
+    display: inline-block;
+    /*makes fed bg shorter instead of full length of div - makes the div width the size of itself*/
 }
 
 /* section__subtitle specific to index page */
@@ -499,7 +487,6 @@ header {
     /*was -3.75*/
     left: -20em;
     width: calc(100% + 5em);
-    /* width: 100%; */
 }
 
 .section__subtitle--gd {
@@ -572,21 +559,18 @@ header {
         align-self: center;
         margin-left: 0;
         position:relative;
-        /* top: -240px; */
         width: 225px;
         text-shadow: 2px 2px var(--clr-darkest);
     }
     .section__subtitle--fed {
         margin: 0;
         order: 0;
-        /* top: 0; */
         top: 7rem;
         left: -170px;
         width: 17em;
     }
     .intro__img--silly{
         order: 1;
-        /* top: -120px; */
         z-index: 0;
     }
     h1.section__title{
@@ -595,13 +579,11 @@ header {
     .intro__img--sideways{
         order: 3;
         align-self: end;
-        /* top: -340px; */
     }
     .section__subtitle--gd{
         margin: 0;
         order: 4;
         align-self: end;
-        /* top: -140px; */
         top: -75px;
         right: -4em
     }
@@ -654,22 +636,22 @@ header {
     padding-bottom: 10em;/*old - none*/
 }
 
-.section__title--whatIdo {
+/* .section__title--whatIdo {
     color: var(--clr-accent);
     position: relative;
-    padding-top: 1em; /*old - none*/
-}
+    padding-top: 1em; old - none
+} */
 
-.section__title--whatIdo::after {
+/* line under title 'What I do' */
+/* .section__title--whatIdo::after {
     content: ' ';
     display: block;
     width: 2em;
     height: 2px;
-    /*was 1*/
     margin: 0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.25;
-}
+} */
 
 .whatIdo__descriptions {
     margin-bottom: 4em;
@@ -743,7 +725,7 @@ header {
     /* removed for canvas */
     /* position: relative;
     z-index: 100; */
-    margin-top: 10em;/*old - none*/
+    margin-top: 15em;/*old - none*/
 }
 .section__img--kk{
     box-shadow: var(--bs-dark), var(--bs-dark), var(--bs-dark);
@@ -852,10 +834,11 @@ header {
 /* PORTFOLIO - my work */
 
 .my-work {
-    background-color: #000000;
+    padding: 0;
+    /* background-color: #000000; */
     /*was var(--clr-darkest)*/
-    color: var(--clr-accent);
-    text-align: center;
+    /* color: var(--clr-accent); */
+    /* text-align: center; */
     /* removed position and zindex when reordered sections */
     /* position: relative;
     z-index: 101; */
