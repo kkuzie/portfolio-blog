@@ -361,18 +361,45 @@ $(document).ready(function () {
         }
     });
 
+    ////////WORKS section animations
+    gsap.from('.section__subtitle--works', {
+        x: 1200,
+        duration: 2.5,
+        scrollTrigger: {
+            trigger: ".section__subtitle--works",
+            toggleActions: 'restart reverse restart reverse'
+        }
+    })
+
+    gsap.from('.section__title--works', {
+        x: -1200,
+        duration: 1.4,
+        scrollTrigger: {
+            trigger: '.section__subtitle--works',
+            toggleActions: 'restart reverse restart reverse'
+        }
+    })
+
 
     ////////WHAT I DO section animations
+    gsap.from('.section__title--whatIdo', {
+        x: -1200,
+        duration: 1.4,
+        scrollTrigger: {
+            trigger: '.whatIdo__descriptions--each',
+            toggleActions: 'restart reverse restart reverse'
+        }
+    })
 
     ScrollTrigger.matchMedia({
         '(min-width: 1100px)': function () {
             gsap.from('.whatIdo__descriptions--each', {
-                x: -2000,
+                x: 2000,
                 duration: 3,
                 opacity: .5,
-                stagger: -.3,
+                stagger: -.1,
                 scrollTrigger: {
-                    trigger: ".whatIdo__descriptions",
+                    trigger: ".whatIdo",
                     // start: 600,//removed when rearranged sections
                     toggleActions: 'restart reverse restart reverse',
                     // markers: true,
@@ -388,7 +415,7 @@ $(document).ready(function () {
 
         '(max-width: 1099px)': function () {
             gsap.from('.whatIdo__descriptions--each', {
-                x: -1000,
+                x: 1000,
                 duration: 2.5,
                 opacity: .5,
                 stagger: .3,
@@ -400,9 +427,9 @@ $(document).ready(function () {
         }
     })
 
-    ////////about section animations
+    ////////WHO I AM section animations
     gsap.from('.section__subtitle--about', {
-        x: 500,
+        x: -1200,
         duration: 2.5,
         scrollTrigger: {
             trigger: ".section__subtitle--about",
@@ -411,36 +438,46 @@ $(document).ready(function () {
     })
 
     gsap.from('.section__title--about', {
-        x: -500,
+        x: 1200,
         duration: 1.4,
         scrollTrigger: {
             trigger: '.section__subtitle--about',
             toggleActions: 'restart reverse restart reverse'
         }
     })
-    gsap.from('.section__img--kk', {
-        opacity: 0, 
-        x: 1000,
-        duration: 2.5,
+
+    gsap.from('.section__image--about', {
+        // opacity: 0, 
+        // x: 1000,
+        // duration: 2.5,
+        x: -340,
+        rotate: 40,
+        duration: .8,
         scrollTrigger: {
             trigger: '.section__subtitle--about',
             toggleActions: 'restart none restart reverse',
         }
     })
-    gsap.from('.section__img--kk', {
+    gsap.from('.section__image--about', {
         marker: true,
-        opacity: 1, 
+        // opacity: 1, 
         // x: 1000,
-        duration: 1.5,
+        // duration: 1.5,
+        x: 0,
+        rotate: -40,
+        duration: .8,
         scrollTrigger: {
             trigger: '.section__title--sneak',
             toggleActions: 'restart none none none',
         }
     })
-    gsap.from('.section__img--kk', {
-        opacity: 0, 
-        x: 1000,
-        duration: 2.5,
+    gsap.from('.section__image--about', {
+        // opacity: 0, 
+        // x: 1000,
+        // duration: 2.5,
+        x: -340,
+        rotate: 40,
+        duration: .8,
         scrollTrigger: {
             trigger: '.section__subtitle--about',
             toggleActions: 'none none restart reverse',
