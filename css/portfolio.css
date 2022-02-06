@@ -8,7 +8,6 @@
     background: var(--clr-darkest);
 }
 
-.intro--port,
 .portfolio__part {
     margin: 0 auto;
     padding: 7em 0em 0;   
@@ -256,7 +255,7 @@ display: block;
     }
     .section__subtitle--right {
         position: relative;
-        left: -1em; 
+        left: 19.5em;
         width: calc(100% + 3.5em);/*to extend right side of purple banner*/
         padding-left: 1em;
         padding-right: calc(475px + 3em); /*set it up so text in subtitle wont go under the image at any screen size (475px is pic width, 1em left padding, 1em left*/
@@ -265,10 +264,6 @@ display: block;
     .section__subtitle--more {
         width: 80%;
         right: 10.5em;
-    }
-    .section__subtitle--moreL{
-        width: 80%;
-        left: 19.5em;
     }
     .section__button-outline {
         text-decoration: none;
