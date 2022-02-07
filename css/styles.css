@@ -269,11 +269,11 @@ h3 {
     border-radius: 10px 0 0 10px;
 }
 
-.section__subtitle--work {
+/* .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
-}
+} */
 .section__captions {
     font-size: var(--fs-captions);
     color: var(--clr-accent);
@@ -757,13 +757,6 @@ header {
     box-shadow: var(--bs-dark), var(--bs-dark), var(--bs-dark);
     border-radius: 10px;
 }
-.my-work__img {
-    transform: rotate(-90deg);
-    position: relative;
-    min-width: 500px;
-    top: -50px;/*how high head peeks out was -210*/
-    right: -50em;
-}
 @media screen and (max-width: 1800px){
     .my-work__img {
     right: -54em;
@@ -888,7 +881,15 @@ header {
     /* reduce section padding */
     /* padding-top: 6em; removed when reordered sections*/
 }
+.section__subtitle--works{
+    position: relative;
+    z-index: 1;
+}
 
+/* .section__subtitle--tagline {
+    color: var(--clr-light);
+    padding-bottom: 1em;
+} */
 .my-work__div-img {
     /*peek a boo image*/
     position: absolute;
@@ -896,9 +897,12 @@ header {
     z-index: 0;
 }
 
-.section__subtitle--tagline {
-    color: var(--clr-light);
-    padding-bottom: 1em;
+.my-work__img {
+    transform: rotate(-90deg);
+    position: relative;
+    min-width: 500px;
+    top: -50px;/*how high head peeks out was -210*/
+    right: -51.8em;
 }
 
 .portfolio {
@@ -908,6 +912,7 @@ header {
     z-index: 100;
     grid-gap: 1em;
     /*brings portfolio foward on top of nav__item and nav__item--hover-element*/
+    top: -2em;
 }
 .overlay {
     position: relative;
