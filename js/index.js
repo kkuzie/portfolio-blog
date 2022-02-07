@@ -498,9 +498,10 @@ $(document).ready(function () {
     //////peek-a-boo image
     gsap.from('.my-work__img', {
         y: 300,
+        opacity: 0,
         duration: 1.4,
         scrollTrigger: {
-            trigger: ".whatIdo",
+            trigger: ".work-created",
             toggleActions: 'play reverse reverse reverse',
             // markers: true,
             // markers: {
