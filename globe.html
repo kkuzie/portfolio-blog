@@ -33,7 +33,7 @@
                 <img src="images/kk logo.png" alt="kk logo" class="logo--img">
             </a>
         </div>
-        <button class="nav-toggle nav-phn" aria-label="back-next buttons" onclick="goBack()">
+        <button class="nav-toggle nav-phn nav-toggle--portfolio__item" aria-label="back-next buttons" onclick="goBack()">
             <span class="arrow-upper"></span>
             <span class="hamburger"></span>
             <span class="arrow-lower"></span>
@@ -46,13 +46,13 @@
         <h1 class="section__title section__title--intro2">
             Globe
         </h1>
-        <h1 class="section__title section__title--intro3" style='margin-left: 2em;'>
+        <h1 class="section__title section__title--intro3">
             Records
         </h1>
 
         <!-- <p class="section__subtitle section__subtitle--intro section__subtitle--left section__subtitle--port">overview</p> -->
 
-        <div class="section__body section__body--intro" style="margin-top: 6.5em;">
+        <div class="section__body section__body--intro">
             <h3>Imagined Enterprise</h3>
             <p>
                 Just like independent films whose works are produced outside the mainstream, Globe Records decided to pioneer an outlet for and work in tandem with the independent musician. The label aims to draw in an audience that appreciates the independent artists and in effect, help the artists succeed - on their terms.
@@ -71,53 +71,81 @@
     </section>
 
     <!-- PORT ITEM 1 -->
-    <section class="portfolio__part portfolio__part--right">
-        <h2 class="section__title section__title--right">
-            contributions
+    <section class="portfolio__part ">
+        <!-- CONTRIBUTION UNDER 1100-->
+    <span class="contribution-under1100">
+
+        <!-- CONTRI -->
+        <h2 class="section__title section__title--intro">
+            <span>contri</span>
         </h2>
 
-        <div class="section__body section__body--section2-eti" style="margin-top: -3em; padding-left: 3em;">
-            <p>
-                <table width="100%">
-                    <col style="width:30%">
-                    <col style="width:70%">
-                    <thead>
-
-                        <tr>
-                            <td style="padding-bottom: .5em;">
-                                <h3>Role</h3>
-                            </td>
-                            <td style="padding-left: 5em; padding-bottom: .5em;">
-                                <h3>My Responsibilities</h3>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>UI Designer</td>
-                            <td style="padding-left: 5em;">Design (website and branding)</td>
-                        </tr>
-                        <tr>
-                            <td>Graphic Designer</td>
-                            <td style="padding-left: 5em;">Iterations of the UI</td>
-                        </tr>
-                        <tr>
-                            <td>Front-end Developer</td>
-                            <td style="padding-left: 5em;">Lo-fi, hi-fi prototyping (basic flow and interactions)</td>
-                        </tr>
-                        <td></td>
-                        <td style="padding-left: 5em;">Research</td>
-                    </tbody>
-                </table>
-            </p>
+        <!-- BUTION -->
+        <h2 class="section__title section__title--intro2">
+            <span>bution</span>
+        </h2>
+        <div class="section__body section__body--section2-eti section__body-contribution" style="padding-left: 3em;">
+            <div class="role">
+                <h3>Role</h3>
+                <p>UI Designer<br>
+                    Graphic Designer<br>
+                    Front-end Developer
+                </p>
+            </div>
+            <div class="responsibilities">
+                <h3>My responsibilities</h3>
+                <p>
+                    Design (website and logo)<br>
+                    Iterations of the UI<br>
+                    Lo-fi, hi-fi prototyping (basic flow and interations)<br>
+                    Research
+                </p>
+            </div>
         </div>
 
+<div class="section__img section__img--section2-eti">
+<img src="images/globe/dribbble shot-diag ph md gif.gif" alt="album cover"
+    class="portfolio__item--section-img portfolio__item--section-img-sketch" style="width: 120%;">
+<!-- src="https://res.cloudinary.com/tkc/image/upload/v1621535657/GlobeAlbumCover_hyy5c4.png" -->
+<!-- <p class="section__captions"></p> -->
+</div>
+</span>
+
+    <!-- CONTRIBUTION OVER 1101 -->
+    <span class="contribution-over1101">
+        <div class="intro--kk-hover">
+        <h2 class="section__title section__title--right">
+            <!-- <span>contribution</span> -->
+            contribution
+        </h2>
+</div>
+
+        <div class="section__body section__body--section2-eti section__body-contribution" style="padding-left: 3em;">
+                        <div class="role">
+                            <h3>Role</h3>
+                            <p>UI Designer<br>
+                                Graphic Designer<br>
+                                Front-end Developer
+                            </p>
+                        </div>
+                        <div class="responsibilities">
+                            <h3>My responsibilities</h3>
+                            <p>
+                                Design (website and logo)<br>
+                                Iterations of the UI<br>
+                                Lo-fi, hi-fi prototyping (basic flow and interations)<br>
+                                Research
+                            </p>
+                        </div>
+                    </div>
+            
         <div class="section__img section__img--section2-eti">
             <img src="images/globe/dribbble shot-diag ph md gif.gif" alt="album cover"
                 class="portfolio__item--section-img portfolio__item--section-img-sketch" style="width: 120%;">
             <!-- src="https://res.cloudinary.com/tkc/image/upload/v1621535657/GlobeAlbumCover_hyy5c4.png" -->
             <!-- <p class="section__captions"></p> -->
         </div>
+</span>
 
     </section>
 
@@ -151,10 +179,10 @@
         <div class="section__body section__body--section4-eti">
             <h3>Scrutinizing design decisions</h3>
             <p>
-                One version portrayed featured artists' photos on the "artists page" within a circular shape (mimicking records) with album covers on "releases page" in squares.  Upon a trial run, the circles were judged to be too busy.  Adjusting to square shapes on both pages provided more eye-pleasing clean lines with a fluid cohesion between the two.  
+                One version portrayed featured artists' photos on the "artists page" within a circular shape (mimicking records) with album covers on "releases page" in squares.  Upon a trial run, the circles were judged to be too busy.  Adjusting to square shapes on both pages provided more <strong style="color: #4b6d99">eye-pleasing clean lines</strong> with a <strong style="color: #4b6d99">fluid cohesion</strong> between the two.  
             </p>
             <p>
-                In the building process one decision leads to another.  Upon further scrutiny, it became apparent something was still lacking from the UI perspective.  In this case, it inspired a valuable scrolling animation feature that focuses on each artist as they come into view.
+                In the building process one decision leads to another.  Upon further scrutiny, it became apparent something was still lacking from the UI perspective.  In this case, it inspired a valuable <strong style="color: #4b6d99">scrolling animation feature</strong> that focuses on each artist as they come into view.
             </p>
         </div>
 
@@ -176,7 +204,7 @@
         </div>
 
         <!-- IMAGE 2 -->
-        <div class="section__img section__img3" style="margin-top: -5em; padding-right: 4em;">
+        <div class="section__img section__img3">
             <img src="images/globe/Artists_v3b.gif" alt="logo before and after"
                 class="portfolio__item--section-img portfolio__item--section-img-sketch">
             <!-- <p class="section__captions">brainstorm sketches, first version, final version</p>-->
@@ -201,7 +229,7 @@
     <!-- PORT ITEM 4 -->
     <section class="portfolio__part portfolio__part--center">
         <h2 class="section__title section__title--intro3 section__title--intro-center">
-            outcomes
+            outcome
         </h2>
         <!-- <p class="section__subtitle section__subtitle--right">outcomes</p> -->
         <div class="section__body section__body--section-center">
@@ -266,7 +294,7 @@
         </div>
 
         <!-- IMAGE 2 -->
-        <div class="section__img section__img4" style="margin-left: 6em; z-index: 1;">
+        <div class="section__img section__img4" style="z-index: 1;">
             <img src="images/globe/design components.png" alt="design system" class="portfolio__item--section-img"
                 style="z-index: 1;">
             <p class="section__captions">sampling of design</p>
@@ -282,7 +310,7 @@
         </div>
 
         <!-- IMAGE 3 -->
-        <div class="section__img section__img2" style="margin-top: -5em;">
+        <div class="section__img section__img2 commercial">
             <video controls autoplay loop muted class="portfolio__item--section-img" id="commercialPlay"
                 data-sizes="auto" alt="globe commercial">
                 <source src="images/globe/final_6183209583b74c0059d4b196_46384.mp4">
@@ -346,106 +374,96 @@
         </div>
 
     </section> -->
+
+<!-- GO TO SITE BUTTON -->
     <div class="center">
         <a href="https://www.behance.net/gallery/129937815/Globe-Records-Stage-I" target="_blank"
-            class="section__subtitle section__subtitle--left section__button-outline">peek at site</a>
+            class="section__subtitle  section__subtitle--left section__button-outline">peek at site</a>
     </div>
 
 
     <section class="more">
         <h2 class="section__title section__title--intro3 section__title--intro-center">
             more
-        </h2>
-        <p class="section__subtitle section__subtitle--right">from my portfolio</p>
-
-        <!-- ARROWS to go to next item in port -->
+        </h2><p class="section__subtitle section__subtitle--right">from my portfolio</p><!-- ARROWS to go to next item in port -->
 
         <!-- <div id="next" class="sprite next"><a href="./ETi.html" rel="prev" style="opacity: 0;">ETi</a></div>
         <div id="prev" class="sprite prev"><a href="./po5.html" rel="next">Po5</a></div> -->
-
-        <div class="row">
-            <div class="col-12">
-
-                <ul id="thumbs" class="thumbs clearfix">
-
-                    <li style="opacity: 1;">
-                        <a href="./eti.html">
-                            <img src="./images/eti/business cards diagonal.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                                loading="lazy"
-                                srcset="./images/eti/business cards diagonal.png 628w, ./images/eti/business cards diagonal.png 300w"
-                                sizes="(max-width: 628px) 100vw, 628px">
-                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                                <h4>ETi</h4>
-                                <p>UI/UX design & front-end dev</p>
-                            </div>
-                        </a>
-
-                        <!-- <a href="./po5.html">
-                            <img
-                        src="./images/po5/pizza-box-mockup-freepix1500x1000.png"
-                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                        loading="lazy"
-                        srcset="./images/po5/pizza-box-mockup-freepix1500x1000.png 628w, ./images/po5/pizza-box-mockup-freepix1500x1000.png 300w"
-                        sizes="(max-width: 628px) 100vw, 628px">
-                    <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                        <h4>Po5 Pizza Lounge & Bar</h4>
-                        <p>logo & branding</p>
-                    </div>
-                </a> -->
-                    </li>
-
-                    <li style="opacity: 1;">
-                        <a href="./globe.html">
-                            <img src="./images/globe/vinyl-2labels-v1-847x564.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                                loading="lazy"
-                                srcset="./images/globe/vinyl-2labels-v1-847x564.png 628w, ./images/globe/vinyl-2labels-v1-847x564.png 300w"
-                                sizes="(max-width: 628px) 100vw, 628px">
-                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                                <h4>Globe Records</h4>
-                                <p>UI/graphic design & front-end dev</p>
-                            </div>
-                        </a>
-
-                        <!-- <a href="./tkc.html"> href="https://thekuzicollaborative.com/mylanding/landing/"-->
-                        <!-- <a >
-                            <img
-                                src="./images/tkc/moodboard-thekuzicollaborative1500x1000.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                                loading="lazy"
-                                srcset="./images/tkc/moodboard-thekuzicollaborative1500x1000.png 628w, ./images/tkc/moodboard-thekuzicollaborative1500x1000.png 300w"
-                                sizes="(max-width: 628px) 100vw, 628px">
-                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                                <h4>TheKuziCollaborative</h4>
-                                <p>COMING SOON</p>
-                            </div>
-                        </a> -->
-
-                    </li>
-
-                    <li style="opacity: 1;">
-                        <a href="./sd350.html">
-                            <img src="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="san diego 350 site" loading="lazy"
-                                srcset="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 628w, ./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 300w"
-                                sizes="(max-width: 628px) 100vw, 628px">
-                            <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
-                                <h4>San Diego 350</h4>
-                                <p>UI design & web dev</p>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
     </section>
 
-    <footer class="footer  darkest-bg">
+    <div class="row">
+        <div class="col-12">
+
+            <ul id="thumbs" class="thumbs clearfix">
+
+                <li style="opacity: 1;">
+                    <a href="./eti.html">
+                        <img src="images/eti/eti mobile 4.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="./images/eti/eti mobile 4.png 628w, ./images/eti/eti mobile 4.png 300w" sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>ETi</h4>
+                            <p>UI/UX design &amp; front-end dev</p>
+                        </div>
+                    </a>
+
+                    <!-- <a href="./po5.html">
+                        <img
+                    src="./images/po5/pizza-box-mockup-freepix1500x1000.png"
+                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                    loading="lazy"
+                    srcset="./images/po5/pizza-box-mockup-freepix1500x1000.png 628w, ./images/po5/pizza-box-mockup-freepix1500x1000.png 300w"
+                    sizes="(max-width: 628px) 100vw, 628px">
+                <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                    <h4>Po5 Pizza Lounge & Bar</h4>
+                    <p>logo & branding</p>
+                </div>
+            </a> -->
+                </li>
+
+                <li class="more-li--under800" style="opacity: 1;">
+                    <a href="./globe.html">
+                        <img src="images/globe/Dribbble shot - artists mobile w wh logo-lights.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="./images/globe/Dribbble shot - artists mobile w wh logo-lights.png" sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Globe Records</h4>
+                            <p>UI/graphic design &amp; front-end dev</p>
+                        </div>
+                    </a>
+
+                    <!-- <a href="./tkc.html"> href="https://thekuzicollaborative.com/mylanding/landing/"-->
+                    <!-- <a >
+                        <img
+                            src="./images/tkc/moodboard-thekuzicollaborative1500x1000.png"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                            loading="lazy"
+                            srcset="./images/tkc/moodboard-thekuzicollaborative1500x1000.png 628w, ./images/tkc/moodboard-thekuzicollaborative1500x1000.png 300w"
+                            sizes="(max-width: 628px) 100vw, 628px">
+                        <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>TheKuziCollaborative</h4>
+                            <p>COMING SOON</p>
+                        </div>
+                    </a> -->
+
+                </li>
+
+                <li style="opacity: 1;">
+                    <a href="./sd350.html">
+                        <img src="./images/sd350/350 home computer.png"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                        loading="lazy"
+                        srcset="./images/sd350/350 home computer.png 628w, ./images/sd350/350 home computer.png 300w"
+                        sizes="(max-width: 628px) 100vw, 628px">
+                <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>San Diego 350</h4>
+                            <p>UI design &amp; web dev</p>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <footer class="footer footer__portfolio__item darkest-bg">
         <div class="footer--bg"></div>
         <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
         <ul class="social-list">
@@ -454,30 +472,26 @@
                 <a href="#" class="social-list__link"><i class="fab fa-codepen"></i></a>
             </li> -->
             <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/karenkuzmiak/" class="social-list__link"><i
-                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/karenkuzmiak/" class="social-list__link"><i class="fab fa-linkedin"></i></a>
             </li>
             <li class="social-list__item">
                 <a href="https://www.behance.net/kkuzie" class="social-list__link"><i class="fab fa-behance"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="https://twitter.com/thekuzicreation" class="social-list__link"><i
-                        class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/thekuzicreation" class="social-list__link"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="social-list__item">
                 <a href="https://github.com/kkuzie" class="social-list__link"><i class="fab fa-github"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="https://www.instagram.com/thekuzicreation/" class="social-list__link"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/thekuzicreation/" class="social-list__link"><i class="fab fa-instagram"></i></a>
             </li>
             <li class="social-list__item">
-                <a href="images/Karen Kuzmiak - UI Designer-WebDev resume v7a.pdf" class="social-list__link"><i
-                        class="fas fa-file-pdf"></i></a>
+                <a href="images/Karen Kuzmiak - UI Designer-WebDev resume v7a.pdf" class="social-list__link"><i class="fas fa-file-pdf"></i></a>
             </li>
         </ul>
+        <p class="copyright">© 2020-2022 TheKuziCollaborative. All Rights Reserved.</p>
     </footer>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 

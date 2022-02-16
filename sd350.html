@@ -42,110 +42,6 @@
 
     </style> -->
 
-    <!-- before/after slider styles -->
-    <style>
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .container .title {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #acacac;
-            font-size: 40px;
-        }
-
-        .compare {
-            position: relative;
-            width: 850px;
-            height: 550px;
-            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Inline #6 | http://127.0.0.1:5500/sd350.html */
-
-
-        .compare .before {
-            position: relative;
-            top: 0px;
-            width: 100%;
-            height: 70%;
-            /*100*/
-            background: url("images/Screenshot\ 2021-12-21\ at\ 13-04-01\ Sempra\ Fracks\ Our\ Future\ -\ Sempra\ is\ a\ fracked\ gas\ infrastructure\ company.png");
-            background-size: 579px;
-            /*850*/
-        }
-
-        .compare .before .after {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 425px;
-            height: 385px;
-            /*550*/
-            background: url("/images/home-before-850x550.png");
-            background-size: 600px;
-            /*850*/
-            z-index: 2;
-        }
-
-        .compare input {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            -webkit-appearance: none;
-            z-index: 3;
-            width: 100%;
-            height: 70%;
-            background: transparent;
-        }
-
-        .compare input::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            display: block;
-            width: 10px;
-            height: 550px;
-            border: 1px solid var(--clr-accent);
-            background: #5b83dc;
-            cursor: pointer;
-        }
-
-        .compare input::-webkit-slider-thumb:active {
-            background: #e25a5a;
-            border: 1px solid #e25a5a;
-            transition: all 300ms ease-in-out;
-        }
-
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
-            background: var(--clr-accent);
-            cursor: pointer;
-        }
-
-        input[type=range]::-moz-range-thumb {
-            -webkit-appearance: none;
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
-            background: var(--clr-accent);
-            cursor: pointer;
-        }
-
-        input[type=range]::-ms-thumb {
-            -webkit-appearance: none;
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
-            background: var(--clr-accent);
-            cursor: pointer;
-        }
-    </style>
 
     <!-- image scroll on hover -->
     <!-- <style> -->
@@ -197,7 +93,7 @@
             </a>
         </div>
 
-        <button class="nav-toggle nav-phn" aria-label="back-next buttons" onclick="goBack()">
+        <button class="nav-toggle nav-phn nav-toggle--portfolio__item" aria-label="back-next buttons" onclick="goBack()">
             <span class="arrow-upper"></span>
             <span class="hamburger"></span>
             <span class="arrow-lower"></span>
@@ -211,9 +107,9 @@
             San
         </h1> -->
         <h1 class="section__title section__title--intro2 ">
-            San Diego
+            <span class="san">San</span> Diego
         </h1>
-        <h1 class="section__title section__title--intro3 " style="margin-right: .80em;">
+        <h1 class="section__title section__title--intro3 section__title--350 ">
             350
         </h1>
 
@@ -234,13 +130,63 @@
     </section>
 
     <!-- PORT ITEM 1 -->
-    <section class="portfolio__part portfolio__part--right">
-        <h2 class="section__title section__title--right">
-            contributions
-        </h2>
+    <section class="portfolio__part ">
 
-        <!-- <p class="section__subtitle section__subtitle--right">contributions</p> -->
-        <div class="section__body section__body--section2-eti" style="margin-top: -3em; padding-left: 3em;">
+    <span class="contribution-under1100">
+
+            <!-- CONTRI -->
+            <h2 class="section__title section__title--intro">
+                <span>contri</span>
+            </h2>
+
+            <!-- BUTION -->
+            <h2 class="section__title section__title--intro2">
+                <span>bution</span>
+            </h2>
+            <div class="section__body section__body--section2-eti section__body-contribution" style="padding-left: 3em;">
+                            <div class="role">
+                                <h3>Role</h3>
+                                <p>
+                                    UI/UX Designer<br>
+                                    Front-end Developer
+                                </p>
+                            </div>
+                            <div class="responsibilities">
+                                <h3>My Responsibilities</h3>
+                                <p>
+                                    UX analysis (flows)<br>
+                                    Design (website and logo)<br>
+                                    Iterations of the UI<br>
+                                    Front-end development (Wordpress)
+                                </p>
+                            </div>
+                            <div class="team">
+                                <h3>Team</h3>
+                                <p>
+                                    Scott Kelly, Project Lead
+                                </p>
+                            </div>
+                
+                
+                        </div>
+            <div class="section__img section__img--section2-eti">
+                <img src="images/sd350/sd350 pages.png" alt="sketches of early design idea"
+                    class="portfolio__item--section-img">
+            </div>
+    
+
+    </span> <!-- under1100 -->
+
+    <!-- KAREN KUZMIAK OVER 1101 -->
+    <span class="contribution-over1101">
+        <div class="intro--kk-hover">
+        <h2 class="section__title section__title--right">
+            <!-- <span>contribution</span> -->
+            contribution
+        </h2>
+</div>
+        <!-- TABLE VERSION -->
+        <!-- <div class="section__body section__body--section2-eti" style="margin-top: -3em; padding-left: 3em;">
             <p>
                 <table width="100%">
                     <col style="width:25%">
@@ -288,13 +234,39 @@
             </p>
 
 
+        </div> -->
+        <div class="section__body section__body--section2-eti section__body-contribution" style="padding-left: 3em;">
+            <div class="role">
+                <h3>Role</h3>
+                <p>
+                    UI/UX Designer<br>
+                    Front-end Developer
+                </p>
+            </div>
+            <div class="responsibilities">
+                <h3>My Responsibilities</h3>
+                <p>
+                    UX analysis (flows)<br>
+                    Design (website and logo)<br>
+                    Iterations of the UI<br>
+                    Front-end development (Wordpress)
+                </p>
+            </div>
+            <div class="team">
+                <h3>Team</h3>
+                <p>
+                    Scott Kelly, Project Lead
+                </p>
+            </div>
+
+
         </div>
 
         <div class="section__img section__img--section2-eti">
             <img src="images/sd350/sd350 pages.png" alt="sketches of early design idea"
                 class="portfolio__item--section-img">
         </div>
-
+</span>
     </section>
 
     <!-- PORTFOLIO ITEM 2 -->
@@ -304,7 +276,7 @@
         </h2>
         <!-- <p class="section__subtitle section__subtitle--left">challenge</p> -->
         <div class="section__body section__body--section3-eti">
-            <h3>Visual experience and intuitive navigation</h3>
+            <h3>Carving a path</h3>
 
             <p>Persons interested in raising their voice to the problem of fracking
                 needed <strong style="color: #4b6d99">a logical path</strong> to take in the abundance of information
@@ -368,22 +340,22 @@
 
             <img src="images/sd350/sd350 before.png" alt="sketches of early ideas" class="portfolio__item--section-img"
                 style="width: 600px;">
-            <p class="section__captions" style="padding-left: 6em;">before - non-cohesive, lacking in design</p>
+            <!-- <p class="section__captions">before</p> -->
 
         </div>
 
-        <div class="section__img section__img3" style="padding-right: 4em;">
+        <div class="section__img section__img3">
             <img src="images/sd350/sd350 cohesion(1).png" class="portfolio__item--section-img" alt="wireframe version">
         </div>
 
         <div class="section__img" style="z-index: 1;">
             <img src="images/sd350/sd350-flow-before.jpg" alt="sketches of early ideas"
-                class="portfolio__item--section-img" style="padding-left: 6em;">
+                class="portfolio__item--section-img">
         </div>
 
         <div class="section__img4">
             <img src="images/sd350/sd350-flow-after.jpg" alt="sketches of early ideas"
-                class="portfolio__item--section-img" style="margin-top: -6em;">
+                class="portfolio__item--section-img">
         </div>
 
     </section>
@@ -440,7 +412,7 @@
                 style="width: 800px;">
 
         </div>
-        <div class="section__img section__img4" style="margin-left: 6em; z-index: 1;">
+        <div class="section__img section__img4" style="z-index: 1;">
             <img src="images/sd350/sd350-mobile.png" alt="sketches of early ideas" class="portfolio__item--section-img">
         </div>
         <!-- <div class="section__img section__img2" style="margin-top: -5em;">
@@ -460,12 +432,13 @@
         <h2 class="section__title section__title--intro3 section__title--intro-center">
             more
         </h2>
-        <p class="section__subtitle section__subtitle--right section__subtitle--moreL">from my portfolio</p>
+        <p class="section__subtitle section__subtitle--right">from my portfolio</p>
 
         <!-- ARROWS to go to next item in port -->
 
         <!-- <div id="next" class="sprite next"><a href="./globe.html" rel="prev" style="opacity: 0;">Globe Records</a></div>
         <div id="prev" class="sprite prev"><a href="./sandy.html" rel="next">Sandy Canvas</a></div> -->
+    </section>
 
         <div class="row">
             <div class="col-12">
@@ -474,11 +447,12 @@
 
                     <li style="opacity: 1;">
                         <a href="./globe.html">
+                            
                             <img
-                                src="./images/globe/vinyl-2labels-v1-847x564.png"
+                                src="./images/globe/Dribbble shot - artists mobile w wh logo-lights.png"
                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                 loading="lazy"
-                                srcset="./images/globe/vinyl-2labels-v1-847x564.png 628w, ./images/globe/vinyl-2labels-v1-847x564.png 300w"
+                                srcset="./images/globe/Dribbble shot - artists mobile w wh logo-lights.png 628w, ./images/globe/Dribbble shot - artists mobile w wh logo-lights.png 300w"
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>Globe Records</h4>
@@ -486,13 +460,12 @@
                             </div>
                         </a>
                     </li>
-                    <li style="opacity: 1;">
+                    <li class="more-li--under800" style="opacity: 1;">
                         <a href="./sd350.html">
-                            <img
-                                src="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="san diego 350 site"
+                            <img src="./images/sd350/350 home computer.png"
+                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                 loading="lazy"
-                                srcset="./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 628w, ./images/Screenshot 2021-12-21 at 13-04-01 Sempra Fracks Our Future - Sempra is a fracked gas infrastructure company.png 300w"
+                                srcset="./images/sd350/350 home computer.png 628w, ./images/sd350/350 home computer.png 300w"
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>San Diego 350</h4>
@@ -514,27 +487,25 @@
                     </li>
                     <li style="opacity: 1;">
                         <a href="./eti.html">
-                            <img src="./images/eti/business cards diagonal.png"
+                            <img src="./images/eti/eti mobile 4.png"
                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                 loading="lazy"
-                                srcset="./images/eti/business cards diagonal.png 628w, ./images/eti/business cards diagonal.png 300w"
+                                srcset="./images/eti/eti mobile 4.png 628w, ./images/eti/eti mobile 4.png 300w"
                                 sizes="(max-width: 628px) 100vw, 628px">
                             <div class="description"><span class="arrow-r" style="opacity: 0; right: 10px;"></span>
                                 <h4>ETi</h4>
                                 <p>UI/UX design & front-end dev</p>
                             </div>
                         </a>
+
                     </li>
                 </ul>
 
             </div>
         </div>
 
-    </section>
-
-
-    <footer class="footer  darkest-bg">
-        <div class="footer--bg"></div>
+        <footer class="footer footer__portfolio__item darkest-bg">
+            <div class="footer--bg"></div>
         <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen@thekuzicollaborative.com</a>
         <ul class="social-list">
 
@@ -564,7 +535,9 @@
                         class="fas fa-file-pdf"></i></a>
             </li>
         </ul>
+        <p class="copyright">© 2020-2022 TheKuziCollaborative. All Rights Reserved.</p>
     </footer>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>

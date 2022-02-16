@@ -72,7 +72,7 @@ section:after,
 img {
     max-width: 100%;
     position: relative;
-    /* removed margin bottom - why have it? */
+    /* removed margin bottom - why have it? for logo */
     /* margin-bottom: 4rem; */
     height: auto;
   }
@@ -178,6 +178,11 @@ img {
     -moz-box-shadow:var(--bs-dark);
     box-shadow: var(--bs-dark);
   }
+  @media screen and (max-width: 830px){
+    .thumbs li.more-li--under800 {
+      display: none;
+    }
+  }
   .thumbs li a {
     text-decoration: none;
     display: block;
@@ -224,7 +229,6 @@ img {
   .thumbs p {
     display: block;
     margin: 0 !important;
-    font-size: 16px;
     font-size: 1rem;
     /* font-size: 1.6rem; */
     color: var(--clr-light);
@@ -233,6 +237,23 @@ img {
     /* overflow: hidden;
     text-overflow: ellipsis; */
   }
+  @media screen and (max-width: 1100px){
+    .thumbs p {
+      font-size: .75rem;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .thumbs p {
+      font-size: .55rem;
+    }
+  }
+  @media screen and (max-width: 430px){
+    .thumbs p {
+      font-size: 1rem;
+    }
+  }
+
+
   .thumbs .arrow-r {
     display: none;
   }
@@ -262,14 +283,14 @@ img {
           font-size: 2.6rem;
         } */
         section.more {
-          padding: 8rem 4.3rem;
+          padding: 0 0 0 0;
         }
         /* Portfolio Thumbs */
         .thumbs li {
           float: left;
           width: 44.16666666666%;
-          margin: 0 5% 5% 0;
-          background: #ffffff;
+          margin: 0 2% 0% 3.25%; /* 0 5% 5% 0; */
+          /* background: #ffffff; */
           padding: 1.6666666666% 1.6666666666% 0 1.6666666666%;
         }
         .thumbs li:nth-child(2n) {
@@ -312,20 +333,23 @@ img {
           display: inline;
         }
         section.more{
-          padding: 9.6rem 4.3rem;
+          padding: 0; /* 0 0 9.6rem 0; */
         }
             /* Portfolio Thumbs */
 
     .thumbs li {
         float: left;
-        width: 30.1923076923%;
-        margin: 0 2.4038461538% 2.4038461538% 0;
+        width: 29.192%; /* 30.1923076923%; */
+        margin: 0 2.4038461538% 2.4038461538% 3.4038461538%;/* 0 2.4038461538% 2.4038461538% 0; */
         background: var(--clr-dark);
         padding: 0.7692307692% 0.7692307692% 0 0.7692307692%;
       }
       .thumbs li:nth-child(2n) {
         margin-right: 2.4038461538%;
       }
+      #thumbs > li:nth-child(2) {
+        margin: 0;
+        }
       /* Show the 3rd item at the bottom of the page */
       /* .home .thumbs li:nth-child(3n),
       .portfolio .thumbs li:nth-child(3n),
@@ -431,7 +455,7 @@ img {
 /* -2558 */
 
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 830px) {/*was 1140px*/
     /* 2578- */
 /* Previous and Next buttons */
 .next,
