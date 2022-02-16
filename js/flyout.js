@@ -17,8 +17,8 @@ function mqHamburger(e) {
 
 ///////hamburger animation
     tl.to('.hamburger', .5, {
-        width: '6em',/*-13 */
-        right: '-5em',/*-10 */
+        width: '7em',/*-13 */
+        right: '-5.5em',/*-10 */
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
@@ -35,7 +35,7 @@ tl.play();
 mqHamburger(mq800andup);
 mq800andup.addEventListener('change', mqHamburger);
 
-////////under 800////////
+////////800 TO 600////////
 /////////////////////////////////
 
 function mqHamburger2(e) {
@@ -44,20 +44,20 @@ function mqHamburger2(e) {
 ///////hamburger animation
     tl.to('.hamburger', .5, {
         width: '6em',
-        height: '5px',
+        height: '8px',
         right: '-8.5em',
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
         width: '4em',
-        height: '5px',
+        height: '8px',
         rotate: 45,
         top: 8,
         right: '-99px'
     }, '-=.5')//offset
     tl.to('.hamburger-bottom', .5, {
         width: '4em',
-        height: '5px',
+        height: '8px',
         rotate: -45,
         top: 8,
         right: '-99px'
@@ -76,21 +76,21 @@ function mqHamburger3(e) {
 
 ///////hamburger animation
     tl.to('.hamburger', .5, {
-        width: '6em',
+        width: '5em',
         height: 5,
         top: 35,
         right: '-4.375em',
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
-        width: '4em',
+        width: '3em',
         height: 5,
         rotate: 45,
         top: 35,
         right: -45
     }, '-=.5')//offset
     tl.to('.hamburger-bottom', .5, {
-        width: '4em',
+        width: '3em',
         height: 5,
         rotate: -45,
         top: 35,
@@ -104,7 +104,8 @@ mq600andunder.addEventListener('change', mqHamburger3);
 
 //////// entire menu slides in:
     tl.to('.nav', 1, {
-        right: '0'
+        right: '0',
+        display: 'flex'
     })
 
 //////// menu items stagger into view

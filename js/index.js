@@ -126,10 +126,10 @@ $(document).ready(function () {
         });
 
         ////////on hover of h1 - both graphic design and front end dev slides in
-        $(document).on('mouseover', ".section__title--intro", function () {
+        $(document).on('mouseover', ".intro--kk-hover", function () {
             tlPeekInR.play();
             tlPeekInL.play();
-        }).on('mouseout', '.section__title--intro', function () {
+        }).on('mouseout', '.intro--kk-hover', function () {
             tlPeekInR.reverse();
             tlPeekInL.reverse();
         });
@@ -138,9 +138,9 @@ $(document).ready(function () {
     ////////MQs for PEEK A BOO
     let mq1600andup = window.matchMedia('(min-width: 1600px)');
     let mq1400to1599 = window.matchMedia('(min-width: 1400px) and (max-width: 1599px');
-    let mq1200to1399 = window.matchMedia('(min-width: 1200px) and (max-width: 1399px');
-    let mq800to1199 = window.matchMedia('(min-width: 800px) and (max-width: 1199px');
-    let mq600to799 = window.matchMedia('(min-width: 600px) and (max-width: 799px');
+    let mq1100to1399 = window.matchMedia('(min-width: 1101px) and (max-width: 1399px');
+    let mq769to1099 = window.matchMedia('(min-width: 769px) and (max-width: 1099px');
+    let mq575to768 = window.matchMedia('(min-width: 575px) and (max-width: 768px');
 
 
     ////////OVER 1600////////
@@ -209,12 +209,12 @@ $(document).ready(function () {
     mq1400to1599.addEventListener('change', mq2);
 
 
-    //////// OVER 1200 ////////
+    //////// OVER 1100 ////////
     //////////////////////////////////
 
     function mq3(e) {
         if (e.matches) {
-            console.log('over 1200 works');
+            console.log('over 1100 works');
 
             ////////graphic design side
             tlPeekInR.from('.intro__img--sideways', .8, {
@@ -238,16 +238,16 @@ $(document).ready(function () {
             PeekInPlay();
         }
     }
-    mq3(mq1200to1399);
-    mq1200to1399.addEventListener('change', mq3);
+    mq3(mq1100to1399);
+    mq1100to1399.addEventListener('change', mq3);
 
 
-    //////// OVER 800 ////////
+    //////// OVER 769 ////////
     //////////////////////////////////
 
     function mq4(e) {
         if (e.matches) {
-            console.log('over 800 works');
+            console.log('over 769 works');
 
             ////////graphic design side
             tlPeekInR.from('.intro__img--sideways', .8, {
@@ -271,16 +271,16 @@ $(document).ready(function () {
             PeekInPlay();
         }
     }
-    mq4(mq800to1199);
-    mq800to1199.addEventListener('change', mq4);
+    mq4(mq769to1099);
+    mq769to1099.addEventListener('change', mq4);
 
 
-    //////// OVER 600 ////////
+    //////// OVER 575 ////////
     //////////////////////////////////
 
     function mq5(e) {
         if (e.matches) {
-            console.log('over 600 works');
+            console.log('over 575 works');
 
             //////graphic design side
             tlPeekInR.from('.intro__img--sideways', .8, {
@@ -304,24 +304,32 @@ $(document).ready(function () {
             PeekInPlay();
         }
     }
-    mq5(mq600to799);
-    mq600to799.addEventListener('change', mq5);
+    mq5(mq575to768);
+    mq575to768.addEventListener('change', mq5);
 
 
-    //////// UNDER 600 ////////
+    //////// UNDER 574 ////////
+    //trigger by scroll not hover
     //////////////////////////////////
 
     ScrollTrigger.matchMedia({
-        '(max-width: 600px)': function () {
-            console.log('under 600 works');
+        '(max-width: 574px)': function () {
+            console.log('under 574 works');
 
             //////graphic design side
             gsap.from('.intro__img--sideways', .8, {
-                x: 150,
+                x: 100,
                 duration: 2,
                 scrollTrigger: {
-                    trigger: ".intro",
-                    toggleActions: 'restart reverse restart reverse'
+                    trigger: ".intro-gd",
+                    toggleActions: 'restart reverse restart reverse',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'blue',
+                    //     endColor: 'green',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
                 }
             })
             ////////graphic design side
@@ -329,8 +337,15 @@ $(document).ready(function () {
                 x: 180,
                 duration: 2,
                 scrollTrigger: {
-                    trigger: ".intro",
-                    toggleActions: 'restart reverse restart reverse'
+                    trigger: ".intro-fed",
+                    toggleActions: 'restart reverse restart reverse',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'orange',
+                    //     endColor: 'yellow',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
                 }
             }, '-=.8')
 
@@ -340,7 +355,7 @@ $(document).ready(function () {
                 rotate: 40,
                 duration: 3,
                 scrollTrigger: {
-                    trigger: ".section__title--intro",
+                    trigger: ".intro-fed",
                     start: 'bottom bottom',
                     toggleActions: 'restart reverse restart reverse'
                 }
@@ -350,7 +365,7 @@ $(document).ready(function () {
                 x: 150,
                 duration: 3,
                 scrollTrigger: {
-                    trigger: ".section__title--intro",
+                    trigger: ".intro-fed",
                     start: 'bottom bottom',
                     toggleActions: 'restart reverse restart reverse',
                 }
@@ -367,7 +382,15 @@ $(document).ready(function () {
         duration: 2.5,
         scrollTrigger: {
             trigger: ".section__subtitle--works",
-            toggleActions: 'restart reverse restart reverse'
+            toggleActions: 'restart reverse restart reverse',
+            // markers: true,
+            // markers: {
+            //     startColor: 'white',
+            //     endColor: 'gray',
+            //     fontSize: '1em',
+            //     indent: 200
+            // }
+
         }
     })
 
@@ -376,14 +399,74 @@ $(document).ready(function () {
         duration: 1.4,
         scrollTrigger: {
             trigger: '.section__subtitle--works',
-            toggleActions: 'restart reverse restart reverse'
+            toggleActions: 'restart reverse restart reverse',
         }
     })
 
+        //////WORKS peek-a-boo image
+        //scroll down img goes up
+        gsap.from('.my-work__img', {
+            y: 290,
+            // opacity: 0,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: ".work-created",
+                toggleActions: 'restart none restart reverse',
+                // markers: true,
+                // markers: {
+                //     startColor: 'blue',
+                //     endColor: 'green',
+                //     fontSize: '1em',
+                //     indent: 200
+                // }
+            }
+        })
+
+        //back to 0 so can replay on scroll up
+        gsap.from('.my-work__img', {
+            y: 0,
+            // opacity: 0,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: '.about-me',
+                toggleActions: 'restart none none none',
+                // markers: true,
+                // markers: {
+                //     startColor: 'orange',
+                //     endColor: 'yellow',
+                //     fontSize: '1em',
+                //     indent: 200
+                // }
+    
+    
+            }
+        })
+
+
+//scroll up img goes up again
+        gsap.from('.my-work__img', {
+            y: 290,
+            // opacity: 0,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: '.section__subtitle--works',
+                toggleActions: 'none none restart reverse',
+                // markers: true,
+                // markers: {
+                //     startColor: 'red',
+                //     endColor: 'pink',
+                //     fontSize: '1em',
+                //     indent: 200
+                // }
+    
+    
+            }
+        })
+    
 
     ////////WHAT I DO section animations
     gsap.from('.section__title--whatIdo', {
-        x: -1200,
+        x: -2000,
         duration: 1.4,
         scrollTrigger: {
             trigger: '.whatIdo__descriptions--each',
@@ -402,13 +485,6 @@ $(document).ready(function () {
                     trigger: ".whatIdo",
                     // start: 600,//removed when rearranged sections
                     toggleActions: 'restart reverse restart reverse',
-                    // markers: true,
-                    // markers: {
-                    //     startColor: 'yellow',
-                    //     endColor: 'lime',
-                    //     fontSize: '2em',
-                    //     indent: 200
-                    // }
                 }
             })
         },
@@ -438,7 +514,7 @@ $(document).ready(function () {
     })
 
     gsap.from('.section__title--about', {
-        x: 1200,
+        x: 2000,
         duration: 1.4,
         scrollTrigger: {
             trigger: '.section__subtitle--about',
@@ -446,44 +522,151 @@ $(document).ready(function () {
         }
     })
 
+//////// WHO I AM image slide in
+// OVER 1100 ///////
+    ScrollTrigger.matchMedia({
+        '(min-width: 1101px)': function () {
     gsap.from('.section__image--about', {
-        // opacity: 0, 
-        // x: 1000,
-        // duration: 2.5,
         x: -340,
         rotate: 40,
         duration: .8,
         scrollTrigger: {
-            trigger: '.section__subtitle--about',
+            trigger: '#whoIam-img-trigger',
             toggleActions: 'restart none restart reverse',
         }
     })
     gsap.from('.section__image--about', {
         marker: true,
-        // opacity: 1, 
-        // x: 1000,
-        // duration: 1.5,
         x: 0,
         rotate: -40,
         duration: .8,
         scrollTrigger: {
-            trigger: '.section__title--sneak',
+            trigger: '.whatIdo',
             toggleActions: 'restart none none none',
         }
     })
     gsap.from('.section__image--about', {
-        // opacity: 0, 
-        // x: 1000,
-        // duration: 2.5,
         x: -340,
         rotate: 40,
         duration: .8,
         scrollTrigger: {
-            trigger: '.section__subtitle--about',
+            trigger: '.about-me',
             toggleActions: 'none none restart reverse',
         }
     })
+},
 
+// 800 to 1199 ///////
+        '(min-width: 801px and max-width: 1199px)': function () {
+            gsap.from('.section__image--about', {
+                x: -220,
+                rotate: 40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '#whoIam-img-trigger',
+                    toggleActions: 'restart none restart reverse',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'blue',
+                    //     endColor: 'green',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
+
+                }
+            })
+            gsap.from('.section__image--about', {
+                marker: true,
+                x: 0,
+                rotate: -40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '.whatIdo',
+                    toggleActions: 'restart none none none',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'orange',
+                    //     endColor: 'yellow',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
+
+                }
+            })
+            gsap.from('.section__image--about', {
+                x: -220,
+                rotate: 40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '.about-me',
+                    toggleActions: 'none none restart reverse',
+            //                                                     markers: true,
+            // markers: {
+            //     startColor: 'red',
+            //     endColor: 'pink',
+            //     fontSize: '1em',
+            //     indent: 200
+            // }
+
+                }
+            })
+        },
+
+        // UNDER 800
+        '(max-width: 800px)': function () {
+            gsap.from('.section__image--about', {
+                x: -155,
+                rotate: 40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '#whoIam-img-trigger',
+                    toggleActions: 'restart none restart reverse',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'blue',
+                    //     endColor: 'green',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
+                }
+            })
+            gsap.from('.section__image--about', {
+                marker: true,
+                x: 0,
+                rotate: -40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '.whatIdo',
+                    toggleActions: 'restart none none none',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'orange',
+                    //     endColor: 'yellow',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
+        
+                }
+            })
+            gsap.from('.section__image--about', {
+                x: -155,
+                rotate: 40,
+                duration: .8,
+                scrollTrigger: {
+                    trigger: '.about-me',
+                    toggleActions: 'none none restart reverse',
+                    // markers: true,
+                    // markers: {
+                    //     startColor: 'red',
+                    //     endColor: 'pink',
+                    //     fontSize: '1em',
+                    //     indent: 200
+                    // }
+        
+                }
+            })
+        } 
+    })
 
     gsap.from('.about-me__body p', {
         opacity: 0,
@@ -495,23 +678,7 @@ $(document).ready(function () {
         }
     })
 
-    //////peek-a-boo image
-    gsap.from('.my-work__img', {
-        y: 300,
-        opacity: 0,
-        duration: 1.4,
-        scrollTrigger: {
-            trigger: ".work-created",
-            toggleActions: 'play reverse reverse reverse',
-            // markers: true,
-            // markers: {
-            //     startColor: 'red',
-            //     endColor: 'purple',
-            //     fontSize: '1em',
-            //     indent: 200
-            // }
-        }
-    })
+
 
 //     gsap.to('.my-work__img', {
 // // opacity: 0,
