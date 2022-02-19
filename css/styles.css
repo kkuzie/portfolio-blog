@@ -228,9 +228,18 @@ strong {
     }
 }
 .center__homepage {
-    margin-bottom: 10em;
+    margin-top: 25em;
 }
-
+@media screen and (max-width: 1100px) {
+    .center__homepage {
+        margin-top: 20em;
+    }
+}    
+@media screen and (max-width: 768px) {
+    .center__homepage {
+        margin-top: 15em;
+    }
+}    
 
 /* TYPOGRAPHY */
 
