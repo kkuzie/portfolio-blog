@@ -1379,3 +1379,10 @@ width: 24em;
     font-size: var(--fs-captions);
     margin-top: 3rem;
 }
+
+#pirate {
+    color: var(--clr-accent);
+}
+#zoo {
+    color: var(--clr-accent);
+}
