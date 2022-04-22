@@ -22,6 +22,7 @@ body { overflow-x: hidden;}
 
 
 .nav {
+    font-family: var(--ff-primary);
     right: -100%;
     width: 100%;
     height: 100%;

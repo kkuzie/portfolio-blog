@@ -6,8 +6,9 @@
 
 /* CUSTOM PROPERTIES */
 :root {
-    --ff-primary: "Be Vietnam", sans-serif;
+    --ff-primary: "Klemer", "Deserved", "Be Vietnam", sans-serif;
     --ff-seconday: "Glegoo", serif;
+    --ff-body: "Be Vietnam", sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 800;
@@ -66,8 +67,8 @@
 }
 @media (min-width: 769px) {
     :root {
-        --fs-h1: 16rem;
-        --fs-h2: 11rem;
+        --fs-h1: 18rem;/*16 11*/
+        --fs-h2: 12rem;
         --fs-h3: 2rem;
         --fs-h4: 1.75rem;
         /* --fs-body: 1.25rem; */
@@ -155,7 +156,7 @@ body {
     color: var(--clr-light);
     /*was dark*/
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-body);
     font-size: var(--fs-body);
     line-height: 1.8;
 }
@@ -247,6 +248,7 @@ h1,
 h2,
 h3 {
     margin: 0;
+    font-family: var(--ff-primary);
 }
 
 h1 {
@@ -1382,7 +1384,9 @@ width: 24em;
 
 #pirate {
     color: var(--clr-accent);
+    font-weight: var(--fw-bold);
 }
 #zoo {
     color: var(--clr-accent);
+    font-weight: var(--fw-bold);
 }
