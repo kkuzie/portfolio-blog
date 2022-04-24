@@ -182,11 +182,12 @@
             "img img img subtitle subtitle";
             ; */
     }
-    @media screen and (max-width: 768px) {
+    /* NEED THIS WHEN NO RESUME BUTTON */
+    /* @media screen and (max-width: 768px) {
         #work.intro--port {
             margin-top: 10em;
         }
-    }
+    } */
     .portfolio__part--right {
         grid-template-areas: 
         "title title title title title" 
