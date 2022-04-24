@@ -657,7 +657,7 @@ header {
 }
     .section__title--works,
     .section__title--about{
-        line-height: 230px;
+        line-height: 128px;/*230*/
     }
     .section__title--intro-kk {
         line-height: 160px;
@@ -1148,7 +1148,7 @@ width: 24em;
 }
 @media screen and (max-width: 1644px){
     .my-work__img {
-    top: -27px;
+    top: -128px;/*-27*/
     } 
 }
 
