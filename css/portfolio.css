@@ -181,8 +181,11 @@
             "img img img title title"
             "img img img subtitle subtitle";
             ; */
-            padding-top: 3em;
     }
+    #work.intro--port {
+        padding-top: 3em;
+    }
+
     /* NEED THIS WHEN NO RESUME BUTTON */
     /* @media screen and (max-width: 768px) {
         #work.intro--port {
