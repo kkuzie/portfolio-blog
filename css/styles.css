@@ -480,7 +480,7 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 3em;
+    padding: 0 3em;
     /*old 1 2*/
     background-image: url(../images/watercolor.jpg);
     background-size: cover;
@@ -535,7 +535,7 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    top: 4em;/*6 */
+    top: 2em;/*6 */
     right: 120px;
     z-index: 1000;
 }
