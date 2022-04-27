@@ -17,8 +17,9 @@ function mqHamburger(e) {
 
 ///////hamburger animation
     tl.to('.hamburger', .5, {
-        width: '7em',/*-13 */
-        right: '-5.5em',/*-10 */
+        top: '.7em',
+        width: '5.5em',/*5 */
+        right: '-4.8em',/*5.5 */
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
