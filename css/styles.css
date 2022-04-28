@@ -1272,7 +1272,7 @@ width: 24em;
 
 @media (min-width: 1500px) {
     .portfolio {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));/*was 500px  when had 6 items - now there is only 3*/
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));/*was 500px  when had 6 items - 400 when only 3*/
         max-width: 2300px;
     }
 }
