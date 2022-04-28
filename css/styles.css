@@ -1190,7 +1190,7 @@ width: 24em;
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
     position: relative;
     z-index: 100;
     grid-gap: 1em;
