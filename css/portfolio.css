@@ -445,14 +445,17 @@ display: block;
     /* div.section__img:nth-child(6) {
         margin-top: -4em;
         } */
-    
-    @media screen and (min-width: 769px){
+.portfolio__item--section-img{
+    margin: 0 auto;
+}
+       
+@media screen and (min-width: 769px){
     div.section__img4:nth-child(5) {
-    margin-left: 6em;
-  }
-    div.section__img4:nth-child(8) > img:nth-child(1) {
-    margin-top: -6em;
-  }
+        margin-left: 6em;
+    }
+    .overlap-img-above {
+        margin-top: -6em;
+    }
   div.section__img:nth-child(6) {
     padding-right: 4em;
     }
@@ -535,12 +538,6 @@ display: block;
     }
 }
 
-    .portfolio__item--section-img{
-        /* max-height: 550px; */
-        margin: 0 auto;
-        /* added since added 2nd image in grid */
-        /* padding-bottom: 1em; */
-    }
 /* } */
 
 
