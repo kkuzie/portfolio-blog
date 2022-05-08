@@ -155,6 +155,7 @@
     .intro--port,
     .portfolio__part--right,
     .portfolio__part--right2,
+    .portfolio__part--right2a,
     .portfolio__part--center,
     .portfolio__part--left {
         display: grid;
@@ -210,7 +211,18 @@
             "img img img imgD imgD" 
             "imgE imgE img4 img4 img4";
         }
-
+        .portfolio__part--right2a {
+            grid-template-areas: 
+                "title title title title title" 
+                "title3 title3 title3 title3 title3" 
+                "text9 text text text8 text8" 
+                "img2 img2 img2 img2 img2" 
+                "img9 img9 img3 img3 img3" 
+                "textC textC text2 text2 text2" 
+                "img img img imgD imgD" 
+                "imgE imgE img4 img4 img4";
+            }
+    
     .portfolio__part--center{
         grid-template-areas: 
         "title3 title3 title3 title3 title3" 
