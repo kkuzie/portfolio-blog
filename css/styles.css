@@ -17,7 +17,7 @@
     --clr-dark: #030005;/*old #303030;*/
     --clr-darkest: #111111;
     --clr-accent: #4b6d99;/*old #a494a4;*/
-    --clr-headings: #2a2f35;
+    --clr-headings: #343f4b;/*my version 2a2f35*/
 
     --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
         0.125em 0.125em .25em rgba(0, 0, 0, .15);
