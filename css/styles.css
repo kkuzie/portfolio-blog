@@ -276,6 +276,19 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
 }
+.section__title--plain{
+    font-size: 5em;
+    color: var(--clr-accent);
+
+}
+.section__designer--plain {
+    font-size: 2em;
+    color: var(--clr-headings);
+}
+.section__designer--plain h4 {
+    margin: 0 0 3em 1.25em;
+    font-family: var(--ff-seconday);
+}
 
 .section__title {
 
@@ -344,7 +357,9 @@ h3 {
     }
 } */
 
-/* KAREN KUZMIAK */
+
+
+/* KAREN KUZMIAK  MY VERSION*/
 .intro--kk-hover {
     display: grid;
     grid-template-areas: 
@@ -714,6 +729,24 @@ header {
     margin-bottom: .5em;
     padding-right: 0;
 }
+/* KAREN KUZMIAK PLAIN VERSION */
+/* KAREN KUZMIAK PLAIN VERSION */
+.intro--plain {
+    display: grid;
+grid-template-areas: 
+"karen" 
+"designer";
+grid-template-columns: 1fr; 
+}
+.section__title--plain {
+grid-area: karen;
+line-height: 1em;
+}
+.section__designer--plain {
+grid-area: designer;
+}
+/* end kk PLAIN */
+
 .section__title--about {
     margin-left: 0;
 }
