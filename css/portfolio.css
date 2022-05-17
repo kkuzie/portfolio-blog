@@ -117,7 +117,7 @@
 .section__subtitle--left {
     background: var(--clr-accent);
     padding: .125em 1em;/*was .25 1*/
-    font-family: var(--ff-seconday);
+    /* font-family: var(--ff-seconday); */
     margin-bottom: 1em;
     color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
@@ -175,8 +175,8 @@
         "title title title title title" 
         "title2 title2 title2 title2 title2" 
         "title3 title3 title3 title3 title3" 
-        "img img imgA img9 img9" 
-        "img5 img5 text3 text3 text3";
+        "img img img img9 img9" 
+        "img img img text3 text3";
         /* grid-template-areas: 
             "img img img title title"
             "img img img title title"
@@ -185,6 +185,7 @@
     }
     #work.intro--port {
         padding-top: 3em;
+        margin-top: 15em;
     }
 
     /* NEED THIS WHEN NO RESUME BUTTON */
@@ -208,7 +209,7 @@
             "img2 img2 img2 img7 img7" 
             "img9 img9 img3 img3 img3" 
             "textC text2 text2 text2 imgC" 
-            "img img img imgD imgD" 
+            "img img img imgR imgD" 
             "imgE imgE img4 img4 img4";
         }
         .portfolio__part--right2a {
@@ -239,7 +240,7 @@
             "text2 text2 text2 text9 text9" 
             "img4 img4 img4 img4 imgA" 
             "img3 img3 img3 img3 img3" 
-            "img8 img8 img2 img2 img2" 
+            "img8 img2 img2 img2 img2" 
             "text text text4 text4 text4";
     }
 
@@ -454,9 +455,9 @@ display: block;
     .section__img4{
         grid-area: img4;
     }
-    /* div.section__img:nth-child(6) {
-        margin-top: -4em;
-        } */
+    .section__img--side-by-sideR {
+        grid-area: imgR;
+    }        
 .portfolio__item--section-img{
     margin: 0 auto;
 }
@@ -531,7 +532,9 @@ display: block;
         margin-top: -2em;
     }
     .section__img-intro{
-        grid-area: title3 / img;
+        grid-area: img;
+        margin-top: -13em;
+        width: 90%;
     }
 @media screen and (max-width: 1101px) {
     .section__img-intro {
