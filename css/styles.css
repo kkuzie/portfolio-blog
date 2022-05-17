@@ -245,8 +245,7 @@ strong {
 /* TYPOGRAPHY */
 
 h1,
-h2,
-h3 {
+h2 {
     margin: 0;
     font-family: var(--ff-primary);
 }
@@ -275,24 +274,26 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+    font-family: var(--ff-seconday);
+    margin: 0;
+    font-weight: var(--fw-reg);
+    text-transform: lowercase;
 }
 .section__title--plain{
-    font-size: 5em;
-    color: var(--clr-accent);
+    color: var(--clr-headings);
 
 }
-.section__designer--plain {
-    font-size: 2em;
+/* .section__designer--plain {
+    font-size: 3em;
     color: var(--clr-headings);
-}
-.section__designer--plain h4 {
-    margin: 0 0 3em 1.25em;
-    font-family: var(--ff-seconday);
+} */
+.section__designer--plain h3 {
+    margin: 0;
+    /* font-family: var(--ff-seconday); */
+    font-size: 3em;
 }
 
 .section__title {
-
-    /* margin-bottom: .5em; */
     /* added for canvas */
     position: relative;
 }
@@ -447,7 +448,7 @@ h3 {
 }
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h3);
+    /* font-size: var(--fs-h3); */
     position: relative;
 }
 .section__subtitle--intro,
@@ -613,7 +614,8 @@ header {
         z-index: 100; */
     /*brings section to the top of .nav so hovering works, then js brings it back to 0 when nav menu appears*/
     background-color: var(--clr-darkest);
-    margin-top: 10em;/*old-none*/
+    /* margin-top: 10em;old-none */
+  margin-top: 7em;
 }
 
 .intro__img {
@@ -733,20 +735,47 @@ header {
 /* KAREN KUZMIAK PLAIN VERSION */
 .intro--plain {
     display: grid;
-grid-template-areas: 
-"karen" 
-"designer";
-grid-template-columns: 1fr; 
-}
+    grid-template-areas: 
+    "karen karen img" 
+    "designer designer img" 
+    "text gap img";
+    grid-template-columns: 2fr .5fr 1fr;
+    margin: 0em 0em 0 5.5em;
+  }
 .section__title--plain {
 grid-area: karen;
-line-height: 1em;
+  /* line-height: 1em; */
+  /* margin-left: 1.5em; */
+  /* margin-bottom: 1em; */
+  line-height: 0.65em;
+  margin-left: 0;
+  opacity: .6;
 }
 .section__designer--plain {
-grid-area: designer;
+    grid-area: designer;
+      /* margin-left: 1.25em; */
+  margin-top: -4em;
+  line-height: 5em;
+}
+.section__body--plain{
+    grid-area: text;
+    position: relative;
+    /* margin-left: 3em; */
+} 
+.section__image--plain{
+    grid-area: img;
+    position: relative;
+    justify-items: right;
+    align-items: end;
+    display: inline-grid;
+}
+.section__image--plain img {
+    width: 100%;
 }
 /* end kk PLAIN */
+----
 
+  
 .section__title--about {
     margin-left: 0;
 }
@@ -1388,10 +1417,9 @@ width: 24em;
     font-weight: var(--fw-bold);
 }
 
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
-    transform: scale(3);
+.footer h3:hover,
+.social-list__link i:hover {
+    transform: scale(1.5);
 }
 
 .social-list {
@@ -1404,6 +1432,7 @@ width: 24em;
 
 .social-list__item {
     margin: 0 .5em;
+    position: relative;
 }
 
 .social-list__link {
@@ -1415,11 +1444,15 @@ width: 24em;
     margin-top: 3rem;
 }
 
-#pirate {
+.word-links {
+    color: var(--clr-accent) ; /*#4b9899*/
+    /* font-weight: var(--fw-bold); */
+    /* font-size: 1.5rem; */
+}
+.word-links:hover {
+    color: var(--clr-accent);
+}
+/* #zoo {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-}
-#zoo {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-}
+} */
