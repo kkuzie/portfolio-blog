@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'deservedregular';
-    src: url('fonts/deserved-regular-webfont.woff2') format('woff2'),
-         url('fonts/deserved-regular-webfont.woff') format('woff');
+    src: url('/fonts/deserved-regular-webfont.woff2') format('woff2'),
+         url('/fonts/deserved-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
