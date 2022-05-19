@@ -489,6 +489,7 @@ h3 {
 .section__captions {
     font-size: var(--fs-captions);
     color: var(--clr-accent);
+    position: relative;
 }
 
 
