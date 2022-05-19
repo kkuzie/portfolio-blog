@@ -175,6 +175,7 @@
         "title title title title title" 
         "title2 title2 title2 title2 title2" 
         "title3 title3 title3 title3 title3" 
+        
         "img img img img9 img9" 
         "img img img text3 text3";
         /* grid-template-areas: 
@@ -197,6 +198,7 @@
     .portfolio__part--right {
         grid-template-areas: 
         "title title title title title" 
+
         "text text text text text" 
         "img9 img img img img" 
         "img8 img2 img2 img7 img7";
@@ -205,41 +207,54 @@
         grid-template-areas: 
             "title title title title title" 
             "title3 title3 title3 title3 title3" 
+
             "text9 text text text8 text8" 
             "img2 img2 img2 img7 img7" 
             "img9 img9 img3 img3 img3" 
+
             "textC text2 text2 text2 imgC" 
             "img img img imgR imgD" 
             "imgE imgE img4 img4 img4";
         }
+        /* PROCESS / RESEARCH */
         .portfolio__part--right2a {
             grid-template-areas: 
                 "title title title title title" 
                 "title3 title3 title3 title3 title3" 
+
                 "text9 text text text8 text8" 
                 "img2 img2 img2 img2 img2" 
-                "img9 img9 img3 img3 img3" 
-                "textC textC text2 text2 text2" 
-                "img img img imgD imgD" 
+
+                "gap gap text2 text2 text2" 
+                "img3 img3 img3 img3 imgZ" 
+
+                "text3 text3 text3 gapZ gapZ" 
+                "imgD img img img img" 
                 "imgE imgE img4 img4 img4";
             }
     
+    /* OUTCOME */
     .portfolio__part--center{
         grid-template-areas: 
         "title3 title3 title3 title3 title3" 
+
         "text text text text text" 
         "img img img img img9" 
         "img8 img2 img2 img7 img7";
         }
 
+        /* FINALE */
     .portfolio__part--left {
         grid-template-areas: 
             "title title title title title" 
+
             "img5 img5 text3 text3 text3" 
             "img9 img img img img" 
+
             "text2 text2 text2 text9 text9" 
             "img4 img4 img4 img4 imgA" 
             "img3 img3 img3 img3 img3" 
+            
             "img8 img2 img2 img2 img2" 
             "text text text4 text4 text4";
     }
@@ -489,7 +504,8 @@ display: block;
             margin-top: -3em;
             } */
     .commercial {
-        margin-top: -5em;
+        /* margin-top: -5em; */
+        margin-top: 0em;
     }
 }
     @media screen and (max-width: 768px){
