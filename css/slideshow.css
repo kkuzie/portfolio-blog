@@ -1,3 +1,96 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --ff-primary: "Klemer", "deservedregular", "Tan nimbus", "Be Vietnam", sans-serif;
+  --ff-seconday: "Glegoo", serif;
+  --ff-body: "Be Vietnam", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 800;
+
+  --clr-light: #ececec;
+  --clr-dark: #030005;/*old #303030;*/
+  --clr-darkest: #111111;
+  --clr-accent: #4b6d99;/*old #a494a4;*/
+  --clr-headings: #343f4b;/*my version 2a2f35*/
+
+  --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
+      0.125em 0.125em .25em rgba(0, 0, 0, .15);
+  --bs-light: 0.25em 0.25em .75em rgba(255, 255, 255, 0.25),
+      0.125em 0.125em .25em rgba(255, 255, 255, 0.15);
+
+      /* done down to 400px only */
+      /*body and under 574px*/
+  --fs-h1: 8rem;
+  --fs-h2: 5.5rem;
+  --fs-h3: 1.75rem;/*subtitles/overlay*/
+  --fs-h4: 1.25rem; /*card headings*/
+  --fs-body: 1.25rem;
+  --fs-captions: .8rem;
+  --fs-nav: 2.5em;
+  --lh-h1: 3.5rem;
+}
+@media (min-width: 350px) {
+  :root {
+      --fs-h4: 2.25rem;
+  }
+}
+
+@media (min-width: 430px) {
+  :root {
+      --fs-h1: 8rem;
+      --fs-h2: 8rem;
+      /* --fs-h3: 1.75rem; */
+      --fs-h4: 1.25rem;
+      /* --fs-body: 1.25rem; */
+      --fs-captions: .8rem;
+
+      /* --fs-nav: 2.5em; */
+      --lh-h1: 6rem;
+
+      /* --fs-h3: 1.5rem; */
+      /* --fs-body: 1.25rem; */
+      
+      /* --lh-h1: 5rem; */
+  }
+}
+@media (min-width: 575px) {
+  :root {
+      --fs-h1: 11.5rem;
+      --fs-h4: 1.75rem;
+  }
+}
+@media (min-width: 769px) {
+  :root {
+      --fs-h1: 18rem;/*16 11*/
+      --fs-h2: 12rem;
+      --fs-h3: 2rem;
+      --fs-h4: 1.75rem;
+      /* --fs-body: 1.25rem; */
+      --fs-captions: .8rem;
+
+      --fs-nav: 4em;
+      --lh-h1: 6rem;
+  }
+}
+@media (min-width: 1101px) {
+  :root {
+      --fs-h3: 2.25rem;
+      --fs-h4: 2.25rem;
+
+  }
+}
+  @media (min-width: 1644px) {
+  :root {
+      --fs-h1: 25rem;
+      --fs-h2: 17rem;
+      --fs-h3: 2.5rem;
+      /* --fs-body: 1.25rem; */
+      --fs-captions: .8rem;
+
+      --fs-nav: 5em;
+      --lh-h1: 6rem;
+  }
+}
 /* html {
     height: 100%;
   }
@@ -135,8 +228,7 @@ http://stackoverflow.com/a/34696029/383904
 	position: relative;
 	overflow: hidden;
 	height: 100%; /* Or set a fixed height */
-    width: 78%;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 /* SLIDER */
@@ -151,7 +243,7 @@ http://stackoverflow.com/a/34696029/383904
 /* SLIDES */
 
 .CSSgal .slider > * {
-	font-size: 1rem;
+	font-size: var(--fs-body);
 	display: inline-block;
 	white-space: normal;
 	vertical-align: top;
@@ -189,9 +281,9 @@ http://stackoverflow.com/a/34696029/383904
 					transform: translateY(-50%);
 	left: 0;
 }
-/* .CSSgal .prevNext a:hover {
+.CSSgal .prevNext a:hover {
 	opacity: 1;
-} */
+}
 .CSSgal .prevNext a+a {
 	left: auto;
 	right: 0;
@@ -204,7 +296,7 @@ http://stackoverflow.com/a/34696029/383904
 	/* position: absolute; */
 	z-index: 2;
 	bottom: 0;
-	padding: 50px 0 0;
+	/* padding: 50px 0 0; */
 	width: 100%;
 	text-align: center;
 }
@@ -224,7 +316,7 @@ http://stackoverflow.com/a/34696029/383904
     /* Dim all but first */
 /* } */
 .CSSgal .bullets > a:hover {
-	background: #4b6d99 !important;
+	/* background: #4b6d99 !important; */
     opacity: .7;
 }
 
@@ -278,4 +370,24 @@ http://stackoverflow.com/a/34696029/383904
 	margin: 0 50px;
 	/* color: rgba(0,0,0,0.8); */
 	text-decoration: none;
+}
+.slider-container {
+  width:78%;
+  height:100%;
+  position:Relative;
+}
+.slider-container div {
+  width: 78%;
+margin: 0 auto;
+}
+.slider div p {
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.bullets a img {
+  max-width: 80%;
+position: relative;
+margin: 0 auto;
+top: 15%;
 }
