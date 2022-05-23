@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'deservedregular';
-    src: url('https://karenkuzmiak-portfolio.netlify.app/css/deserved-regular-webfont.woff2') format('woff2'),
-         url('https://karenkuzmiak-portfolio.netlify.app/css/deserved-regular-webfont.woff') format('woff');
+    src: url('deserved-regular-webfont.woff2') format('woff2'),
+         url('deserved-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
