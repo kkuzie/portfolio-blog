@@ -228,8 +228,8 @@ strong {
 .center {
     position: relative;
     margin-top: 15em;
-    margin-bottom: 15em;
-    height: 3em;
+    /* margin-bottom: 15em; */
+    height: 4em;
 }
 
 @media screen and (max-width: 768px) {
@@ -520,6 +520,14 @@ header {
     width: 100%;
     transition: top 0.3s;
     z-index: 1000;
+}
+header p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--ff-seconday);
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent);
 }
 
 .logo {
