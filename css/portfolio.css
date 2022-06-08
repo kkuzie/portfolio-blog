@@ -8,11 +8,11 @@
     background: var(--clr-darkest);
 }
 
-.portfolio__part {
+/* .portfolio__part {
     margin: 0 auto;
-    padding: 7em 0em 0;   
+    padding: 10em 0em 0;  was 7 0 0
 
-}
+} */
 
 .intro__img--port,
 .portfolio__item--section-img {
@@ -118,7 +118,7 @@
     background: var(--clr-accent);
     padding: .125em 1em;/*was .25 1*/
     /* font-family: var(--ff-seconday); */
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
 }
 
@@ -141,8 +141,8 @@
     color: var(--clr-accent);
     background: none;
     outline: var(--clr-accent) solid 3px;
-    right: 0;
-    margin-bottom: 0;
+    /* right: 0;
+    margin-bottom: 0; */
 }
 .section__button-outline:hover {
     color: var(--clr-dark);
@@ -184,9 +184,18 @@
             "img img img subtitle subtitle";
             ; */
     }
+    .intro--port {
+        padding-top: 10em;
+    }
     #work.intro--port {
-        padding-top: 3em;
-        margin-top: 15em;
+        /* padding-top: 3em; */
+        margin: 0;/*reset section margin*/
+        padding: 0; /*reset padding*/
+    }
+
+    /* MOVE TO NEW GRID SECTION WHEN SET */
+    .challenge {
+        padding: 0; /*reset padding*/ 
     }
 
     /* NEED THIS WHEN NO RESUME BUTTON */
@@ -210,7 +219,7 @@
 
             "text9 text text text8 text8" 
             "img2 img2 img2 img7 img7" 
-            "img9 img9 img3 img3 img3" 
+            "imgZ img9 img3 img3 img3" 
 
             "textC text2 text2 text2 imgC" 
             "img img img imgR imgD" 
@@ -334,7 +343,7 @@ display: block;
         /* added since removed row gap */
         grid-column: 4 / -1;
         padding-right: 3em;/*might have to make this specific to intro area*/
-        margin-top: 2em;
+        margin-top: 6em;/*was 2*/
     }
     @media screen and (max-width: 1101px) {
         .section__body {
