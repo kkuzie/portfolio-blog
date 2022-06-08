@@ -283,7 +283,11 @@ img {
           font-size: 2.6rem;
         } */
         section.more {
-          padding: 0 0 0 0;
+          /* padding: 0 0 0 0; */
+          margin: 0; /*reset margins*/
+        }
+        .more h2 {
+          line-height: 100px;
         }
         /* Portfolio Thumbs */
         .thumbs li {
@@ -332,10 +336,10 @@ img {
         span.text-wide {
           display: inline;
         }
-        section.more{
-          padding: 0; /* 0 0 9.6rem 0; */
+        /* section.more{
+          padding: 0; 
           margin-top: 15em;
-        }
+        } */
             /* Portfolio Thumbs */
 
     .thumbs li {
