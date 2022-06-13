@@ -1,0 +1,17 @@
+.gcs-1 {
+    grid-column-start: 1;
+}
+.gce-3 {
+    grid-column-end: 3;
+}
+.gce-5 {
+    grid-column-end: 5;
+}
+.gce-6 {
+    grid-column-end: 6;
+}
+
+
+.img-90 {
+    width:90%;
+}
