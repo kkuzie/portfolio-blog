@@ -12,7 +12,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
 }
 
 /* CUSTOM PROPERTIES */
@@ -748,7 +747,6 @@ header p a {
 }
 .section__title--intro3{
     grid-area: title3;
-    margin-bottom: .5em;
     padding-right: 0;
 }
 /* KAREN KUZMIAK PLAIN VERSION */
