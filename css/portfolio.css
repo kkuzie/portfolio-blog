@@ -232,7 +232,8 @@
                 "title3 title3 title3 title3 title3" 
 
                 "text9 text text text8 text8" 
-                "img2 img2 img2 img2 img2" 
+                "img2 img2 img2 img2 img2"
+                "imgXX imgXX imgX imgX imgX" 
 
                 "gap gap text2 text2 text2" 
                 "img3 img3 img3 img3 imgZ" 
@@ -343,7 +344,10 @@ display: block;
         /* added since removed row gap */
         grid-column: 4 / -1;
         padding-right: 3em;/*might have to make this specific to intro area*/
-        margin-top: 6em;/*was 2*/
+        /* margin-top: 6em;was 2 */
+    }
+    .section__body-firstItem {
+        margin-top: -5em;
     }
     @media screen and (max-width: 1101px) {
         .section__body {
@@ -359,9 +363,11 @@ display: block;
     
     .section__body2 {
         grid-area: text2;
+        margin-top: 5em;
     }
     .section__body3 {
         grid-area: text3;
+        padding-left: 3em;
     }
     .section__body4 {
         grid-area: text4;
@@ -371,18 +377,17 @@ display: block;
     }
     .section__body--section2-eti{
         grid-area: text;
-        margin-top: -3em;
     }
-    .section__body--section3-eti{
+    /* .section__body--section3-eti{
         margin-top: -2em;
-    }
+    } */
     @media screen and (min-width: 769px) {
     .section__body--section3-eti{
         grid-area: text3;
     }
 }
     .section__body--section4-eti {
-        margin-top: -2em;
+        /* margin-top: -2em; */
         margin-left: -7em;
         grid-area: text;
         grid-row: title3 / text;
@@ -403,7 +408,7 @@ display: block;
     .section__body--section-center {
         grid-area: text;
         grid-column: 2 / -2;
-        margin-top: -2em;
+        /* margin-top: -2em; */
     }
         .section__body--intro {
         margin-top: 10.5em;
@@ -481,11 +486,16 @@ display: block;
     }
     .section__img--side-by-sideR {
         grid-area: imgR;
-    }        
+    }
+    .section__imgX{
+        grid-area: imgX;
+        padding-right: 5em;
+    }
+        
 .portfolio__item--section-img{
     margin: 0 auto;
 }
-       
+  
 @media screen and (min-width: 769px){
     div.section__img4:nth-child(5) {
         margin-left: 6em;
@@ -493,9 +503,9 @@ display: block;
     .overlap-img-above {
         margin-top: -6em;
     }
-  div.section__img:nth-child(6) {
+  /* div.section__img:nth-child(6) {
     padding-right: 4em;
-    }
+    } */
   div.section__img:nth-child(7) > img:nth-child(1) {
     padding-left: 6em;
   }
