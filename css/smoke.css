@@ -20,9 +20,17 @@ canvas {
   left: 0; 
   /* z-index: -1; */
 }
+@media screen and (max-width: 768px) {
+  canvas {
+    display: none;
+  }
+  
+}
 #canvasContainer{
     position: fixed;
 }
+
+
 /* h1 {
   font: 2.75em 'Cinzel', serif;
   font-weight: 400;
