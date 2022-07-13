@@ -302,14 +302,30 @@ h3 {
 } */
 
 /*HOME page subtitle KAREN section*/
-.section__designer--plain h3 {
+.section__designer--plain h3,
+.section__designer--plain2 h3  {
     margin: 0;
     /* font-family: var(--ff-seconday); */
     font-size: 3em;
 }
 @media screen and (max-width: 1374px){
-    .section__designer--plain h3 {
+    .section__designer--plain h3,
+    .section__designer--plain2 h3 {
         font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1150px){
+    .section__designer--plain h3,
+    .section__designer--plain2 h3 {
+        font-size: var(--fs-h3);
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section__designer--plain h3,
+    .section__designer--plain2 h3 {
+        z-index: 3;
+        position: relative;
     }
 }
 
@@ -767,10 +783,40 @@ header p a {
     grid-template-areas: 
     "karen karen img" 
     "designer designer img" 
+    "designer1 designer1 img" 
     "text gap img";
     grid-template-columns: 2fr .5fr 1fr;
     margin: 0 0 0 5.5em;
   }
+  @media screen and (max-width: 1150px) {
+      .intro--plain {
+    grid-template-areas:
+     "karen karen karen img img" 
+     "designer designer designer img img" 
+     "designer1 designer1 designer1 img img"
+     "text text text img img";
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     margin: 0 0 0 1em;
+
+      }
+    }
+    @media screen and (max-width: 768px) {
+        .intro--plain {
+            grid-template-areas: 
+            "karen0 karen0 karen0 karen0 img img" 
+            "karen karen karen karen img img" 
+            "designer designer designer designer designer designer"
+             "designer1 designer1 designer1 designer1 designer1 designer1" 
+             "text text text text text text";
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+       margin: 0 0 0 1em;
+  
+        }
+        /* .section__designer--plain2 {
+            margin-top: -5em;
+        } */
+      }
+  
 .section__title--plain {
 grid-area: karen;
   /* line-height: 1em; */
@@ -778,13 +824,33 @@ grid-area: karen;
   /* margin-bottom: 1em; */
   line-height: 0.65em;
   margin-left: 0;
-  opacity: .6;
+  /* opacity: .6; */
+}
+@media screen and (max-width: 768px) {
+    .section__title--plain {
+        /* opacity: 1; */
+        z-index: 1;
+    }
 }
 .section__designer--plain {
     grid-area: designer;
       /* margin-left: 1.25em; */
   margin-top: -4em;
   line-height: 5em;
+}
+.section__designer--plain2 {
+    grid-area: designer1;
+}
+@media screen and (max-width: 1150px) {
+    .section__designer--plain {
+        margin-top: -3em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section__designer--plain {
+        line-height: 3em;
+        margin-top: -2em;
+    }
 }
 .section__body--plain{
     grid-area: text;
