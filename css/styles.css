@@ -824,7 +824,7 @@ grid-area: karen;
   /* margin-bottom: 1em; */
   line-height: 0.65em;
   margin-left: 0;
-  /* opacity: .6; */
+  opacity: .6;
 }
 @media screen and (max-width: 768px) {
     .section__title--plain {
