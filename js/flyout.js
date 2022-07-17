@@ -36,7 +36,7 @@ tl.play();
 mqHamburger(mq800andup);
 mq800andup.addEventListener('change', mqHamburger);
 
-////////800 TO 600////////
+////////800 TO 601////////
 /////////////////////////////////
 
 function mqHamburger2(e) {
@@ -46,22 +46,23 @@ function mqHamburger2(e) {
     tl.to('.hamburger', .5, {
         width: '6em',
         height: '8px',
-        right: '-8.5em',
+        right: '-5em',//'-8.5em',
+        top: 20,//nothing,
         rotate: 90
     })
     tl.to('.hamburger-top', .5, {
         width: '4em',
         height: '8px',
         rotate: 45,
-        top: 8,
-        right: '-99px'
+        top: 20,//8,
+        right: -53//'-99px'
     }, '-=.5')//offset
     tl.to('.hamburger-bottom', .5, {
         width: '4em',
         height: '8px',
         rotate: -45,
-        top: 8,
-        right: '-99px'
+        top: 20,//8,
+        right: -53//'-99px'
     }, '-=.5')//offset
 }
 tl.play();
@@ -69,7 +70,7 @@ tl.play();
 mqHamburger2(mq800to601);
 mq800to601.addEventListener('change', mqHamburger2);
 
-////////under 800////////
+////////under 600////////
 /////////////////////////////////
 
 function mqHamburger3(e) {

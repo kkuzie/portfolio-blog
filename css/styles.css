@@ -548,6 +548,11 @@ header {
     transition: top 0.3s;
     z-index: 1000;
 }
+@media screen and (max-width: 768px){
+    header {
+        padding: 0 1em;
+    }
+}
 header p a {
     display: flex;
     align-items: center;
@@ -606,10 +611,15 @@ header p a {
         top: 75px;
     }
 } */
+@media screen and (max-width: 768px){
+    .nav-toggle {
+        right: 80px;/*120*/
+    }
+}
 @media screen and (max-width: 600px){
     .nav-toggle {
-        top: 1.5em;
-        right: 95px;
+        top: 0em;/*1.5em*/
+        right: 50px;/*95*/
     }
     .nav-toggle--portfolio__item {
         top: 2.5em;
