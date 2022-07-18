@@ -389,6 +389,11 @@ http://stackoverflow.com/a/34696029/383904
 	/* color: rgba(0,0,0,0.8); */
 	text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .CSSgal a {
+    margin: 0;
+  }
+}  
 .slider-container {
   width:78%;
   height:100%;
@@ -411,4 +416,9 @@ top: 15%;
 }
 .slider-container div.container-img--55 {
   width: 55%;
-}       
+}  
+@media screen and (max-width: 768px) {
+  .slider-container div.container-img--55 {
+    width: 100%;
+  }  
+}  
