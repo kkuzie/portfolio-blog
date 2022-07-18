@@ -620,7 +620,7 @@ $(document).ready(function () {
                 duration: .8,
                 scrollTrigger: {
                     trigger: '.section__subtitle--about',
-                    toggleActions: 'restart none none none',
+                    toggleActions: 'restart none restart reverse',
                     // markers: true,
                     // markers: {
                     //     startColor: 'blue',
@@ -654,7 +654,7 @@ $(document).ready(function () {
                 duration: .8,
                 scrollTrigger: {
                     trigger: '.about-me',
-                    toggleActions: 'none none none none',
+                    toggleActions: 'none none restart reverse',
                     // markers: true,
                     // markers: {
                     //     startColor: 'red',
