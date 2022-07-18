@@ -619,15 +619,15 @@ $(document).ready(function () {
                 rotate: 40,
                 duration: .8,
                 scrollTrigger: {
-                    trigger: '#whoIam-img-trigger',
+                    trigger: '.section__subtitle--about',
                     toggleActions: 'restart none restart reverse',
-                    // markers: true,
-                    // markers: {
-                    //     startColor: 'blue',
-                    //     endColor: 'green',
-                    //     fontSize: '1em',
-                    //     indent: 200
-                    // }
+                    markers: true,
+                    markers: {
+                        startColor: 'blue',
+                        endColor: 'green',
+                        fontSize: '1em',
+                        indent: 200
+                    }
                 }
             })
             gsap.from('.section__image--about', {

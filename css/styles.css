@@ -1184,7 +1184,11 @@ width: 24em;
         /* margin-right: -1.25em; */
         justify-self: right;
     }
-
+    @media screen and (max-width: 575px){
+        .section__title--about {
+            justify-self: center;
+        }
+    }
     /* @media (min-width: 2150px) {
         .section__title--about {
             margin-left: 0em;
@@ -1227,7 +1231,7 @@ width: 24em;
     }
     @media screen and (max-width: 575px){
         .section__subtitle--about {
-            width: 18em;
+            width: 16em;
         }
     }
 
@@ -1242,6 +1246,8 @@ width: 24em;
     @media screen and (max-width: 575px) {
         .section__image--about {
             margin-top: -1em;
+            left: -2em;
+
         }
     }
     /* .intro__img--silly {
