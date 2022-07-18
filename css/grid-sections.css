@@ -7,14 +7,31 @@
 .gce-5 {
     grid-column-end: 5;
 }
+@media screen and (max-width: 768px) {
+    .gce-5 {
+        grid-column-end: 6;
+    }
+}    
 .gce-6 {
     grid-column-end: 6;
 }
-
+.img-70 {
+    width: 70%;
+}
+.img-80 {
+    width: 80%;
+}
 
 .img-90 {
     width:90%;
 }
-.marginTop-3 {
+@media screen and (max-width: 575px) {
+    .img-90,
+    .img-80,
+    .img-70 {
+        width:100%;
+    }
+}    
+/* .marginTop-3 {
     margin-top:-3em;
-}
+} */
