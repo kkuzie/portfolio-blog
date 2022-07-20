@@ -1600,13 +1600,13 @@ width: 24em;
     font-size: var(--fs-h3);
     font-family: var(--ff-seconday)
 }
-.footer p,
+.footer p:first-of-type,
 .social-list__link i {
     transform: scale(1);
     transition: transform 0.8s;
 }
 
-.footer p:hover,
+.footer p:first-of-type:hover,
 .social-list__link i:hover {
     transform: scale(1.5);
     transition: transform 0.8s;
@@ -1632,7 +1632,6 @@ width: 24em;
     position: relative;
     font-size: var(--fs-captions);
     margin-top: 3rem;
-    transform: scale(1);
 }
 .word-links {
     color: var(--clr-accent) ; /*#4b9899*/
