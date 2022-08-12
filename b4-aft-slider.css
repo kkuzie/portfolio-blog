@@ -1,0 +1,102 @@
+/* <!-- before/after slider styles --> */
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container .title {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #acacac;
+        font-size: 40px;
+    }
+
+    .compare {
+        position: relative;
+        width: 850px;
+        height: 550px;
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Inline #6 | http://127.0.0.1:5500/sd350.html */
+
+
+    .compare .before {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 70%;
+        /*100*/
+        background: url("images/Screenshot\ 2021-12-21\ at\ 13-04-01\ Sempra\ Fracks\ Our\ Future\ -\ Sempra\ is\ a\ fracked\ gas\ infrastructure\ company.png");
+        background-size: 579px;
+        /*850*/
+    }
+
+    .compare .before .after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 425px;
+        height: 385px;
+        /*550*/
+        background: url("/images/home-before-850x550.png");
+        background-size: 600px;
+        /*850*/
+        z-index: 2;
+    }
+
+    .compare input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        -webkit-appearance: none;
+        z-index: 3;
+        width: 100%;
+        height: 70%;
+        background: transparent;
+    }
+
+    .compare input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        display: block;
+        width: 10px;
+        height: 550px;
+        border: 1px solid var(--clr-accent);
+        background: #5b83dc;
+        cursor: pointer;
+    }
+
+    .compare input::-webkit-slider-thumb:active {
+        background: #e25a5a;
+        border: 1px solid #e25a5a;
+        transition: all 300ms ease-in-out;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: var(--clr-accent);
+        cursor: pointer;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: var(--clr-accent);
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-thumb {
+        -webkit-appearance: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: var(--clr-accent);
+        cursor: pointer;
+    }

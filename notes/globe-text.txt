@@ -1,0 +1,206 @@
+ This was a three-week personal project to design four distinct pages (desktop and mobile versions) for an up-and-coming record label. 
+ 
+                 Globe Records operates under the principle that all musical creativity deserves a chance to develop. It
+                isn't about one audience or current trends. The focus is on the unique message each artist wants to
+                relay through their music. It's about individuality and inclusiveness for all genres, whether existing
+                or an entirely brand new concept. It's about reaching out and touching all.
+            </p>
+            <p>Globe Record's mission is to find and polish talented "diamonds in the rough" to make their originality
+                shine.
+
+                 • Market who the company is, what they stand for <br>
+ 
+                Two outcomes were the goal: 
+                Coming up with a brand that would be easily identifiable, simple, with the ability to be animated and then be incorporated into an immersive website experience where the audience would 'feel' the music.  
+
+ The main requirements were interactiveness and inspiration.  
+          
+        Create a brand to showcase artists and new releases, include a shop that the audience could buy memories, and a newsletter signup to keep fans informed - all in an interactive environment that the audience wants to explore. 
+                
+PROCESS
+A true blueprint to design. Without this vital step just makes things take longer than they should. 
+
+-----
+            <h3>systematic design</h3>
+            <p>
+                As the design developed, components within a design system were created in order to <strong
+                    style="color: #4b6d99">streamline
+                    repeatable features.</strong> This included interactive components in order to add
+                enhancements/features that
+                would further immerse the audience in the environment.
+            </p>
+                        <!-- <img src="images/globe/design components.png" alt="design system" class="portfolio__item--section-img"
+                > -->
+------
+            <h3>All about the details</h3>
+            <p>
+                Original hover effect was left flat, leaving no impression on the visitor.
+            </p>
+            <p>
+                By adding <strong style="color: #4b6d99">micro-interaction with flair, </strong>the hover now added to
+                the experience in a unique way. Reusing
+                features in different ways created a connection to other areas of the site.
+            </p>
+-----
+            <h3>Hypnotic colors</h3>
+            <p>
+                Whereas the logo pulled from the idea of gold and platinum records, the site needed to cool down and
+                hold attention almost hypnotically - like music in the background. The <strong
+                    style="color: #4b6d99">palette was pulled from concerts, spotlights, and colored lights
+                </strong>blending together.
+            </p>
+            <p>
+                Because a design system was already taking form, when realizing the original palette was was not quite working, it was easy to update the entire design.
+            </p>
+-----
+
+        <h3>All about the details</h3>
+            <p>
+                Original hover effect was left flat, leaving no impression on the visitor.
+            </p>
+            <p>
+                By adding <strong style="color: #4b6d99">micro-interaction with flair, </strong>the hover now added to
+                the experience in a unique way. Easily accessible reusable components allowed for use of 
+                features in different ways which created connections to other areas of the site.
+            </p>
+----- 
+
+For this project, I started by creating an eye-pleasing logo -- and went on to build a successful
+                record-producing empire (in my head, at least)! Hang tight while I take you through the myriad stages
+                and components of my UI design and branding process. 
+Started with a logo and built an empire! OK, so not really an empire. Though this imaginary company now
+                has produced albums (well, just the album cover…), it really has made , and even has a promotional
+                video! You will see the range of work I can do for a company through projects based on Globe Records. 
+
+And hey, one day I’ll get a Grammy.Com’on! You never know… 
+
+<a class="section__link"
+                    href="https://youtu.be/Z_QMh9e1vPQ">beautiful music</a>
+
+Message internalization can happen through different kinds of media. Music is known to stimulate the limbic system in our brains, which is the part of the brain in charge of responding to outside stimuli such as emotions.
+
+This decision illustrates the importance of hearing others' opinions and collaboration. In this case, it
+                was a fellow graphic designer who suggested gold and silver and "Bingo!", when it's right you know it! (Thank you to my friend, May!)
+                Once a client's personality is understood, it is doodle time. It's part of the brainstorming technique, a kind
+                of hieroglyphics or pictoral script, if you will. Writing words that are associated with the client and
+                their company goals and then sketching ideas that pop into mind. Over time, the doodles change, are
+                refined, some even discarded or replaced in the process of learning more about the company via
+                discussions or topical research on a product. 
+Gold and platinum were too stark and cold, instead for the website, a deep, dark blue was incorporated along with the secondary bright, lively pink while focusing the attention on the artists. 
+
+For the website, in order to make Globe Records stand out amongst the big names in the industry, instead of the typical black base of most labels, color was used to represent the diversity and beauty of music which would stimulate hearing and sight - allowing the audience to 'feel' the music.
+Along the way, details were created such as album cover art, logo animation, and a marketing video.
+
+ Why these colors?
+
+Whereas the logo pulled from the idea of gold and platinum records, the website needed to cool down and hold attention almost hypnotically - like music in the background; the website design pulled from what comes to mind when thinking of music:
+concerts, spotlights, and colored lights blending together. 
+
+   For the website, oddly enough, the initial color scheme was geared more toward the gold/platinum of the brand and ended with deep blue. 
+
+
+How to take a logo to a higher level:
+                Animation!In today's growing high tech visual and, I must add, competitive world, the ability to add movement is
+                often highly desirable. Good animation draws a viewer's interest and can elicit reactions and appeal to
+                a brand in a way that a "flat" logo cannot. Thus it can be a valuable tool to a client's business if
+                done right.
+
+                Software: AfterEffects, Audition, Illustrator, Inkscape, Photoshop, GIMP
+
+
+                For stage I, the goal was to complete the logo and four pages of website in desktop and mobile sizes in a three week timeframe. Being that this was a self-imposed goal, it was a challenge not to procrastinate at times. Putting myself in the mindset as if this was a real deadline with real client demands, I pushed through and met the challenge.
+                
+                As a complete novice to Adobe AfterEffects, where did I start my education process to research its value
+                and potential application to achieve my desired animation results? Why, YouTube of course! It was the
+                perfect jumping off point for me. For one, I found it instrumental in my navigating through new
+                terminology (much like learning a new language--and I have a Linguistics degree, so there is a certain
+                familiarity in that part of the learning process for me).While learning the tool's idiosynchrocies was a formidable challenge, my perserverence paid off.
+                Educating myself on the use of this tool has added a valuable enhancement to my arsenal of knowledge and
+                to a mounting reference library for repeated application.
+
+result: 
+
+               The result of Stage I is a recognizable brand that is now not only animated as a logo but also used within the website as an icon.
+
+              The responsive website gives the sense of vibrancy providing a feel of the music, initial interactions allow for the audience be a part of the scene, and intuitive navigation within each page keeps the audience exploring.
+
+Stage II will further expand on the site: <br>
+              • news page/blog, <br>
+              • options for listening to music when clicking on 'listen' button, <br>
+              • product page with purchasing screens, and <br>
+              • an artist page.
+
+ Through the process, ideas became fluid - ever-changing - being improved upon at each iteration. If something looks pleasing but takes away from the user experience, it is important to recognize it and let it go.
+
+ A few random volunteers were asked to go through a prototype and give feedback on feel, flow, and whether the intended interactions were obvious. Tweaks to the interactions were made, some added, and design decisions were narrowed in on. 
+
+ As a design blossoms, it changes. Some ideas seems good in theory yet once in practice doesn't work. Learning to be mallable is key to a professional final product. 
+
+
+             <p>
+            Going in reverse for the site ... </p>
+
+
+            <!-- <p><br> -->
+   <!-- For the website, in order to make Globe Records stand out amongst the big names in the industry, instead of the typical black base of most labels, color was used to represent the diversity and beauty of music which would stimulate hearing and sight - allowing the audience to 'feel' the music. -->
+   
+            <!-- </p> -->
+• 
+
+Being new on the music scene, Globe Records needs to stand out from the big names in the industry while targeting the lesser-known artists and creating buzz around new talent through branding and an interactive environment that an audience would want to explore. 
+
+Design a brand that would be easily identifiable, simple, with the ability to be animated.
+and
+
+identity
+The goal of a company's brand is to make a pleasing, memorable visual impact as a long-lasting identifier. </p>
+                <p>
+                Initially the colors green and blue were used to designate earthly colors of the globe. Though the colors would work for an environmental company, for the imaginary Globe Records, things began to take shape once the color palette was changed to gold and platinum . After all, it is the record industry where the ultimate prize is to go gold or platinum!
+
+                 Whereas the logo pulled from the idea of gold and platinum records, the website colors started with the brand palette but ended in blue. The site needed to cool down and hold attention almost hypnotically - like music in the background; 
+            the palette was pulled from what comes to mind when thinking of music: <br>concerts, spotlights, and colored lights blending together.  
+
+            challenge: 
+            Experience Through Feeling
+
+Design a brand that would be easily identifiable, simple, with the ability to be animated.
+
+and
+
+Create an immersive experience website (desktop and mobile versions) where Globe Records' audience would 'feel' the music and can experience their favorite artists, through finding music to listen to, buying memorabilia, and news.
+
+outcomes: 
+            <h3>Four Pages and a Brand</h3>
+            <p>• Design a brand that encapsulates the spirit of the mission of Globe Records <br>
+                • Showcase artists and new releases<br>
+                • Create a page where artists, agents, managers can submit demos as well as search other career opportunities in the industry<br>
+                • Outlet for keeping audience informed of music newsletter<br>
+                • Include a shop where the audience could buy memories
+                 </p>
+
+            <p>
+                <!-- <br><br><br><br> -->
+                Even the smallest decision can make a difference on 'feel.'</p>
+
+<h3>Doodle to Wireframe</h3>
+            <p>
+                Started with researching dozens of established recording labels to find what worked, what didn't, and the feel that a music label site has. Then moved on to sketching ideas that turned into wireframes. Once the groundwork was laid, color and imagery was incorporated.<br><br>
+
+                
+
+            </p>
+
+
+            Stage II will expand on the shopping experience, newsletter feed, pop-up options for 'listen' button, 404 page, and
+
+            what
+                comes to mind when thinking of music
+                The epitomy of the feeling of being there.
+
+
+intro
+ Not only are more musicians making their way in the business without the aid of a label, but independent musicians are actually the fastest-growing segment of the global recorded music business.
+
+                Globe Records operates under the principle that all musical creativity deserves a chance to develop. The focus isn't about one audience or current trends; it is about the unique feeling each artist wants to
+                relay through their music.
+

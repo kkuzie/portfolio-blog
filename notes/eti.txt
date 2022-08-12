@@ -1,0 +1,575 @@
+The first door to unlock was the one into that got us into the collective mind of the site's audience.  Creating personas served as a key foundational piece to keep
+                the design construct on point and inclusive.  
+
+The objective was to create a design that would entice users to explore the courses of study and training services via not only clear and concise descriptions but a pleasing visual experience paired with an intuitive, user-friendly navigational path. 
+                
+               provides educational programs that empower students to earn degrees and skills certificates, as well as offering customized training for employees and/or clientele of businesses, nonprofit organizations, and public entities.
+                
+                The top 10 designs were chosen and individual teams formed to arrive at a winning, final product. It was
+                a competition designed to get students' creative juices flowing -- and a real-world test of our
+                developing skills. 
+                As a born competitor with a great thirst for learning and artistic leanings, I viewed this assignment
+                with enthusiasm!
+
+
+                            <!-- <p>ROLE: <br>
+                Team Leader/Lead Designer<br>
+            Front-end Developer</p>
+            <p>TEAM:<br>
+                Sardor Ziyoev, Front-End Developer<br>
+                Chad Teichman, Designer
+            </p>
+            <p>RESPONSIBILITIES:<br>
+                • UX analysis (flows and persona)<br>
+                • Design (website and logo)<br>
+                • Iterations of the UI<br>
+                • Lo-fi, mid-fi wireframes<br>
+                • Research<br>
+                • Front-end development
+            </p> -->
+            <!--Our team's design won and is ETi's current working site!
+                The design provides two ways to explore ETi's offerings from both employer and student perspectives. The
+                "Employer Experience" section explains Contract Education and ways it can assist employers via
+                customized employee training. The "Student Experience" area provides links to Certificate Programs and
+                to individual classes available with a focus on career advancement.Two of us on our team coded the whole site. (What can I say, except that I genuinely enjoy coding!).  -->
+
+                <!--    Employee Training Institute offers customizable training courses, workshops, and/seminars focusing on Organizational Training and Workforce Development for companies at their offices or at an ETi facility and at time(s) and date(s) that work for the client.
+                <p>Also available are continuing education and development courses through the local community college district where longer term, off-site courses are available. ETi creates curriculums that meet the needs of the company. The classes are closed and specific to the organization’s needs so privacy and company secrets are not shared with outside organizations.</p>
+
+                <!-- Role: UI Designer / Front-end Developer<br>
+                Freelance/Contract Work -->
+
+
+ETi loved it and is currently using it. (Another aspect of my artistic side, I enjoy creating logos and once even taught myself how to create my
+                    own font design! See Po5) -->
+
+ <p>The first four pages (Home, About, Students, Employers) were released in the incredibly short time span of just two months. </p>
+
+
+           <h3>Sorting It Out</h3>
+           <p>In order to make sense of the myriad of information that was currently on the site, we need to
+
+            By sorting out the information on cards with possible tasks a user may be searching for, we were able to discern the what four main pages would be:
+            Home: Brief description of ETi, course types, clients served
+            About: Description, mission, why partner with ETi, award winner
+            Students: Courses offered to students
+            Employers: Describing how ETi can help employers train their employees
+           </p>
+ Each contributed to guiding the client to understand better what they didn't know they were looking for. Though all three were well-received, in the end the more traditional, conservative design was chosen.
+
+
+            <p>Three designs were presented. Each offered distinct styles:</p>
+            <p>
+                ONE: Simple with a 50s retro undertone <br>
+                TWO: Modern with artistic flair<br>
+                THREE: Traditional and straight forward
+            </p>
+
+            <p>We investigated the pros and cons experienced by a variety of real-world website users and included astute
+                consideration of ETi's expressed desires of professional and conservative. </p>
+
+
+objectives:
+order, symetry, usability - oh my
+In designing and coding a minimum of four pages that avoided the frustration of muddling through the text-heavy prior state of the site, three main objectives were imperative to achieve for usability and efficiency:</p>
+
+                <p>
+                • order and symmetry<br>
+                • logical flow<br>
+                • a well-defined navigation pattern
+
+CHALLENGE
+Cluttered and outdated</h3>
+            <p>Team was tasked with the redesign of ETi's existing website, whose issues included a lack of hierachy, disorganized content, and difficulty in locating and discerning the content and value of ETi's
+                offerings. 
+            
+             </p>
+            <p>Main goal was to provide a professional, uncluttered environment where potential clients would be enticed to explore the courses of study and training services via not only
+                clear and concise descriptions but a pleasing visual experience paired with an intuitive, user-friendly
+                navigational path.
+            </p>
+            <p>Voice and Tone:<br>
+                • Professional, informative<br>
+                • Conservative, easy (to navigate)<br>
+                • More current in design
+
+
+                Solution
+                            <h3>Efficient Navigation</h3>
+            <p>A minimal, easily navigated interface slimmed down to four main pages solved the initial problem of being overwhelmed by text. Direct links to offered courses simplified the site further. 
+                </p>
+                <p>
+                    These efficiencies give the user a clear path of how to find what is needed whether as a student finding courses or as an employer seeking customized training programs. 
+
+hierarchy
+when you don’t have visual hierarchy, the following 2 scenarios usually ensue:
+
+1) Confusion.
+The viewer tries to take in the content but can’t. They bounce around all of the “parts” of the composition without ever getting the “whole.”
+
+2) Defeat.
+The viewer sees everything at the same level of importance. They pass up the “parts” because the “whole” doesn’t inform them where to start or how to get around causing them to miss your point entirely.
+
+problems solved
+                <!--When landing on the home page of a website, first impressions may keep the user there but the navigation will provide a comfort of knowing where they are going. . 
+                    , highlight the best option for them whenever possible. Break complex tasks into smaller steps, that is using progressive disclosure when appropriate. -->
+
+ outcomes
+
+ 
+                <!--https://www.score.org/blog/12-reasons-why-small-businesses-need-website
+                    Currently the business comes from direct contact with long-time business clients and military contracts. The website increases business credibility 
+                    
+                    In the digital age, not having a website for a business is grounds for suspicion; having a website is one of the criteria for determining trustworthiness.
+                    Customers will seek you out online and and you will not be able to convert as many sales as you would if you have a more stable digital presence. 
+                    
+                    An inadequate or 'out of date' website may convey laziness or inattention to detail to today's consumer - traits that are extremely unattractive and lead the prospective client to 'swipe left'. -->
+
+                 Getting a website is the first step toward putting your business in an environment where it can thrive. It allows you to promote your product, build credibility, distinguish yourself, and quite frankly - compete. If you’re not on the internet these days, you’re not being competitive and you will miss out on opportunities, even from loyal customers. If your customers can’t find you, they will find someone else.
+
+                
+
+                The website is the gateway, door, and welcome mat of a business. It should educate the consumer as well as elicit emotion. It is the very first impression that will be made on the consumer and can determine with certainty whether or not the consumer will continue engagement.
+
+                A small business needs a website to drive business in today’s digital world. Without a website, you give up much, if not most, of your potential business because consumers will not be able to learn anything about you or your business’s offerings. If not for anything else, a website will show your audience that you really do exist.
+
+
+                    <!-- The efficiency of the site provided  -->
+              <!--   Since inital launch, cohesively designed individual pages describing each course in more detail was added. In order to allow for inquiries, a fillable email form that sent the inquiry to the specific contact in charge of each program was also added.-->
+
+            <!-- just as in interior design, the visual design to include color palette,
+                recognizes the audience. The team was attuned to the fact that an academia aesthetic differs greatly
+                from a seaside aesthetic, for example. We decided on a color scheme with primarily a gray, white and
+                soft blue with small punches of terra cotta to reflect a clean, contemporary feel. -->
+
+
+                finale
+
+                To mark the new main pages, each are distinguished by individual but complementary design and palette, featuring a relatable person representing different working sectors. 
+                
+                                <!-- <p>
+                    STAY FLEXIBLE IN COLLABORATION<br>
+                    Being more on the creative side of the spectrum, it was a challenge for me to design something conservative. This project gave me the opportunity to open my mind to others' ideas and not to say no right away. By doing this, 
+                </p> -->
+                <h3>Lessons Learned</h3>
+                <p>
+                    DIVVYING THE WORK<br>
+                    This was the first time I led a project from meeting with the client all the way through the coding and launch of the site. At the start of the project, whether it was screen design or coding a page, we would be working on the same sections simultaneously. As we progressed, I learned that assigning sections for each of us to work on then coming together to collaborate not only sped up the process but gave the team a part of the project they could call their own.
+                </p>
+                <h3>Epilogue</h3>
+                <p>
+                    Since the initial phase outlined above, ETi has reached out to me in a freelance capacity for some continued
+                    maintenance and updates. I have added additional course pages, functionable email form, and created their new logo design that incorporates the existing "star" that is
+                    part of the San Diego Community College district logo (with whom ETi is affiliated). The analogy being that ETi is an
+                    "offshoot" of the college. 
+                </p>
+            </div>
+
+            <!-- <h3>Navigation</h3>
+            <p>
+Each page is instantly reached by one click from either the navigation bar or the footer
+            </p>  
+        </div>
+
+
+           //////
+
+           <section class="portfolio__part portfolio__part--right">
+        <!-- <h2 class="section__title section__title--right">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+        <h3 class="section__subtitle section__subtitle--right">user interface</h3>
+        <div class="section__body">
+            <h3>Narrowing It Down</h3>
+            <p>We investigated the pros and cons experienced by a variety of real-world website users and included astute
+                consideration of ETi's expressed desires of professional and conservative. </p>
+            </div>
+            <div style="/*! margin-right: 15em; */" class="section__body5">
+
+            <p>Three designs were presented. Each offered distinct styles:</p>
+            <p>
+                ONE: Simple with a 50s retro undertone <br>
+                TWO: Modern with artistic flair<br>
+                THREE: Traditional and straight forward
+            </p>
+            
+        </div>
+
+
+
+        <div class="section__body2">
+  <p>
+               Each contributed to guiding the client to understand better what they didn't know they were looking for. Though all three were well-received, in the end the more traditional, conservative design was chosen. </p>
+</div><div class="section__img3">
+            <img src="images/eti/interface mockup v2 800x535px.png" alt="wireframe version" class="portfolio__item--section-img" style="margin-left: 10em;" width="100%">
+                <p class="section__captions section__captions--right">early design 1 wireframe</p>
+
+        </div>
+        <div class="section__img2">
+            <img src="images/eti/design 2.png" alt="wireframe version" class="portfolio__item--section-img" style="/*! margin-left: 29em; */" width="850px">
+                <p class="section__captions section__captions--right">design 2 mockup</p>
+
+        </div>
+
+
+    </section>
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+/* div.section__img3:nth-child(5) > img:nth-child(1) { */
+.section__img2 > img:nth-child(1) {
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+/* div.section__img3:nth-child(4) > img:nth-child(1) { */
+.section__img3 > img:nth-child(1) {
+  margin-left: 10em;
+}
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+@media (min-width: 600px) {
+  .portfolio__part--right {
+    /* grid-template-areas: "title img img img img" "title img img img img" "text text text text3 text3" "text5 text5 text5 text5 text5" "img3 img3 img3 text4 text4" "text2 text2 img2 img2 img2"; */
+    grid-template-areas: "title img img img img" "title img img img img" "text text text text3 text3" "img3 img3 img3 text4 text4" "text5 text5 text5 text5 text5" "text2 text2 img2 img2 img2";
+  }
+}
+
+
+////// design 1 and 2 and 3 in a row
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+/* div.section__img3:nth-child(5) > img:nth-child(1) { */
+.section__img2 > img:nth-child(1) {
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+/* div.section__img3:nth-child(4) > img:nth-child(1) { */
+.section__img3 > img:nth-child(1) {
+  margin-left: 10em;
+}
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+@media (min-width: 600px) {
+  .portfolio__part--right {
+    /* grid-template-areas: "title img img img img" "title img img img img" "text text text text3 text3" "text5 text5 text5 text5 text5" "img3 img3 img3 text4 text4" "text2 text2 img2 img2 img2"; */
+    grid-template-areas: "title img img img img" "title img img img img" "text text text text3 text3" "img3 img3 img3 text4 text4" "text5 text5 text5 text5 text5" "text2 text2 img2 img2 img2";
+  }
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+div.section__img3:nth-child(5) > img:nth-child(1) {
+  margin-left: 29em;
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+div.section__img3:nth-child(4) > img:nth-child(1) {
+  /* margin-left: 10em; */
+  margin-right: 10em;
+}
+
+<section class="portfolio__part portfolio__part--right">
+        <!-- <h2 class="section__title section__title--right">
+            Creating<strong> the Brand</strong>
+        </h2> -->
+
+         section__subtitle--right">user interface</p>
+        <div class="section__body">
+            <h3>Narrowing It Down</h3>
+            <p>We investigated the pros and cons experienced by a variety of real-world website users and included astute
+                consideration of ETi's expressed desires of professional and conservative. </p>
+            
+
+            <p>Three designs were presented. Each offered distinct styles:</p>
+            <p>
+                ONE: Simple with a 50s retro undertone <br>
+                TWO: Modern with artistic flair<br>
+                THREE: Traditional and straight forward
+            </p>
+            
+        </div>
+
+
+
+        <div class="section__body5">
+  <p>
+               Each contributed to guiding the client to understand better what they didn't know they were looking for. Though all three were well-received, in the end the more traditional, conservative design was chosen. </p>
+</div><div class="section__img3">
+            <img src="images/eti/interface mockup v2 800x535px.png" alt="wireframe version" class="portfolio__item--section-img" style="margin-right: 10em;" width="350px">
+                <p class="section__captions section__captions--right">early design 1 wireframe</p>
+
+        </div>
+        <div class="section__img3">
+            <img src="images/eti/design 2.png" alt="wireframe version" class="portfolio__item--section-img" style="margin-left: 29em;" width="350px">
+                <p class="section__captions section__captions--right">design 2 mockup</p>
+
+        </div>
+
+
+    </section>
+The overhaul of the website was just the first step in ETi's business strategy.  For now, the site is informational in nature, offering people insights into who they are, why they are different, and what they provide. It has helped build community, connection, and loyalty due to fresh and engaging content. 
+
+
+    NEW DESIGN 
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+@media (min-width: 600px) {
+  .intro--port, .portfolio__part--right, .portfolio__part--left {
+    /* grid-auto-rows: 1fr; */
+    /* grid-auto-rows: min\); */
+    /* grid-auto-rows: mi\); */
+    /* grid-auto-rows: m\); */
+    /* grid-auto-rows: \); */
+    grid-auto-rows: auto;
+  }
+  .portfolio__part--left {
+    /* grid-template-areas: "img img img img title" "img img img img title" "img5 img5 text text text" "text4 text4 img3 img3 img3" "img2 img2 img2 text2 text2" "text6 text6 img4 img4 img4"; */
+    grid-template-areas: "title title title title title" "title2 title2 title2 title2 title2" "title3 title3 title3 title3 title3" "img img img9 img9 img9" "img5 img5 text text text" "text4 text4 img3 img3 img3" "img2 img2 img2 text2 text2" "text6 text6 img4 img4 img4";
+  }
+  .section__subtitle--port, .section__subtitle--right, .section__subtitle--left {
+    /* grid-row: 2; */
+    grid-row: 4;
+  }
+  .intro__img--port, .portfolio__item--section-img, .section__img {
+    /* grid-area: img; */
+    grid-area: title3 / img;
+  }
+  .portfolio__part--left {
+    /* grid-template-columns: .5fr 1fr 1fr 1fr 1.5fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section__body {
+    /* background: blue; */
+  }
+}
+
+.section__title--intro, .section__title--left {
+  z-index: 1;
+}
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css */
+
+@media (min-width: 1200px) {
+  :root {
+    /* --fs-h1: 5rem; */
+    --fs-h1: 11rem;
+  }
+}
+
+h1 {
+  /* line-height: var(--lh-h1); */
+  font-weight: bold;
+}
+
+body {
+  /* color: var(--clr-light); */
+  color: #151515;
+}
+
+.section__title--intro {
+  /* font-weight: var(--fw-reg); */
+  font-weight: var(--fw-bold);
+}
+
+.section__title {
+  /* margin-bottom: .5em; */
+}
+
+.section__title--intro {
+  /* margin-left: 50px; */
+}
+
+/* Element | http://127.0.0.1:5500/eti.html */
+
+h1.section__title:nth-child(2) {
+  grid-area: title2;
+  text-align: left;
+  margin-left: .5em;
+}
+
+/* Element | http://127.0.0.1:5500/eti.html */
+
+h1.section__title:nth-child(3) {
+  /* grid-area: title3\\; */
+  grid-area: title3;
+  margin-bottom: .5em;
+  padding-right: 0;
+  opacity: 0.5;
+}
+
+/* Element | http://127.0.0.1:5500/eti.html */
+
+h1.section__title:nth-child(1) {
+  text-align: left;
+  opacity: 0.5;
+}
+
+
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+@media (min-width: 600px) {
+  .section__body {
+    /* grid-area: text; */
+    /* margin-top: 2em; */
+    /* grid\=column: 3; */
+    /* grid\=column: 3 !important; */
+    /* grid\=column: 3 / !important; */
+    /* grid\=column: 3 / -; */
+    /* grid\=column: 3 / -1; */
+    grid-area: title3 / text;
+    margin-top: 5em;
+    grid=column: 3 / -1;
+    grid-column: 4 / -1;
+  }
+}
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css */
+
+@media (min-width: 1200px) {
+  :root {
+    /* --fs-h1: 11rem; */
+    --fs-h1: 14rem;
+  }
+}
+
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css?_cacheOverride=1642712981162 */
+
+h1, h2, h3 {
+  /* line-height: 1; */
+  line-height: 155px;
+}
+
+.section__title--intro2 {
+  /* margin-left: .5em; */
+  margin-left: 0.5em;
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+h1.section__title:nth-child(2) {
+  z-index: 0;
+}
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css?_cacheOverride=1642712981164 */
+
+.section__title--intro, .section__title--intro2, .section__title--intro3 {
+  /* z-index: 1; */
+  z-index: 0;
+}
+
+.intro--port, .portfolio__part {
+  /* padding: 10em 4em 0; */
+  padding: 7em 0em 0;
+}
+
+@media (min-width: 600px) {
+  .section__body {
+    padding-right: 3rem;
+  }
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+h1.section__title:nth-child(3) {
+  margin-left: 1.8em;
+}
+
+
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css?_cacheOverride=1642714862838 */
+
+@media (min-width: 600px) {
+  .portfolio__part--right {
+    grid-template-areas: "title title title title title" "text text text  text text" "img9 img9 img img img" "img8 img2 img2 img7 img7";
+  }
+  .portfolio__part--right {
+    /* grid-template-columns: 1.5fr 1fr 1fr 1fr .5fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .intro--port, .portfolio__part--right, .portfolio__part--left {
+    /* grid-auto-rows: auto; */
+    /* grid-auto-columns: 1fr; */
+  }
+  .section__body {
+    /* margin-top: 5em; */
+  }
+}
+
+.section__img--section-origSite {
+  grid-area: img;
+}
+
+.section__title--left, .section__title--right {
+  /* font-weight: var(--fw-reg); */
+  /* padding-top: .75em; */
+  font-weight: var(--fw-bold);
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+div.section__body:nth-child(1) {
+  grid-area: text;
+}
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css?_cacheOverride=1642714862837 */
+
+@media (min-width: 1200px) {
+  :root {
+    /* --fs-h2: 4.125rem; */
+    --fs-h2: 12rem;
+  }
+}
+
+h2 {
+  color: #151515;
+}
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+div.section__img2:nth-child(4) {
+  grid-area: img2;
+  margin-top: -2em;
+}
+
+
+
+
+
+
+/* Element | http://127.0.0.1:5500/ETi.html */
+
+section.portfolio__part:nth-child(6) {
+  grid-template-areas: "title title title title title" "title3 title3 title3 title3 title3" "text text text text text" "img9 img9 img img img" "img8 img2 img2 img7 img7";
+  display: grid;
+}
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+@media (min-width: 600px) {
+  .section__body--section2-eti {
+    /* grid-area: text; */
+    /* margin-top: -3em; */
+    grid-area: title3 / text;
+    grid-column: 2 / -3;
+    margin-left: 0em;
+  }
+  .intro__img--port, .portfolio__item--section-img, .section__img {
+    /* grid-area: title3 / img; */
+  }
+  .section__body {
+    /* padding-right: 3em; */
+    padding-right: 17em;
+  }
+}
+
+end NEW DESIGN

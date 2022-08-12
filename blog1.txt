@@ -1,0 +1,159 @@
+kevin powell portfolio:
+https://www.youtube.com/watch?v=_xkSvufmjEs
+
+menu animation:
+https://www.youtube.com/watch?v=lehqYOCm6Tc&list=PLEoAp8bEob2eV-YjY5sr6blj8AEmJOWnh&index=4
+
+
+decided to create a basic portfolio for the job hunt i have been procrastinating on. oh, i have applied for things, but perhaps i have a bit of imposter syndrome, or maybe it is just that i am still trying to think through exactly what type of company i want to work for or maybe i just havent found that company yet. i know i want a creative company, i want to be able to learn new cool things, but key is that we create interesting websites not cookie cutter ones. i am inspired by sites seen on awwwards and the like. that is what makes me sit down and code everyday. I
+so i found a portfolio tute on building and deploying a portfolio website with Kevin Powell one of my go-to guys in development instruction. 
+
+Already learning little details that i didnt know - 
+    gonna utilize BEM which is something i have been wanting to learn more deeply,
+    found out the use of aria-label which helps with accessibility since there is no label or text stating what this button does.
+    using border-box changes how padding is calculated to make it within a width instead of adding on to the total width.
+    root is where you can set up custom properties
+    always good to use 'em' on text since it is relative to font-size
+
+gsap animations:
+    walked away from the animation for the night. I couldn't figure out why the hover over the h1 wasnt producing the animation. I had set up the new var, duplicated the animation and changed the name to the new var. Seems logical that it would work, right? 
+
+    Nope.
+
+    Console.log showed that the mouseenter was working properly, yet the animation wasnt happening. Erg.  Finally, I commented out the animation for the individual animations - the right and the left sides. And lo and behold the hover over the h1 animated the left and right. But it was enough for the night. i still didnt know why it was doing this.
+
+    the next morning, i sat down looked at the code for a mere second and it came to me. I didnt need to create a new var for both the animations. The vars for them were already created. what if I use the tlPeekInR and tlPeekInL with the method .play()?  and gosh diddly darn, it flippin worked. easy peasy. 
+
+    Walking away, leaving it be clears the mind. And in mere seconds the solution was in front of me the following morning. I am still amazed how the simple act of stopping and returning "magically" makes the solution appear. 
+
+CHallenge:
+in order to scroll to a section, one uses href and ids. 
+I needed to use the href and ids for an image to appear when hovering over a link (<a> tag).
+This posed the problem of having 2 identical ids which of course is not possible since the DOM wont know which id to go to so it will use the first one it sees.
+
+to get around this, one can use data-target which allows for its own id, therefore on hover the image will be able to appear and on click the page will scroll to the section.
+
+23jun21
+after many hours trying to figure out the z-index issue for the nav items which are 'hidden' when menu flyout is closed (even tho they were not visible, when hovered cursor over them the cursor turned to pointer)
+
+the answer turned out to be to simply change the x from only -1000 to -3000 in order to "slide" the item completely off the screen.
+
+//////// menu items stagger into view
+    tl.from('nav ul li', .8, {
+        x: -3000,
+        opacity: 0,
+        stagger: .3
+    })
+
+////////bar comes into view
+    tl.from('.nav__item--hover-element', 1, {
+        x: -3000,
+        opacity: 0
+    }, '-=1' )
+
+solution for the navAppear on scrollup:
+******first made the navScrollup a function so could call it again when needed
+
+let navAppearOnScrollup = function () {
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector("header").style.top = "0";
+    } else {
+        document.querySelector("header").style.top = "-180px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+}
+navAppearOnScrollup();
+
+******then created an adaptation of the navScrollup that hid the nav bar.
+
+let pauseNavAppearOnScrollup = function () {
+var prevScrollpos2 = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos2 = window.pageYOffset;
+    if (prevScrollpos2 < currentScrollPos2) {
+        document.querySelector("header").style.top = "-180px";
+    } else {
+        document.querySelector("header").style.top = "-180px";
+    }
+    prevScrollpos2 = currentScrollPos2;
+}
+}
+
+******then incorporated both to onclick of nav items adding a delay to the navAppearOnScrollup function in order for it to once again work when scrolling up. but the paused version stops it from appearing when nav 'scrolls' to a previous section located above the current position.
+
+///////removes nav-open so flyout disappears - menu closed
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+
+        //disable scrollup nav appear
+        pauseNavAppearOnScrollup();
+
+        //re enable scrollup nav appear 
+        window.setTimeout(function () {
+            navAppearOnScrollup();
+        }, 3000);
+
+    })
+});
+
+28jun21
+
+little bother: video tag in html 
+
+autoplay loop is supposed to autoplay video. worked in other pages not for a particular video. 
+it did work with controls loop but had to press play. 
+
+turns out, for whatever reason the fix for this was to add muted as well - autoplay loop muted. 
+and lo and behold, it worked. go figure.
+
+
+
+
+
+/* styles.css | http://127.0.0.1:5503/css/styles.css?_cacheOverride=1652744943340 */
+
+.intro--plain {
+  /* grid-template-areas: "karen img" "designer img" "text img"; */
+  /* grid-template-columns: 2fr 1fr; */
+  grid-template-areas: "karen karen img" "designer designer img" "text gap img";
+  grid-template-columns: 2fr .5fr 1fr;
+  margin: 0em 0em 0 2.5em;
+}
+
+.section__title--plain {
+  /* line-height: 1em; */
+  /* margin-left: 1.5em; */
+  /* margin-bottom: 1em; */
+  line-height: 0.65em;
+  margin-left: 0;
+  opacity: .7;
+}
+
+.section__designer--plain {
+  /* margin-left: 1.25em; */
+  margin-top: -4em;
+  line-height: 5em;
+}
+
+.section__body--plain {
+  /* margin-left: 3em; */
+}
+
+.intro {
+  /* margin-top: 10em; */
+  margin-top: 7em;
+}
+
+/* portfolio.css | http://127.0.0.1:5503/css/portfolio.css?_cacheOverride=1652744943340 */
+
+.section__title--intro2 {
+  /* text-align: left; */
+  /* opacity: 1; */
+  /* z-index: 0; */
+}

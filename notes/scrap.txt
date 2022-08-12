@@ -1,0 +1,77 @@
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css */
+
+.hamburger-top, .hamburger-bottom, .hamburger, .arrow-upper, .arrow-lower {
+  /* height: 10px; */
+  height: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-toggle {
+    /* top: 20px; */
+    top: 35px;
+  }
+}
+
+/* portfolio.css | http://127.0.0.1:5500/css/portfolio.css */
+
+.arrow-upper, .arrow-lower {
+  /* top: -3px; */
+  /* width: 3em; */
+  /* left: -1px; */
+  top: -2px;
+  width: 2em;
+  left: 4px;
+}
+
+.arrow-lower {
+  /* top: 18px; */
+  top: 15px;
+}
+
+DELETE when done:
+
+/* styles.css | http://127.0.0.1:5503/css/styles.css */
+
+@media screen and (max-width: 768px) {
+  .intro--plain {
+    grid-template-areas: "karen0 karen0 karen0 karen0 img img" "karen karen karen karen img img" "designer designer designer designer designer designer" "designer1 designer1 designer1 designer1 designer1 designer1" "text text text text text text";
+  }
+  .section__designer--plain2 {
+    /* margin-top: -5em; */
+  }
+}
+
+.section__designer--plain {
+  /* margin-top: -4em; */
+  /* line-height: 5em; */
+  line-height: 3em;
+}
+
+.section__title--plain {
+  /* opacity: .6; */
+  z-index: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  .section__designer--plain h3, .section__designer--plain2 h3 {
+    z-index: 3;
+    position: relative;
+  }
+}
+
+.section__title--plain {
+  /* color: var(--clr-headings); */
+}
+
+:root {
+  /* --clr-headings: #343f4b; */
+  --clr-headings: #353d47;
+}
+
+@media screen and (max-width: 1150px) {
+  .section__designer--plain {
+    /* margin-top: -3em; */
+    margin-top: -2em;
+  }
+}
