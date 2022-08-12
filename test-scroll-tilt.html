@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Projects</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;800&family=Glegoo&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flyout.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <style>
+
+        #scroll{ 
+            /* transform: translate3d(0, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); */
+            transform: rotate(-16deg) scale(.9);
+            right: -150px;
+            margin-left: -150px;
+            max-width: 1000px;
+            max-height: unset;
+     }
+     .portfolio__part--right {
+         padding-right: unset;
+     }
+     .section__body {
+         z-index: 2;
+     }
+
+/* .project {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 66%;
+    height: 90vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-perspective: 3500px;
+    perspective: 3500px;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    -webkit-transform: perspective(3500px);
+    transform: perspective(3500px);
+}
+.img {
+    position: relative;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.img.mobile {
+    display: none;
+}
+.mobile {
+    display: none;
+} */
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/kk logo trns bkgrd with rectangle frames purp dk grey 7jun21.svg" alt="kk logo"
+                class="logo--img">
+        </a>
+    </div>
+    <button class="nav-toggle nav-phn" aria-label="back-next buttons" onclick="goBack()">
+        <span class="arrow-upper"></span>
+        <span class="hamburger"></span>
+        <span class="arrow-lower"></span>
+    </button>
+</header>
+
+
+<!-- INTRO -->
+    <section class="intro--port portfolio__part portfolio__part--left">
+        <h1 class="section__title section__title--intro section__title--intro-port">
+            Creating<strong> the Brand</strong>
+            </h2>
+
+            <h3 class="section__subtitle section__subtitle--left">personas</h3>
+            <div class="section__body">
+                <p>I am a tireless seeker of knowledge,<br>
+                    a polyglot,<br>
+                    long to move back to Italy,<br>
+                    and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+                <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and s. To
+                    bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                    beats to complement the videos I produce.
+                </p>
+            </div>
+
+
+    </section>
+
+    <section class="intro--port portfolio__part portfolio__part--right">
+        <h1 class="section__title section__title--intro section__title--intro-port">
+            Creating<strong> the Brand</strong>
+            </h2>
+
+            <h3 class="section__subtitle section__subtitle--right">personas</h3>
+            <div class="section__body">
+                <p>I am a tireless seeker of knowledge,<br>
+                    a polyglot,<br>
+                    long to move back to Italy,<br>
+                    and am critter crazy (I have 5 dogs, 3 cats, and 2 opossums).</p>
+                <p>Oh, for my work passion, I specialize in creating unique, usable, professional websites and logos. To
+                    bring my oh-so-many ideas to life I lovingly hand-code whenever possible and enjoy producing my own
+                    beats to complement the videos I produce.
+                </p>
+            </div>
+
+            <div class="section__img" id="scroll">
+                <img src="images/breakout w text w sdce mockup.png"
+                class="portfolio__item--section-img" id="scroll-img" alt="ETi business cards">
+            </div>
+
+    </section>
+
+    <!-- <div data-w-id="65295753-2916-2074-57ba-fabe13a7e549" class="project"
+        style="will-change: opacity, transform; opacity: 1; transform: translate3d(-2vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0.3731deg) skew(0deg); transform-style: preserve-3d;">
+        <img src="https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3a570c7c03d7455a7006ba_cover_image_fenestra.jpg"
+            alt="A mockup of a responsive website design for company that produces windows and doors" loading="lazy"
+            sizes="(max-width: 767px) 100vw, (max-width: 991px) 80vw, 66vw"
+            srcset="https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3a570c7c03d7455a7006ba_cover_image_fenestra-p-800.jpeg 800w, https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3a570c7c03d7455a7006ba_cover_image_fenestra-p-1080.jpeg 1080w, https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3a570c7c03d7455a7006ba_cover_image_fenestra-p-1600.jpeg 1600w, https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3a570c7c03d7455a7006ba_cover_image_fenestra.jpg 1680w"
+            class="img desktop"
+            style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); transform-style: preserve-3d;"><img
+            src="https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3b617fbd627e2ef86e178d_Cover-Mobile-Fenestra.jpg"
+            alt="An iPhone mockup of a responsive website design for a company that sells Bubble tea." loading="lazy"
+            sizes="(max-width: 767px) 80vw, 100vw"
+            srcset="https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3b617fbd627e2ef86e178d_Cover-Mobile-Fenestra-p-500.jpeg 500w, https://assets.website-files.com/5e6b08d53dfad885beca7a05/5f3b617fbd627e2ef86e178d_Cover-Mobile-Fenestra.jpg 600w"
+            class="img mobile"
+            style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); transform-style: preserve-3d;"
+            width="300"></div> -->
+
+            <footer class="footer ">
+                <div class="footer--bg"></div>
+                <p>
+        <a href="mailto:karen@thekuzicollaborative.com" class="footer__link">karen kuzmiak</a>
+    </p>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="images/resume for humans-v1.pdf" target="_blank" class="social-list__link"><i
+                                class="fa fa-id-card"></i></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="mailto:karen@thekuzicollaborative.com" target="_blank"class="social-list__link"><i
+                                class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="social-list__item">|</li> 
+        
+                    <!-- <li class="social-list__item">
+                        <a href="#" target="_blank" class="social-list__link"><i class="fab fa-youtube"></i></a>
+                    </li> -->
+                    <li class="social-list__item">
+                        <a href="https://www.linkedin.com/in/karenkuzmiak/" target="_blank" class="social-list__link"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.behance.net/thekuzicreation" target="_blank" class="social-list__link"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://twitter.com/thekuzicreation" target="_blank" class="social-list__link"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.instagram.com/thekuzicreation/" target="_blank" class="social-list__link"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                            <!-- <li class="social-list__item">
+                        <a href="https://github.com/kkuzie" target="_blank" class="social-list__link"><i class="fab fa-github"></i></a>
+                    </li> -->
+        </ul>
+                    </footer>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+        
+    <!-- <script src="js/flyout.js"></script> -->
+    <script src="js/index.js"></script> 
+    <script src="js/portfolio.js"></script>
+    <script src="js/headerNavScrollup.js"></script>
+
+    <script>
+
+// window.onscroll = function () {
+//     scrollRotate();
+// };
+
+// function scrollRotate() {
+//     let image = document.getElementById("scroll");
+//     image.style.transform = "rotateX(" + window.pageYOffset/90 + "deg)";
+//     image.style.transform = "rotateY(" + window.pageYOffset/90 + "deg)";
+//     image.style.transform = "rotateZ(" + window.pageYOffset/90 + "deg)";
+
+//     image.style.transform = "translate3d(" + window.pageYOffset/90 + "px)";
+
+// }
+
+// ransform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+                <!-- Call to Action (CTA) buttons were different colors and sizes, two of which were titled more as menu items than calls to action.  The site lacked any design and appeared to have been thrown together with no cohesion between pages and no hierarchy. Questions abounded:  Where does user begin to read? Why would reader want to read more?  -->
+                <!-- Ironically, the logo for fracking awareness contains their battlecry to "Raise the Alarm" complete with a megaphone icon, begging for the user to click on it in anticipation of sound to be produced and a web journey to an exhilarating and inspiring experience. So much possibility left unpursued!  -->
+
+
+            <p>After re-launching the updated site, San Diego 350/Sempra Fracks Our Future promoted the site in their new campaign and over social media. The site has gotten more traffic and has provided more awareness for the non-profit organization's campaign efforts.
+            </p>
+            <p>
+                Along with the website update, I designed the logo/branding for both 'Sempra Fracks Our Future' and 'Raise the Alarm' campaigns which will be used on products from tshirts to flyers to sides of vans!
+
+Disecting the information from the original pages into comprehensive sections was step one.
+
+Imagery was also a key aspect to providing the seriousness the site needed to portray.
+
+                • Create cohesiveness between pages <br>
+                • Provide a intuitive flow from section to section and page to page <br>
+                • Provide buttons throughout the site leading user to join the cause, take action, or learn more<br>
+                • Update the blog page to highlight articles
+
+Studying the current site and the content, one graphic seemed to encapsulate the campaign's message.
+
+Persons interested in information about the impacts of fracking need an easy, obvious way to find information, take action, and/or get involved in the fight for clean energy.s
+
+The challenge was to address the multiple issues in order make the goals of the site clear, bring
+                cohesion between pages and entice the visitor to get involved in the campaign.
+
+                Every section of the site is reachable via a simple navigation bar and a multitude of buttons and
+                hoverable images that lead the user to more information. The ability to circulate between the pages in
+                an intuitive manner created a better user experience allowing for longer time exploring the site's
+                information.
+
+                Since the home page was bare, by incorporating the content from the original 'About' page background of the campaign plus a jumping off point for the rest of the site was provided for the visitor. 
+            </p>
+
+                        <p>
+                In order to accomplish this, reorganization of content with cohesion along with call-to-action buttons
+                placed throughout the content were necessary.
+            </p>
+
+By incorporating the content from the original 'About' page background of the campaign plus a jumping
+                off point for the rest of the site was provided for the visitor.
+
+                <br><br>
+
+                San Diego 350 had attempted to put together a website to raise awareness about Sempra Energy and
+                fracking. However, with no clear message and sorely lacking a path to lead the user to discover more, it
+                was confusing and inadequate to meet their goals.
+
+                                <!-- My challenge was to address the multiple issues in order make the goals of the site clear, bring cohesion between pages and ultimately provide a great user experience working on a common vision.   -->
+
+          
+                          The first round of test users found the boldness of the original red choice 'too in the face,' a
+                black/grey/white/orange/teal scheme was decided on:
+
+           • Orange gives a feeling of ‘warning’ that aligns with the cause. (Think traffic cones or safety
+                vests as examples.)<br>
+                • Teal was added providing a balance and serves as a pop against the black, grey and white. <br>
+                • Black and grey tones reflect a seriousness, even foreboding, as in the world of fracking.
+
+
+
+                slider before and after image:
+                            <!-- <div class="container"> -->
+            <div class="title">
+                <!-- Before-After Image Slider -->
+            </div>
+            <div class="compare">
+                <div class="before">
+                    <div class="after"></div>
+                </div>
+                <input type="range" min="0" max="850" step="10" id="compare-ip">
+            </div>
+            <!-- </div> -->
+There’s no benefit in overloading screens with visual information, so aim for arrangements that are both minimal and spacious.
+
+to create a future that supports a livable planet and 
+and climate injustice
+                just society through education and outreach, public policy advocacy, and

@@ -1,0 +1,226 @@
+Phishing scams have become very advanced, and can seem 100% authentic. Employee training and conducting a phishing test for employees helps ensure that they know what to look for in these instances.
+
+    After exercising, the human body is depleted of hydration and electrolytes from sweating. (Context)
+
+    Employers are susceptible to phishing attacks when employees don't know how to recognize them.
+
+    The person then needs to decide how best to rehydrate the body and replenish the lost electrolytes. (Issue)
+
+    Employers need to be sure that their staff can spot the invading email.
+
+    Not all beverages are equally beneficial after exercise. The coach must decide what drink to offer volleyball players during a game or practice. (Relevance)
+
+    Not all training are equally qualified to properly teach users. The employer must decide how to be sure employees aren't making the organization susceptible.
+
+    This training program will provide a way to keep the employees aware of phishing. 
+
+    In this experiment, we will investigate the electrolyte content found in standard sports drink compared to what is found in plain coconut water. (Objective)
+
+Phising scams are only getting worse. 
+
+    The manufacturing and assembly process for Product X is as efficient as possible. (Ideal) 
+    
+    Employees are able to recognize phishing emails 100% of the time.
+
+    Currently, certain parts need to be transported from one assembly line to the next and installed by hand. (Reality)
+
+    Unfortunately, XX% of the staff are proficient at knowing which to not open.
+    The incremental loss in efficiency means that Company Y has not been meeting its production goals this year. (Consequences)
+
+The XXX of attacks means that Company X can be compromised and can bring business to a halt. (Consequences)
+
+    To reduce the need for manual transport of parts, conveyor belts and mechanical robot arms should be installed between assembly lines. This way, workers can stay at their respective stations rather than having to walk back and forth across the assembly room floor. (Proposal)
+To reduce the possibility of malware and viruses, regular employee training should be a regular part of XXX. This way, business can stay virus free rather than causing information loss. 
+
+A company that feels susceptible to malware attacks needs to train employees to recognize phishing emails but faces the overwhelming task of providing the proper tools to keep them informed.
+
+The user can click the navigation bar to skip ahead to each of the sections.
+
+The next steps are to conduct user testing and make adjustments to the app’s and the website’s language. The website is fully deployable, and the code is available to the client for any further changes. The client should hand-off the prototype to developers for the actual deployment of the mobile app.
+
+ABOUT NOTES
+Univi is a mobile prototype designed in four sprints (one month). It’s an online banking solution that focuses on saving, investment, and advises the user on the common day-to-day financial adversities. Univi looks easy, appealing, fresh. Most importantly, it puts the users always in control, by making very clear that the app isn’t messing with their money.
+
+GoPhish is appealing and fresh. Most importantly, it trains employees in a way that is engaging and fun while still integrating key learning points to not get 'hooked' by hackers vying for important information.
+
+2. Initially the quiz was going to be only for desktop, figuring training would take place at the workplace. Today hybrid and remote work environments more prevelent, and after user testing showed that mobile and tablets were often being used, opted for a responsive design for all device sizes. For desktop, it was desired to keep the app to viewport height with no scrolling required.
+
+Thanks to the general user base, we were able to validate the UX flows early on.
+----------------------------------------------------------------
+
+ABOUT
+GoPhish! is an online training tool for businesses to train employees how to spot phishing emails. 
+
+This is Phase I of the process which consisted of two deadlines over two months.
+
+***IMAGE***
+
+ROLE
+UI /UX
+Front-end Developer
+
+RESPONSIBILITIES 
+interface design
+user research and testing
+HTML/CSS/JS coding
+
+TEAM
+Lamar Clapham, Owner/Developer
+
+***IMAGE***
+
+CHALLENGE
+Company needs a high-quality resource in order to successfully teach employees how to recognize phishing emails and avoid internet scams.
+
+The user base consisted of employees of large and small business who use email in daily job. The main requirements for Phase I were to create five sections with 10 questions to start: 
+    welcome
+    register
+    instructions 
+    quiz (with templates to be used for quiz questions)
+    pass/fail page with certificate
+
+GoPhish! needed to be easily understadable by people without any specific knowledge of phishing emails and provide resources to learn more. 
+
+
+PROBLEMS SOLVED
+1. Once beginning the quiz, there was no clear indication of how far along in the quiz the user was.
+
+By adding progress 'bubbles' with added feature of checks and Xs, user knew how far along they were as well as their score thusfar.
+
+Adding to the interface, modals were created to not only tell user whether they got the answer right or not, but to add to the experience fish puns were used to communicate. When an answer was incorrect a teaching moment appeared with text bubbles pointing to why the email was phish or valid.
+
+***IMAGE***
+2. Isn't it so annoying to have to scroll a tiny bit just to click a button? User feedback confirmed this pain point.
+
+For a minimal yet optimal flow, each page would be limited to the viewport height for desktop.
+
+***IMAGE***
+
+
+DESIGN PROCESS
+storyboard
+
+After the first deadline, we were able to really get into the story we were trying to tell as the user goes through the quiz.
+
+The storyboards helped us find other gaps in our story:
+
+**SLIDESHOW**
+
+            <h3>Designing a system</h3>
+            <p>
+                Many parts of a design are repeated. Immediately started creating a library of components to pull from based on the patterns that formed.
+             </p>
+             <p>
+            </p>
+            <p>Colors have meaning
+
+                            <p>
+                    Teal as the color of the 'sea'
+                    </p>
+                        <p>Teal represents a cautious color, not impulsive and doesn’t take unnecessary risks. Teal personality is to think before acting. 
+                            
+                            Perfect for a quiz to teach employees to be aware before clicking.
+            </p>
+red is a signal to stop when you are at a red light, danger, warning
+
+
+                </p>
+            <p>
+                Typography choice Glegoo gave the technical feel, while Be Vietnam offered clean lines as contrast and ease of readability.
+            
+                </p>
+
+OUTCOME
+The first live version was released in the incredibly short time span of just two months. Built initially as simply a quiz, the first version kicked off an idea to expand to full training program and monetize as a stand-alone product. 
+
+Phase II will focus on back-end development of the login process along with custom animations for different areas of the quiz.
+
+Phase III will include development for payment processing.
+
+FINALE
+
+            <h3>Main pages</h3>
+
+            <p>A play off the 'fish' theme and keeping to the client's request of wanting a more masculine, conservative color scheme, the brand design includes a cool base with pop reddish pink. the predominant teal color of the 'sea' represents Teal is also a cautious color, not impulsive and doesn’t take unnecessary risks. Teal personality is to think before acting. Perfect for a quiz to teach employees to be aware before clicking.
+        </p>
+        <p>
+            Typography choice Glegoo gave the technical feel, while Be Vietnam offered clean lines as contrast and ease of readability.
+            </p>
+
+The red
+
+Typography choice Glegoo gave the technical feel, while Be Vietnam offered clean lines as contrast and ease of readability.
+
+Finally custom animations are being created incorporating the fish theme.
+
+***IMAGE***
+
+
+***IMAGE***
+
+***IMAGE***
+
+To add to the playfulness and to create enthusiasm and engagement, animations were added. background and a 'window' with expressive fish denoting emotions.
+~Personal thoughts~
+This work showcases the UI design and why design decisions were made, through collaboration with owner and many 'think sessions' my role also included the business needs and how the project would expand to include training courses which made me think about the how today's decision would possibly affect future versions and to design so that duplication or rework would be to a minimum.
+
+IMAGE IDEAS
+about - final version
+role - final version
+problems solved - color swatches, responsive image, right and wrong modals
+finale - animation process?, final version
+
+
+DESIGNING PROCESS
+
+          <p>There are times when starting at the usual beginning isn't an option.
+          </p>Being flexible in a process is key.
+          <p>
+              The first soft deadline was just one week after starting. Therefore the usual order of doing things wasn't an option. First to do was code an email template to be tweaked as needed to create the interactive questions.
+
+             
+              Once the email template was created three basic layouts were created then expanded on as the creative juices flowed.
+
+Whereas ideally one would start at research stage, In this case going straight into a bit of coding was required as the first deadline was just one week into the project. 
+
+
+PROBLEMS SOLVED
+          <h3>Reverse engineering</h3>
+          <p>There are times when starting at the usual beginning isn't an option.
+          </p>
+          <p>
+              Since the first deadline to create a live prototype was just one week after starting, we had to jump straight into coding and do a bit of designing along the way.
+              <!-- , the usual order of doing things wasn't an option. First to do was code an email template to be tweaked as needed to create the interactive questions. -->
+        </p>
+        <p>Whether designing or coding, the key to making this kind of quick shooting possible is the practice creating sustainable systems that can be reused when needed.
+
+
+                   <!-- <h3>Showing progress</h3>
+            <p>Once beginning the quiz, there was no clear indication of how far along in the quiz the user was.
+            </p>
+            <p>
+                By adding progress 'bubbles' with added feature of checks and Xs, user knew how far along they were as well as their score thusfar.
+          </p>
+          <p>
+            Adding to the interface, modals were created to not only tell user whether they got the answer right or not, but to add to the experience fish puns were used to communicate. When an answer was incorrect a teaching moment appeared with text bubbles pointing out why.  
+          </p> -->
+
+                      <!-- <h3>Little annoyances, big effect</h3>
+            <p>Isn't it so annoying to have to scroll a tiny bit just to click a button? User feedback confirmed this pain point.
+             </p>
+             <p>
+                For a minimal yet optimal flow, each page would be limited to the viewport height for desktop.
+            </p> -->           
+
+                                          <h3>Animate to engage</h3>
+    
+                        </p>                
+                        Finally custom animations are being created incorporating the fish theme.
+                    </p>
+                    <p>
+                        To add to the playfulness and to create enthusiasm and engagement, animations were added. background and a 'window' with expressive fish denoting emotions.
+                    </p>
+<h3>Showcasing UI</h3>
+
+            <p>This work showcases the UI design and why design decisions were made, through collaboration with owner and many 'think sessions' my role also included the business needs and how the project would expand to include training courses which made me think about the how today's decision would possibly affect future versions and to design so that duplication or rework would be to a minimum.
+            </p>

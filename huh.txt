@@ -1,0 +1,85 @@
+   add tools for each project
+   
+    72            To the left is music synced to video.<br>
+                Tools: AfterEffects
+
+119                    Music production<br>
+                    Video production
+                </p>
+            </div>
+            <div class="team">
+                <h3>tools</h3>
+                <p>
+                    Adobe AfterEffects<br>
+                    Adobe PremierPro<br>
+                    Adobe Audition<br>
+                    Figma
+    </p
+
+    158                              <h3>responsibilities</h3>
+
+    163                                 Music production<br>
+                                Video production
+                            </p>
+                        </div>
+                        <div class="team">
+                            <h3>tools</h3>
+                            <p>
+                                Adobe AfterEffects<br>
+                                Adobe PremierPro<br>
+                                Adobe Audition<br>
+                                Figma
+                            </p>
+                        </div>
+                                </div>
+
+    196             <p>Bringing a logo to life.<br>
+                Tools: Illustrator, AfterEffects
+
+                237
+                                <p> Promotional video for a record label.<br>
+                    Tools: AfterEffects, Audition
+
+                    304            <p>
+               Producing music requires a video to go with it!
+               Tools: AfterEffects, Audition
+            </p>
+
+            378
+                           This was created for a phishing quiz app for 227 InfoSec, Inc. Project is still ongoing as are more animations!<br>
+                Tools: Figma, Affinity Design
+
+specify only footer <p> with Karen
+                styles: 
+                1603 .footer p:first-of-type,
+.social-list__link i {
+    transform: scale(1);
+    transition: transform 0.8s;
+}
+
+.footer p:first-of-type:hover,
+.social-list__link i:hover {
+    transform: scale(1.5);
+    transition: transform 0.8s;
+}
+
+1634    margin-top: 3rem;
+
+}
+delete     transform: scale(1);                            
+
+833 section__title--plain {
+grid-area: karen;
+  /* line-height: 1em; */
+  /* margin-left: 1.5em; */
+  /* margin-bottom: 1em; */
+  line-height: 0.65em;
+  margin-left: 0;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+    .section__title--plain {
+        opacity: .6;
+        z-index: 1;
+    }
+}

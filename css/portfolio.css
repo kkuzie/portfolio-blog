@@ -586,6 +586,12 @@ display: block;
         margin-top: -13em;
         width: 90%;
     }
+    .section__img-intro #intro-syncVid {
+        margin-top: 27em;
+    }
+    .section__img-intro #intro-GlobeImg{
+    margin-top: -5em;
+    }
 @media screen and (max-width: 1101px) {
     .section__img-intro {
         grid-column: 1 / 4;

@@ -1,0 +1,57 @@
+
+Design
+
+It is all about imagination. I get inspiration from things I see, experience, or hear about in order to design logos, create interfaces and experiences that spark interest.
+Gotta turn the world on its head to see different perspectives.
+Development
+
+Constantly aspiring to write cleaner code, be ever more efficient, and figure out how to bring designs and ideas to life.
+Always thinking,
+“There’s gotta be a way to do that.”
+Figuring out the puzzle is half the fun.
+Audio & Video
+
+I can sing, I can dance, I make films.
+Uh, nope.
+But I love to give it a whirl and have so much fun editing parts together to make beautiful music and stories. Sometimes I add my voice then do a happy dance in my chair when it all comes together.
+
+
+        <div class="about-me__body">
+            <!-- <p>I understand how to put the user at the center of design. I do this by empathizing with the users and discovering their motivations, needs, and pain points. I possess three years of experience as a contract Web Developer, where I maintain and update the website I designed and coded.</p> -->
+
+                            <!-- I want to work with a team that is enthusiastic about creating user-centric projects. I believe the excitement of working with people in a close-knit group makes solving problems more manageable and bursts the creative balloon inside us. -->
+
+            <!-- <p>I have the skills and experience of a seasoned designer and can’t wait to use them for the next opportunity. I can take a diverse responsibility that help me gain new skills and expertise.
+                </p> -->
+            <!-- I have a strong desire to step out of the box - maybe create a new box - in fact maybe not a box at all
+                but step into an open field of dreams with many possibilities. Oh, and I am multi-faceted: -->
+
+            <!-- for new growth! Innovation requires this
+                -- progress means not always staying with the status quo but "seeing differently". -->
+
+            <!-- <p>I guess you'd say I am a spirited non-conformist to a degree while being respectful of parameters and
+                views of others.
+            </p> -->
+                    <!-- <div class="section__img">        
+                <img src="images/whoIam-image.jpg" alt="image of Karen"
+                    class="section__img--kk portfolio__item--section-img" width="250px">
+            </div> -->
+
+
+
+How do you make a digital product memorable? i have this belief that when a user lands on a digital product, though they expect certain familiarities such as a menu, they also want to see something memorable and engaging. 
+long for an experience. 
+the best websites i have been on are the ones that i can remember months later. 
+Maybe it was just one feature such as 
+
+Through engagement and familiarities. Which begs the question, how do you keep a user engaged? 
+I have this belief that when someone finds a digital platform boring, their engagement will be limited and they will leave as soon as their task is done. 
+
+What if the platform had something memorable that had the user wanting to explore more - even if subconsciously? The best platforms to me are the ones that make me say 'ooh, what does this button do?' or a scrolling effect that keeps me scrolling and exploring. Take a look at my portfolio - isn't the simple moving of your mouse mesmerizing?
+
+Disney is one of the best at imagining the unimagined. I believe we all have ideas ready to burst out of us. I certainly have tons swimming in my brain. This passion to open a 'whole new world' to users is what I would bring to Disney along with my professsional expertise in UI/UX design and front-end development. Some highlights include:
+
+a
+b
+c
+

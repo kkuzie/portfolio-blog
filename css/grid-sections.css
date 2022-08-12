@@ -7,6 +7,12 @@
 .gce-5 {
     grid-column-end: 5;
 }
+.grs-3 {
+    grid-row-start: 3;
+}
+.gre-5 {
+    grid-row-end: 5;
+}
 @media screen and (max-width: 768px) {
     .gce-5 {
         grid-column-end: 6;
