@@ -37,7 +37,7 @@
         /* done down to 400px only */
         /*body and under 574px*/
     /* --fs-h1: 8rem; */
-    --fs-h2: 5.5rem;
+    /* --fs-h2: 5.5rem; */
     --fs-h3: 1.75rem;/*subtitles/overlay*/
     --fs-h4: 1.25rem; /*card headings*/
     --fs-body: 1.25rem;
@@ -45,43 +45,34 @@
     --fs-nav: 2.5em;
     --lh-h1: 3.5rem;
 }
-@media (min-width: 250px) {
+/* @media (min-width: 250px) {
     :root {
         --fs-h4: 2.25rem;
         --fs-body: 1rem;
 
     }
-}
+} */
 
-@media (min-width: 430px) {
+/* @media (min-width: 430px) {
     :root {
-        /* --fs-h1: 8rem; */
         --fs-h2: 8rem;
-        /* --fs-h3: 1.75rem; */
         --fs-h4: 1.25rem;
         --fs-body: 1rem;
         --fs-captions: .8rem;
-
-        /* --fs-nav: 2.5em; */
         --lh-h1: 6rem;
-
-        /* --fs-h3: 1.5rem; */
-        
-        /* --lh-h1: 5rem; */
     }
-}
-@media (min-width: 575px) {
+} */
+/* @media (min-width: 575px) {
     :root {
-        /* --fs-h1: 11.5rem; */
         --fs-h4: 1.75rem;
         --fs-body: 1.25rem;
 
     }
-}
+} */
 @media (max-width: 1643px) {
     :root {
         --fs-h1: 20rem;
-
+        --fs-h2: 16rem;
 
     }
 }
@@ -94,11 +85,6 @@
 @media (max-width: 769px) {
     :root {
         --fs-h1: 15rem;
-    }
-}
-@media (max-width: 769px) {
-    :root {
-        /* --fs-h1: 18rem;16 11 */
         --fs-h2: 12rem;
         --fs-h3: 2rem;
         --fs-h4: 1.75rem;
@@ -120,9 +106,9 @@
     @media (min-width: 1644px) {
     :root {
         --fs-h1: 30rem;
-        --fs-h2: 17rem;
+        --fs-h2: 25rem;
         --fs-h3: 2.5rem;
-        /* --fs-body: 1.25rem; */
+        --fs-body: 1.25rem;
         --fs-captions: .8rem;
 
         --fs-nav: 5em;
@@ -297,7 +283,7 @@ h1 {
 }
 @media screen and (max-width: 1101px) {
     .portfolio__part  h1{
-        font-size: var(--fs-h2);
+        font-size: var(--fs-h1);
     }
 }
 h2 {
