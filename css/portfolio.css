@@ -92,6 +92,19 @@
     margin-left: 0;
 }
 }
+@media (max-width: 490px) {
+    .section__title--intro2,
+    .section__title--intro3 {
+        margin-top: -.7em;
+    }
+    }
+    @media (max-width: 350px) {
+        .section__title--intro2,
+        .section__title--intro3 {
+            margin-top: -1.4em;
+        }
+        }
+    
 .section__title--intro-center {
     text-align: center;
     margin: 0;
@@ -171,6 +184,16 @@
         /* grid-auto-rows: auto;
         grid-auto-columns: 1fr; */
     }
+    @media (max-width: 490px) {
+        .intro--port,
+        .portfolio__part--right,
+        /* .portfolio__part--right2, */
+        /* .portfolio__part--right2a, */
+        .portfolio__part--center,
+        .portfolio__part--left {
+            grid-row-gap: 1.5em;
+    }
+}
     .intro--port, 
     #work.intro--port {
         grid-template-areas: 

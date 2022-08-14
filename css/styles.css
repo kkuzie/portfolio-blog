@@ -68,11 +68,18 @@
 @media (max-width: 490px) {
     :root {
         --fs-h1: 8rem;
-        --fs-h2: 6rem;
-        --fs-h3: 1.25rem;
+        --fs-h2: 7rem;
+        --fs-h3: 2rem;
         --fs-body: 1rem;
     }
 }
+@media (max-width: 350px) {
+    :root {
+        --fs-h1: 5rem;
+        --fs-h2: 4rem;
+     }
+}
+
     @media (min-width: 1644px) {
     :root {
         --fs-h1: 30rem;
@@ -739,11 +746,11 @@ header p a {
 }
 }
 @media screen and (max-width: 430px){
-    .section__title--intro,
+    /* .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
         line-height: 55px;
-}
+} */
 .section__title--intro-kk {
     line-height: 82px;
 }
@@ -1003,7 +1010,7 @@ width: 24em;
         align-self: center;
         margin-left: 0;
         position:relative;
-        width: 225px;
+        /* width: 225px; */
     }
     .intro__img--silly{
         order: 1;
