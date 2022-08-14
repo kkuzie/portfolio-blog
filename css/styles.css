@@ -706,35 +706,50 @@ header p a {
 .section__title--intro3, 
 .section__title--works,
 .section__title--about{
-    line-height: 230px;
+    line-height: 150px;
 }
 @media screen and (max-width: 1644px) {
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
-        line-height: 117px;
+        line-height: 100px;
 }
+span h2.section__title--intro, 
+span h2.section__title--intro2, 
+span h2.section__title--intro3,
+.portfolio__part--right2 h2.section__title--intro, 
+.portfolio__part--right2 h2.section__title--intro2, 
+.portfolio__part--right2 h2.section__title--intro3,
+.portfolio__part--right2a h2.section__title--intro, 
+.portfolio__part--right2a h2.section__title--intro2, 
+.portfolio__part--right2a h2.section__title--intro3
+ {
+    line-height: 80px;
+}
+
     .section__title--intro-kk {
         line-height: 160px;
     }
 }
-/* @media screen and (max-width: 1101px){
-    .section__title--intro,
-    .section__title--intro2,
-    .section__title--intro3{
-        line-height:  117px;
-}
-.section__title--intro-kk {
-    line-height: 160px;
-}
-
-} */
 @media screen and (max-width: 768px){
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
-        line-height:  80px;
+        line-height:  75px;
 }
+span h2.section__title--intro, 
+span h2.section__title--intro2, 
+span h2.section__title--intro3,
+.portfolio__part--right2 h2.section__title--intro, 
+.portfolio__part--right2 h2.section__title--intro2, 
+.portfolio__part--right2 h2.section__title--intro3,
+.portfolio__part--right2a h2.section__title--intro, 
+.portfolio__part--right2a h2.section__title--intro2, 
+.portfolio__part--right2a h2.section__title--intro3
+ {
+    line-height: 60px;
+}
+
 .section__title--intro-kk {
     line-height: 117px;
 }
@@ -746,13 +761,39 @@ header p a {
     .section__title--intro3{
         line-height:  32px;
 }
+span h2.section__title--intro, 
+span h2.section__title--intro2, 
+span h2.section__title--intro3,
+.portfolio__part--right2 h2.section__title--intro, 
+.portfolio__part--right2 h2.section__title--intro2, 
+.portfolio__part--right2 h2.section__title--intro3,
+.portfolio__part--right2a h2.section__title--intro, 
+.portfolio__part--right2a h2.section__title--intro2, 
+.portfolio__part--right2a h2.section__title--intro3
+ {
+    line-height: 40px;
+}
+
 }
 @media screen and (max-width: 350px){
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
-        line-height:  20px;
+        line-height:  18px;
 }
+span h2.section__title--intro, 
+span h2.section__title--intro2, 
+span h2.section__title--intro3,
+.portfolio__part--right2 h2.section__title--intro, 
+.portfolio__part--right2 h2.section__title--intro2, 
+.portfolio__part--right2 h2.section__title--intro3,
+.portfolio__part--right2a h2.section__title--intro, 
+.portfolio__part--right2a h2.section__title--intro2, 
+.portfolio__part--right2a h2.section__title--intro3
+ {
+    line-height: 28px;
+}
+
 }
 
 @media screen and (max-width: 574px){
@@ -761,11 +802,6 @@ header p a {
 }
 }
 @media screen and (max-width: 430px){
-    /* .section__title--intro,
-    .section__title--intro2,
-    .section__title--intro3{
-        line-height: 55px;
-} */
 .section__title--intro-kk {
     line-height: 82px;
 }
