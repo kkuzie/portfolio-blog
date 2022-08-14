@@ -36,30 +36,31 @@
 
         /* done down to 400px only */
         /*body and under 574px*/
-    --fs-h3: 1.75rem;/*subtitles/overlay*/
-    --fs-body: 1.25rem;
-    --fs-captions: .8rem;
+    /* --fs-h3: 1.75rem;subtitles/overlay */
+  /* --fs-body: 1.25rem; */
+   /*    --fs-captions: .8rem;
     --fs-nav: 2.5em;
-    --lh-h1: 3.5rem;
+    --lh-h1: 3.5rem; */
 }
 
 @media (max-width: 1643px) {
     :root {
-        --fs-h1: 20rem;
-        --fs-h2: 16rem;
-        --fs-h3: 2.5rem;
-        --fs-h4: 2.25rem;
-        --fs-body: 1.5rem;
+        --fs-h1: 200px;
+        --fs-h2: 160px;
+        --fs-h3: 28px;
+        --fs-h4: 22px;
+        --fs-body: 16px;
+        --fs-captions: 12px;
+
     }
 }
 
 @media (max-width: 769px) {
     :root {
-        --fs-h1: 15rem;
-        --fs-h2: 12rem;
-        --fs-h3: 2.25rem;
-        --fs-h4: 1.75rem;
-        --fs-captions: .8rem;
+        --fs-h1: 150px;
+        --fs-h2: 120px;
+        --fs-h3: 24px;
+        --fs-h4: 20px;
         --fs-nav: 4em;
         --lh-h1: 6rem;
     }
@@ -67,27 +68,26 @@
 
 @media (max-width: 490px) {
     :root {
-        --fs-h1: 8rem;
-        --fs-h2: 7rem;
-        --fs-h3: 2rem;
-        --fs-body: 1rem;
+        --fs-h1: 96px;
+        --fs-h2: 80px;
     }
 }
 @media (max-width: 350px) {
     :root {
-        --fs-h1: 5rem;
-        --fs-h2: 4rem;
+        --fs-h1: 72px;
+        --fs-h2: 56px;
+        --fs-h3: 20px
      }
 }
 
     @media (min-width: 1644px) {
     :root {
-        --fs-h1: 30rem;
-        --fs-h2: 25rem;
-        --fs-h3: 2.5rem;
-        --fs-h4: 2.25rem;
-        --fs-body: 1.75rem;
-        --fs-captions: 1rem;
+        --fs-h1: 300px;
+        --fs-h2: 250px;
+        --fs-h3: 48px;
+        --fs-h4: 24px;
+        --fs-body: 20px;
+        --fs-captions: 12px;
 
         --fs-nav: 5em;
         --lh-h1: 6rem;
@@ -712,13 +712,13 @@ header p a {
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
-        line-height: 160px;
+        line-height: 117px;
 }
     .section__title--intro-kk {
         line-height: 160px;
     }
 }
-@media screen and (max-width: 1101px){
+/* @media screen and (max-width: 1101px){
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
@@ -728,18 +728,33 @@ header p a {
     line-height: 160px;
 }
 
-}
+} */
 @media screen and (max-width: 768px){
     .section__title--intro,
     .section__title--intro2,
     .section__title--intro3{
-        line-height:  82px;
+        line-height:  80px;
 }
 .section__title--intro-kk {
     line-height: 117px;
 }
 
 }
+@media screen and (max-width: 490px){
+    .section__title--intro,
+    .section__title--intro2,
+    .section__title--intro3{
+        line-height:  32px;
+}
+}
+@media screen and (max-width: 350px){
+    .section__title--intro,
+    .section__title--intro2,
+    .section__title--intro3{
+        line-height:  20px;
+}
+}
+
 @media screen and (max-width: 574px){
 .section__title--intro-kk {
     line-height: 82px;
