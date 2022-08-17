@@ -167,7 +167,7 @@ main {
 }
 section {
     max-width: 2300px;
-    margin: 0 auto 15em;
+    margin: 0 auto 150px;
     /* padding: 10em 0 0; removed when reordered sections*/
     /* overflow: hidden; */
 }
@@ -286,17 +286,11 @@ h3 {
     color: var(--clr-headings);
 
 }
-/* .section__designer--plain {
-    font-size: 3em;
-    color: var(--clr-headings);
-} */
 
 /*HOME page subtitle KAREN section*/
 .section__designer--plain h3,
 .section__designer--plain2 h3  {
     margin: 0;
-    /* font-family: var(--ff-seconday); */
-    font-size: 3em;
 }
 @media screen and (max-width: 1374px){
     .section__designer--plain h3,
@@ -828,7 +822,7 @@ span h2.section__title--intro3,
 .intro--plain {
     display: grid;
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: auto 50px 50px min-content;
+grid-template-rows: auto 50px 50px auto;
     margin: 15em 0 0 5.5em;
   }
   @media screen and (max-width: 1150px) {
