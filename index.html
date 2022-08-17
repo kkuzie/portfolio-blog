@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/smoke.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/flyout.css">
     <link rel="stylesheet" href="css/navbar-textVersion.css">
@@ -27,71 +28,11 @@
 
 </head>
 
-<!-- <h1 id="h1">Smoke Simulation</h1> -->
-
 <body>
-    <!-- <div id="canvasContainer"> -->
     <canvas></canvas>
-    <!-- </div>     -->
 
-    <header class="header-textVersion">
-        <!-- style="display: none;" -->
-        <!-- <nav class="navbar-textVersion">
-            <ul class="d-flex nav-container">
-              
-              <li class="logo">
-                  <a href="#home" class="g-highlight">
-                  <img src="/images/kk logo.png" alt="" class="logo-img">
-              </a>
-            </li>
-              
-              <li><a href="#about" class="text-purple ">about</a></li>
-              <li><a href="#works" class="text-blue ">works</a></li>
-              <li><a href="mailto:karen@thekuzicollaborative.com" class="text-teal ">contact</a></li>
-            </ul>
-          </nav> -->
-
-        <!-- HAMBURGER MENU VERSION-->
-        <div class="logo">
-            <img src="images/kk logo.png" alt="kk logo" class="logo--img">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger-top"></span>
-            <span class="hamburger"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" data-target="#home--img" class="nav__link nav__link--home">Intro</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#work" data-target="#work--img" class="nav__link nav__link--work">Works</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" data-target="#about--img" class="nav__link nav__link--about">Who <span
-                            class="short-title">I am</span></a>
-                </li>
-                <li class="nav__item">
-                    <a href="#whatIdo" data-target="#whatIdo--img" class="nav__link nav__link--whatIdo">What <span
-                            class="short-title">I do</span></a>
-                </li>
-
-                <div class="nav__item nav__item--hover-element"></div>
-            </ul>
-
-            <div class="nav__img">
-                <img id="home--img" src="images/sideways-silly.png" alt=""
-                    class="nav__img--link-img nav__img--home active" style="transform: rotate(-90deg);">
-                <img id="whatIdo--img" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
-                    class="nav__img--link-img nav__img--whatIdo">
-                <img id="about--img" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
-                <img id="work--img" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
-                    class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
-            </div>
-        </nav>
-    </header>
+        <!-- VERY SIMPLE NAV with LOGO -->
+        <div id="navbar" src="navbar.html"></div>
 
 <main>
     <!-- INTRO -->
@@ -157,7 +98,7 @@
                         alt="GoPhish mobile splashing in water" class="portfolio__item--img">
                 </div>
 
-                <div class="overlay__box">
+                <!-- <div class="overlay__box">
                     <div class="overlay__box--content">
                         <ul class="work-created">
                             <li>product design</li>
@@ -166,7 +107,7 @@
                             <li>animation</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </a>
         </div>
@@ -180,15 +121,14 @@
                     <img src="images/eti/eti mobile 4.png" alt="" class="portfolio__item--img">
                 </div>
 
-                <div class="overlay__box">
+                <!-- <div class="overlay__box">
                     <div class="overlay__box--content">
                         <ul class="work-created">
                             <li>UI/UX design</li>
                             <li>web development</li>
-                            <!-- <li>logo</li> -->
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </a>
         </div>
@@ -202,16 +142,15 @@
                         alt="globe mobile designs" class="portfolio__item--img">
                 </div>
 
-                <div class="overlay__box">
+                <!-- <div class="overlay__box">
                     <div class="overlay__box--content">
                         <ul class="work-created">
-                            <!-- <h2> Globe Records</h2> -->
                             <li>UI & visual design</li>
                             <li>web development</li>
                             <li>video production</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </a>
 
         </div>
@@ -229,7 +168,7 @@
                     <img src="images/sd350/350 home computer.png" alt="sd350 home page" class="portfolio__item--img">
                 </div>
 
-                <div class="overlay__box">
+                <!-- <div class="overlay__box">
                     <div class="overlay__box--content">
                         <ul class="work-created">
                             <li>UI/UX design</li>
@@ -237,7 +176,7 @@
                             <li>Wordpress</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </a>
         </div>
@@ -271,13 +210,13 @@
                         class="portfolio__item--img">
                 </div>
 
-                <div class="overlay__box">
+                <!-- <div class="overlay__box">
                     <div class="overlay__box--content">
                         <ul class="work-created">
                             <li>logo/branding</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </a>
         </div>
@@ -292,7 +231,7 @@
                             class="portfolio__item--img">
                     </div>
 
-                    <div class="overlay__box">
+                    <!-- <div class="overlay__box">
                         <div class="overlay__box--content">
                             <ul class="work-created">
                                 <li>video & music production</li>
@@ -300,7 +239,7 @@
                                 <li>animation</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                 </a>
             </div>
@@ -528,6 +467,12 @@
     <script src="js/worksPeek.js"></script>
     <!-- <script src="js/headerNavScrollup.js"></script> -->
     <script src="js/smoke.js"></script>
+    <script>
+        $(function(){
+        $("#navbar").load("navbar.html"); 
+        });
+       </script> 
+    
 
 </body>
 
