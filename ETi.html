@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/flyout.css">
     <link rel="stylesheet" href="css/more.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
 
 </head>
@@ -29,71 +30,8 @@
 <body>
     <canvas></canvas>
 
-    <!-- <header> -->
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/kk logo.png" alt="kk logo" class="logo--img">
-                </a>
-            </div>
-
-            <!-- next arrow with text -->
-            <p style="display: inline-block;">
-                <a href="./globe.html">Globe Records
-                    <img src="/images/next-arrow.png" alt="">
-                </a>
-            </p>
-            <!-- back arrow to go back to previous page -->
-            <!-- <button class="nav-toggle nav-phn nav-toggle--portfolio__item" aria-label="back-next buttons" onclick="goBack()">
-                <span class="arrow-upper"></span>
-                <span class="hamburger"></span>
-                <span class="arrow-lower"></span>
-            </button> -->
-            
-            
-            <!-- <button class="nav-phn" aria-label="back-next buttons" >
-                <a href="index.html" class="nav__link nav__link--home">Home</a>
-            </button>
-            <button class="nav-phn" aria-label="back-next buttons" onclick="goForward()">
-                <span >next</span>
-            </button> -->
-    
-            <!-- <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger-top"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-    
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link nav__link--home">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#whatIdo" class="nav__link nav__link--whatIdo">What I do</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link nav__link--about">Who I am</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link nav__link--work">Works</a>
-                    </li>
-    
-                    <div class="nav__item--hover-element"></div>
-                </ul>
-    
-                <div class="nav__img">
-                    <img id="home" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--home active"
-                        style="transform: rotate(-90deg);">
-                    <img id="whatIdo" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
-                        class="nav__img--link-img nav__img--whatIdo">
-                    <img id="about" src="images/sideways-silly.png" alt="" class="nav__img--link-img nav__img--about">
-                    <img id="work" src="images/paolo looks at me wo p v4 purpleish.png" alt=""
-                        class="nav__img--link-img nav__img--work" style="transform: scaleX(-1)">
-                </div> -->
-            <!-- </nav> -->
-        </header>
-    
+    <!-- VERY SIMPLE NAV with LOGO -->
+    <div id="navbar" src="navbar.html"></div>
 
     <!-- INTRO -->
 <main>
@@ -603,6 +541,13 @@ margin: 18em 0 0 -4em;">
             $('.transition, #thumbs a, #next a, #prev a').leavePage();
         });
     </script>
+
+<script>
+    $(function(){
+    $("#navbar").load("navbar.html"); 
+    });
+   </script> 
+
     <script>
         $(function(){
         $("#eti-research-slideshow").load("eti-research-slideshow.html"); 

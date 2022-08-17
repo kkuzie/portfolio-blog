@@ -23,31 +23,15 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/grid-sections.css">
     <link rel="stylesheet" href="css/more.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
 </head>
 
 <body>
     <canvas></canvas>
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/kk logo.png" alt="kk logo" class="logo--img">
-            </a>
-        </div>
-                <!-- next arrow with text -->
-                <p style="display: inline-block;">
-                    <a href="./phish.html">GoPhish!
-                        <img src="/images/next-arrow.png" alt="">
-                    </a>
-                </p>
-                <!-- back arrow to go back to previous page -->
-        <!-- <button class="nav-toggle nav-phn nav-toggle--portfolio__item" aria-label="back-next buttons" onclick="goBack()">
-            <span class="arrow-upper"></span>
-            <span class="hamburger"></span>
-            <span class="arrow-lower"></span>
-        </button> -->
-    </header>
+    <!-- VERY SIMPLE NAV with LOGO -->
+    <div id="navbar" src="navbar.html"></div>
 
     <!-- INTRO -->
 <main>
@@ -550,6 +534,11 @@
             $('.transition, #thumbs a, #next a, #prev a').leavePage();
         });
     </script>
+    <script>
+        $(function(){
+        $("#navbar").load("navbar.html"); 
+        });
+       </script> 
 
 <script>
     $(function(){
