@@ -27,7 +27,7 @@
     --clr-dark: #030005;/*old #303030;*/
     --clr-darkest: #111111;
     --clr-accent: #4b6d99;/*old #a494a4;*/
-    --clr-headings: #343f4b;/*my version 2a2f35*/
+    --clr-headings: #343f4b;/*my version  possible version but needs to be more like watercolor 91B9ED*/
 
     --bs-dark: 0.25em 0.25em .75em rgba(0, 0, 0, .25),
         0.125em 0.125em .25em rgba(0, 0, 0, .15);
@@ -830,14 +830,22 @@ grid-template-rows: auto 50px 50px auto;
      margin: 10em 0 0 2em;
       }
     }
-    @media screen and (max-width: 490px) {
+    @media screen and (max-width: 769px) {
         .intro--plain {
             grid-template-rows: 145px 50px 50px 145px;
+        }
+      } 
+ 
+    @media screen and (max-width: 575px) {
+        .intro--plain {
+            grid-template-rows: 235px 50px 50px 235px;
         }
       } 
       @media screen and (max-width: 350px) {
         .intro--plain {
             margin: 10em 0 0 .5em;
+            grid-template-rows: 145px 50px 50px 145px;
+
         }
       } 
 
@@ -1402,7 +1410,7 @@ width: 24em;
     transform: rotate(-90deg);
     position: relative;
     min-width: 200px;/*500*/
-    top: -55px;
+    top: -175px;
 }
 @media (min-width: 1644px) {
     .my-work__img{
@@ -1412,31 +1420,36 @@ width: 24em;
 }
 @media screen and (max-width: 1644px){
     .my-work__img {
-    top: -100px;/*-128*/
+    top: -160px;/*-128*/
     } 
 }
 
 @media screen and (max-width: 1200px){
     .my-work__img{
         min-width: 175px;
-        top: -100px;
+        top: -125px;
     }
 }
 @media screen and (max-width: 900px){
     .my-work__img {
         min-width: 155px;
-        top: -80px;
+        top: -100px;
     }
 }
 @media screen and (max-width: 768px){
     .my-work__img {
-        top: -100px;
+        top: -115px;
     }
 }
 @media screen and (max-width: 574px){
     .my-work__img {
-        top: -60px;
+        top: -40px;
         min-width: 100px;
+    }
+}
+@media screen and (max-width: 349px){
+    .my-work__img {
+        top: -50px;
     }
 }
 
