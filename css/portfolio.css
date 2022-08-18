@@ -468,7 +468,7 @@ display: block;
     }
     .team {
         margin-left: 0;
-        margin-top: -5em;
+        margin-top: -3em;
     }
     
 }
@@ -480,6 +480,9 @@ display: block;
         "resp"
         "team";
     }
+    .team, .responsibilities, .role {
+        margin-bottom: 1em;
+      }
     .team {
         margin-top: 0;
     }
