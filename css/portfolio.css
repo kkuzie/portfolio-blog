@@ -126,15 +126,6 @@
     text-align: right;
 }
 
-.section__subtitle--right,
-.section__subtitle--left {
-    background: var(--clr-accent);
-    padding: .125em 1em;/*was .25 1*/
-    /* font-family: var(--ff-seconday); */
-    /* margin-bottom: 1em; */
-    color: var(--clr-dark);/*remove this for light font color (will inherit body)*/
-}
-
 .section__captions--right {
     float: right;
 }
