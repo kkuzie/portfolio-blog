@@ -17,7 +17,7 @@
 /* CUSTOM PROPERTIES */
 :root {
     --ff-primary: "Klemer", "deservedregular", "Tan nimbus", "Be Vietnam", sans-serif;
-    --ff-seconday: "Glegoo", serif;
+    --ff-seconday: "Glegoo", serif;/**/
     --ff-body: "Be Vietnam", sans-serif;
 
     --fw-reg: 300;
@@ -472,7 +472,9 @@ h3 {
     position: relative;
 }
 .section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--about,
+.section__subtitle--right,
+.section__subtitle--left {
     background: var(--clr-accent);
     padding: .125em 1em;
     /*was .25 1*/
@@ -482,6 +484,7 @@ h3 {
     /*remove this for light font color (will inherit body)*/
     border-radius: 10px;
 }
+
 .section__subtitle--intro,
 .section__subtitle--left {
     border-radius: 0 10px 10px 0 ;
