@@ -25,7 +25,7 @@
     padding : 16px 0px 16px 0px;
     position : relative;
   }
-  a{
+  .navbar-a{
     color: var(--clr-dark);
     text-decoration : none;
     text-transform : lowercase;
